@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -10,7 +11,8 @@ import (
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	name := request.QueryStringParameters["name"]
-	response := fmt.Sprintf("Hello %s!", name)
+	var mongo = os.Getenv("mongo")
+	response := fmt.Sprintf("mongo : %s %s!", mongo, name)
 
 	return &events.APIGatewayProxyResponse{
 		StatusCode:        200,
