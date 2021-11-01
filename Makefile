@@ -1,6 +1,4 @@
 build:
 	mkdir -p functions
-	GOOS=linux
-	GOARCH=amd64
-	GO111MODULE=on
-	go build -o functions/hello ./go-src/hello.go
+	GOOS=linux GOARCH=amd64 GO111MODULE=auto GOBIN=${PWD}/functions go get ./...
+	GOOS=linux GOARCH=amd64 GO111MODULE=auto GOBIN=${PWD}/functions go install ./...
