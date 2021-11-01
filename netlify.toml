@@ -1,8 +1,8 @@
 [build]
   base = "/"
   command = "make build"
-  publish = "/public"
+  publish = "/"
   functions = "/functions"
 
 [build.environment]
-  GO_VERSION = "1.14.5"
+  GO_VERSION = "1.17"
