@@ -1,4 +1,4 @@
-module test
+module github.com/EsmaeilMazahery/EsmaeilMazahery.github.io
 
 go 1.17
 
