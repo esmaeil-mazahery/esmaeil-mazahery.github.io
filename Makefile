@@ -3,5 +3,5 @@ build:
 	GOOS=linux
 	GOARCH=amd64
 	GO111MODULE=on
-	go mod init
-	go build -o functions/hello ./go-src/hello.go
+	GOBIN=${PWD}/functions go get ./...
+	GOBIN=${PWD}/functions go install ./...
