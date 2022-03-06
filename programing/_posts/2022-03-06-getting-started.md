@@ -2,7 +2,7 @@
 layout: post
 title: "starting"
 author: "اسماعیل مظاهری"
-categories: programing1
+categories: programing
 tags: [برنامه نویسی]
 excerpt_separator: <!--more-->
 ---
