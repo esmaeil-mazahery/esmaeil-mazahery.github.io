@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: physics
 title: Physics
 permalink: /physics
 ---

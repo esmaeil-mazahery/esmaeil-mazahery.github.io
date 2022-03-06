@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: programing
 title: Programing
 permalink: /programing
 ---
