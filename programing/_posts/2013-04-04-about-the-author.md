@@ -2,8 +2,8 @@
 layout: post
 title: "About the Author"
 author: "Paul Le"
-categories: journal
-tags: [documentation,sample]
+categories: programing
+tags: [documentation, sample]
 image: cutting.jpg
 ---
 
