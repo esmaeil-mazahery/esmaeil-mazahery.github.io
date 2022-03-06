@@ -7,7 +7,7 @@ disqus:
 google-ID: ""
 
 menu:
-  - { name: "رزومه", url: "about.html" }
+  - { name: "رزومه", url: "cv.html" }
   - { name: "فیزیک", url: "physics.html" }
   - { name: "برنامه نویسی", url: "programing.html" }
   - { name: "تماس", url: "contact.html" }
