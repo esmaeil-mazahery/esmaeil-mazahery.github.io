@@ -7,7 +7,7 @@ layout: default
 </h1>
 
 <ul class="posts-container">
-  {% for post in site.categories['physics'].posts %}
+  {% for post in site.categories[0].posts %}
   {% unless post.next %}
   <h3>{{ post.date | date: '%Y' }}</h3>
   {% else %}
