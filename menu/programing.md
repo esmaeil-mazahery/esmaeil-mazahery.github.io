@@ -1,5 +1,5 @@
 ---
 layout: programing
-title: Programing
+title: برنامه نویسی
 permalink: /programing
 ---

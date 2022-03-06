@@ -1,5 +1,5 @@
 ---
 layout: physics
-title: Physics
+title: فیزیک
 permalink: /physics
 ---
