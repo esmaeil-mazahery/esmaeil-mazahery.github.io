@@ -1,260 +1,340 @@
-<!doctype html>
-<html dir="rtl" lang="fa">
-<head>
-  <title>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage" prefix="og:http://ogp.me/ns#">
+    <head>
     
-    Esmaeil mazahery | Programing
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <!-- Use Atom -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Esmaeil mazahery" />
-  <!-- Use RSS-2.0 -->
-  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Esmaeil mazahery | Programing"/>
-  //-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+    
+
+    <!-- LibDoc metadata -->
+    <title>Esmaeil Mazahery</title>
+    <meta name="description" content="my notes and topics about programing">
+    <meta itemprop="name" content="Esmaeil Mazahery">
+    <meta name="description" itemprop="description" content="my notes and topics about programing">
+    <meta name="application-name" content="Esmaeil Mazahery">
+    
+
+    <!-- Favicons -->
+    
+    
+    
+        
+        
+        
+        
+        
+        
+        
+            
+                <link rel="icon" type="image/png" href="http://localhost:4000/assets/libdoc/img/favicon/favicon-32x32.png">
+            
+        
+    
+    
+    <meta name="msapplication-TileColor" content="#123456">
+    <meta name="theme-color" content="#123456">
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="msapplication-starturl" content="http://localhost:4000/index.html">
+    <meta name="msapplication-tooltip" content="Esmaeil Mazahery">
+    <meta name="msapplication-TileColor" content="#123456">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/index.html">
+    <meta property="og:title" content="Esmaeil Mazahery">
+    <meta property="og:description" content="my notes and topics about programing">
+    
+        
+            <meta property="og:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+        
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Esmaeil Mazahery">
+    <meta name="twitter:description" content="my notes and topics about programing">
+    <meta name="twitter:url" content="http://localhost:4000/index.html">
+    
+        
+            <meta name="twitter:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+        
+    
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Esmaeil Mazahery">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#123456">
+
+    <!-- Android -->
+    <meta name="theme-color" content="#123456">
+    <meta name="color-scheme" content="light">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="/assets/libdoc/css/normalize.css">
+    <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css">
+
+    <!-- Prism syntax highlighter -->
+    
+        <link rel="stylesheet" href="http://localhost:4000/assets/libdoc/css/prism/prism-tomorrow.css">
+    
+    
+        <style>
+            code[class*="language-"], pre[class*="language-"] {
+                font-size: 0.9em;
+                line-height: 1.4em;
+                font-family: var(--sg-font-family-monospace);
+            }
+        </style>
+    
+
+    <!-- Head scripts -->
+    <script type="text/javascript" src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- LibDoc config -->
+    <script>
+        window.site = {
+            title: 'Esmaeil Mazahery',
+            description: 'my notes and topics about programing',
+            url: 'http://localhost:4000',
+            baseurl: '',
+            playground: {
+                min_height: '300px',
+                stylesheets: [
+                    
+                ],
+                scripts_head: [
+                    
+                ],
+                scripts_body: [
+                    
+                ]
+            }
         }
-      });
     </script>
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script>
-
-  <!-- Use Jekyll SEO plugin -->
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Esmaeil mazahery</title>
-<meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Home" />
-<meta name="author" content="Esmaeil mazahery" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Programing" />
-<meta property="og:description" content="Programing" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Esmaeil mazahery" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Esmaeil mazahery"},"description":"Programing","headline":"Home","name":"Esmaeil mazahery","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
-
 </head>
 
-<body>
-  <div class="container">
-    <header class="header">
-  <h3 class="header-title">
-    <a href="/">Esmaeil mazahery</a>
-    <small class="header-subtitle">Programing</small>
-    <div class="menu">
-  <nav class="menu-content">
+    <body class="u-bc-primary-edge">
+        <div class="c-grid m-nowrap">
+            
+<div    class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right" 
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"></div>
+<nav    class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md" 
+        m-fw-medium="md,xl"
+        u-fixed="sm,md" 
+        u-sticky="xl"
+        id="libdoc-sidebar">
+    <div class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt" style="width:1px;"></div>
+    <button class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm" 
+            u-none="xl" 
+            onclick="sidebar()">
+        <span class="i-menu u-fs-md"></span>
+    </button>
+    <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
+        <li>
+            <a rel="author" href="http://localhost:4000" class="c-btn m-translucid m-block-right u-p-md">
+                
+                    <img    src="http://localhost:4000/assets/libdoc/img/favicon/android-chrome-512x512.png" 
+                            
+                                style="max-height:40px"
+                            
+                            alt="Esmaeil Mazahery">
+                
+            </a>
+        </li>
+        
+            
+                <li id="libdoc-sidebar-item-search">
+                    <form class="c-form" action="/assets/libdoc/search.html" method="get">
+                        <input  type="search" 
+                                id="libdoc-search-box" 
+                                name="query" 
+                                class="u-bl-none u-bt-thin-dashed-alt u-br-none u-bb-none u-bg-search"
+                                u-fs-xs="sm,md"
+                                u-p-xs="sm,md">
+                        <label for="libdoc-search-box" u-fs-xs="sm">Search</label>
+                        <input type="submit" value="Search" class="u-none">
+                    </form>
+                </li>
+            
+            
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-      <a href="/programing.html">Programing</a>
-    
-      <a href="/devops.html">Devops</a>
-    
-      <a href="/cv.html">cv</a>
-    
-      <a href="/contact.html">call</a>
-    
-  </nav>
-  <nav class="social-icons">
-    
-  
-  
-    <a href="https://github.com/EsmaeilMazahery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="https://twitter.com/smaeilmazahery" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="http://www.linkedin.com/in/esmaeilmazahery/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="mailto:smaeil.mazahery@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="/rss-feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-  
-
-  </nav>
-</div>
-
-  </h3>
-</header>
-
-    <div class="content-container">
       
-  <div class="posts-container">
-    <h1>
-      <a href="/programing/solid-cs.html">اصول SOLID در سی شارپ C#</a>
-    </h1>
-    
-    <p>
       
-  حروف S.O.L.I.D مخففی برای پنج اصل در طراحی شی گرا است . با این اصول برنامه
-  نویس می تواند نرم افزاری تهیه کند که نگهداری و توسعه آن آسان است. همچنین از کد
-  های بد بو جلوگیری می شود و ریفکتور کد راحت تر می شود.
-
-
-
-
-اصل The Single Responsibility Principle:
-
-  یک کلاس باید فقط و فقط یک دلیل برای بوجود آمدن داشته باشد و فقط یک وظیفه به آن
-  داد... <a href="/programing/solid-cs.html">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 11 Nov 2022 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
-  
-  
-    7 minute read
-  
-
-
-</span>
-    </p>
-  </div>
-
-  <div class="posts-container">
-    <h1>
-      <a href="/programing/getting-started.html">starting</a>
-    </h1>
-    
-    <p>
-      برنامه نویسی
-
-
-
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
-برنامه نویسی
- <a href="/programing/getting-started.html">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 06 Mar 2022 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
-  
-  
-    less than 1 minute read
-  
-
-
-</span>
-    </p>
-  </div>
-
-  <div class="posts-container">
-    <h1>
-      <a href="/devops/getting-started.html">فیزیک چیست؟</a>
-    </h1>
-    
-      <div class="thumbnail-container">
-        <a href="/devops/getting-started.html"><img src="/assets/img/physics.jpg"></a>
-      </div>
-    
-    <p>
+        <li class="c-grid m-right u-bt-thin-dashed-alt ">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            Linux
+          </div>
+        </li>
+        
       
-  
-    هروقت بخواهید پدیدههای اطراف خود را بهطور علمی توضیح دهید به دنیای فیزیک
-    وارد میشوید.
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/add-swap-space-on-ubuntu.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            add swap space on ubuntu
+          
+        </a>
+      </li>
+      
+    
   
 
   
-  
-    مطالعات علمی نشان دادهاند که پدیدهها از قانونهای خاصی پیروی میکنند. هدف اصلی
-    علم فیزیک کشف و بیان این قانونها است و همانطور که در این کتاب خواهید دید،
-    منظور از آهنگ مصرف انرژى این است که در یک زمان معین چه مقدار انرژى مصرف
-    ... <a href="/devops/getting-started.html">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 06 Mar 2022 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
-  
-  
-    1 minute read
+
   
 
+  
 
-</span>
-    </p>
-  </div>
+  
 
-<!-- Pagination links -->
-<div class="pagination">
   
-    <span class="pagination-button">prev</span>
-  
-  
-    <span class="pagination-button">next</span>
-  
-</div>
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+        
+    </ul>
+</nav>
+
+            <main class="m-grow m-w-1 c-grid" m-nowrap="md,xl" id="libdoc-page-split-container">
+    <div class="m-w-6 m-w-12--sm u-bc-primary-max u-br-thin-dashed-alt u-bb-thin-dashed-alt u-relative resizeable resizeable-width" style="max-width: 70ch">
+        <header id="libdoc-page-split-header" class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+            <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs u-lh-1">Esmaeil Mazahery</h1>
+            <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">my notes and topics about programing</p>
+        </header>
+        <div id="libdoc-featured-code"></div>
+        <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+            
+        </div>        
     </div>
-    <footer class="footer">
-  
-  
-  
-    <a href="https://github.com/EsmaeilMazahery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-  
+    <div id="libdoc-page-split" class="m-grow c-position c-grid m-column u-bc-primary-max u-o-hidden u-bb-thin-dashed-alt u-z-10" m-sticky="md,xl" m-top-0="md,xl" m-w-12="sm" m-order--1="sm" u-h-100vh="md,xl"></div>
+</main>
 
-  
-  
-    <a href="https://twitter.com/smaeilmazahery" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  
+        </div>
+        <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+            <nav class="c-grid m-space-between m-bottom">
+                <ul class="u-ls-none u-mb-md--sm">
+                    <li>
+                        <a href="http://localhost:4000" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
+                        my notes and topics about programing 
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+        </footer>
+        <script type="text/javascript" src="/assets/libdoc/js/prism/prism-core.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markup.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-css.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-clike.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-javascript.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-bash.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-csharp.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-dart.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-docker.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-go.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-graphql.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-http.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-java.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markdown.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-scss.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-sql.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-yaml.min.js"></script>
+        
+        <script type="text/javascript" src="/assets/libdoc/js/my-toggles.js"></script>
+        <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+        <script type="text/javascript" src="/assets/libdoc/js/playground.js"></script>
 
-  
-  
-    <a href="http://www.linkedin.com/in/esmaeilmazahery/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="mailto:smaeil.mazahery@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-  
-
-  
-  
-    <a href="/rss-feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-  
-
-  <div class="footer-description"><a href="/">Esmaeil mazahery | Programing by Esmaeil mazahery</a></div>
-</footer>
-
-  </div>
-</body>
-
+        <aside my-toggle-name="libdoc-modal" class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100">
+            <div class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100">
+                <div class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded" my-toggle="libdoc-modal"></div>
+                <div class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto">
+                    <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+                        <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">Playground settings</h4>
+                        <nav>
+                            <button class="c-btn u-p-sm u-bl-thin-dashed-alt" my-toggle="libdoc-modal">Close <span class="i-x u-ml-xs"></span></button>
+                        </nav>
+                    </header>
+                    <div id="libdoc-modal-content" class="u-p-lg" u-pl-md="sm" u-pr-md="sm">content</div>
+                </div>
+            </div>
+        </aside>
+    </body>
 </html>
