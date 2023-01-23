@@ -3,7 +3,7 @@
 */
 
 body {
-  font-family: $serif-font-family;
+  font-family: $vazir-font-family;
   font-size: 18px;
   color: $body-color;
   line-height: 1.75rem;
@@ -19,7 +19,7 @@ body {
   }
 }
 
-h1{
+h1 {
   font-size: 2rem;
 }
 
@@ -27,8 +27,13 @@ h1 a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $sans-serif-font-family;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $vazir-font-family;
   color: $dark-gray-color;
 }
 
@@ -70,11 +75,20 @@ table {
   width: 100%;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
   text-align: left;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 2;
 }

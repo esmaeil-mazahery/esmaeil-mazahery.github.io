@@ -2,6 +2,7 @@
 ---
 
 $sans-serif-font-family: "Quattrocento Sans", sans-serif;
+$vazir-font-family: vazir, sans-serif;
 $serif-font-family: "PT Serif", Georgia, "Times New Roman", serif;
 $code-font-family: "Source Code Pro", monospace;
 
@@ -92,5 +93,5 @@ $rss-color: #ff6600;
 }
 
 * {
-    font-family: vazir, sans-serif;
+    font-family: $vazir-font-family;
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-23T10:56:44+03:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">اسماعیل مظاهری</title><subtitle>فیزیک,برنامه نویسی</subtitle><author><name>اسماعیل مظاهری</name></author><entry><title type="html">Solid Cs</title><link href="http://localhost:4000/programing/solid-cs.html" rel="alternate" type="text/html" title="Solid Cs" /><published>2022-11-11T00:00:00+03:30</published><updated>2022-11-11T00:00:00+03:30</updated><id>http://localhost:4000/programing/solid-cs</id><content type="html" xml:base="http://localhost:4000/programing/solid-cs.html"><![CDATA[]]></content><author><name>اسماعیل مظاهری</name></author><category term="programing" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">فیزیک چیست؟</title><link href="http://localhost:4000/physics/getting-started.html" rel="alternate" type="text/html" title="فیزیک چیست؟" /><published>2022-03-06T00:00:00+03:30</published><updated>2022-03-06T00:00:00+03:30</updated><id>http://localhost:4000/physics/getting-started</id><content type="html" xml:base="http://localhost:4000/physics/getting-started.html"><![CDATA[<div>
+  <p>
+    هروقت بخواهید پدیدههای اطراف خود را بهطور علمی توضیح دهید به دنیای فیزیک
+    وارد میشوید.
+  </p>
+
+  <!--more-->
+  <p>
+    مطالعات علمی نشان دادهاند که پدیدهها از قانونهای خاصی پیروی میکنند. هدف اصلی
+    علم فیزیک کشف و بیان این قانونها است و همانطور که در این کتاب خواهید دید،
+    منظور از آهنگ مصرف انرژى این است که در یک زمان معین چه مقدار انرژى مصرف
+    مىشود انرژیای که اجسام متحرک، به علت حرکتشان دارند، انرژی جنبشی نامیده
+    میشود. نرژی جنبشی یک جسم، به جرم جسم (m) و سرعت آن (v) بستگی دارد و با رابطه
+    زیر محاسبه میشود. k=1/2mv^2 m برحسب کیلوگرم kg v برحسب متر برثانیه m/s K
+    برحسب ژول J به بیان دیگر انرژی جنبشی مقدار انرزی است که شما برای متوقف گردن
+    یک جسم متحرک با سرعت ثابت نیاز دارید انرژى درونى یک جسم، مجموع انرژىهاى
+    ذرههاى تشکیل دهندهٔ آن است معمولا بالا رفتن انرژى درونى جسم به صورت گرمتر
+    شدن آن ظاهر مىشود. انرژی یک مساله نسبی است مثلا یک جسم با دمای ۱۰۰ درجه
+    سانتی گراد در محیطی که همین دما را دارد بدون انرژی محسوب می شود ولی همان جسم
+    در محیطی با دمای صفر درجه دارای انرژی است انرژى یک جسم هیچگاه از بین نمىرود
+    و خودبهخود نیز بهوجود نمىآید و همواره پایسته (ثابت) مىماند، مگر اینکه مقدارى
+    از آن را به جسم دیگرى بدهد یا اینکه از جسم دیگری انرژى دریافت کند. انرژیای
+    که هر جسم به دلیل قرار گرفتن در ارتفاع نسبت به زمین دارد را انرژی پتانسیل
+    گرانشی مینامیم. انرژی پتانسیل گرانشی هر جسم (U)، به جرم (m) و ارتفاع آن از
+    زمین (h) بستگی دار U = mgh یکای اندازهگیری انرژی پتانسیل گرانشی ژول (J)، جرم
+    کیلوگرم (kg) و ارتفاع متر (m) است. g در این رابطه شتاب گرانشی زمین نام دارد
+    و مقدار s/m 9/8 2
+  </p>
+</div>]]></content><author><name>اسماعیل مظاهری</name></author><category term="physics" /><category term="فیزیک پایه" /><summary type="html"><![CDATA[هروقت بخواهید پدیدههای اطراف خود را بهطور علمی توضیح دهید به دنیای فیزیک وارد میشوید.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/physics.jpg" /><media:content medium="image" url="http://localhost:4000/physics.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">starting</title><link href="http://localhost:4000/programing/getting-started.html" rel="alternate" type="text/html" title="starting" /><published>2022-03-06T00:00:00+03:30</published><updated>2022-03-06T00:00:00+03:30</updated><id>http://localhost:4000/programing/getting-started</id><content type="html" xml:base="http://localhost:4000/programing/getting-started.html"><![CDATA[<h1 id="برنامه-نویسی">برنامه نویسی</h1>
+
+<!--more-->
+
+<p>برنامه نویسی
+برنامه نویسی
+برنامه نویسی
+برنامه نویسی
+برنامه نویسی
+برنامه نویسی
+برنامه نویسی
+برنامه نویسی</p>]]></content><author><name>اسماعیل مظاهری</name></author><category term="programing" /><category term="برنامه نویسی" /><summary type="html"><![CDATA[برنامه نویسی]]></summary></entry></feed>

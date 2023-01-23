@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>اسماعیل مظاهری</title>
+		<description>فیزیک,برنامه نویسی</description>
+		<link></link>
+		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Solid Cs</title>
+				
+				
+					<description>
+</description>
+				
+				<pubDate>Fri, 11 Nov 2022 00:00:00 +0330</pubDate>
+				<link>http://localhost:4000/programing/solid-cs.html</link>
+				<guid isPermaLink="true">http://localhost:4000/programing/solid-cs.html</guid>
+			</item>
+		
+			<item>
+				<title>starting</title>
+				
+					<dc:creator>اسماعیل مظاهری</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;برنامه-نویسی&quot;&gt;برنامه نویسی&lt;/h1&gt;
+
+</description>
+				
+				<pubDate>Sun, 06 Mar 2022 00:00:00 +0330</pubDate>
+				<link>http://localhost:4000/programing/getting-started.html</link>
+				<guid isPermaLink="true">http://localhost:4000/programing/getting-started.html</guid>
+			</item>
+		
+			<item>
+				<title>فیزیک چیست؟</title>
+				
+					<dc:creator>اسماعیل مظاهری</dc:creator>
+				
+				
+					<description>&lt;div&gt;
+  &lt;p&gt;
+    هروقت بخواهید پدیدههای اطراف خود را بهطور علمی توضیح دهید به دنیای فیزیک
+    وارد میشوید.
+  &lt;/p&gt;
+
+  </description>
+				
+				<pubDate>Sun, 06 Mar 2022 00:00:00 +0330</pubDate>
+				<link>http://localhost:4000/physics/getting-started.html</link>
+				<guid isPermaLink="true">http://localhost:4000/physics/getting-started.html</guid>
+			</item>
+		
+	</channel>
+</rss>
