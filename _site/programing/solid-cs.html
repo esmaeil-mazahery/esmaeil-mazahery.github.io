@@ -1,1 +1,331 @@
+<!doctype html>
+<html dir="rtl" lang="fa">
+<head>
+  <title>
+    
+    اصول SOLID در سی شارپ C# | Esmaeil mazahery
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Esmaeil mazahery" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Esmaeil mazahery | Programing"/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+    </script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
 
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>اصول SOLID در سی شارپ C# | Esmaeil mazahery</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="اصول SOLID در سی شارپ C#" />
+<meta name="author" content="اسماعیل مظاهری" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="حروف S.O.L.I.D مخففی برای پنج اصل در طراحی شی گرا است . با این اصول برنامه نویس می تواند نرم افزاری تهیه کند که نگهداری و توسعه آن آسان است. همچنین از کد های بد بو جلوگیری می شود و ریفکتور کد راحت تر می شود." />
+<meta property="og:description" content="حروف S.O.L.I.D مخففی برای پنج اصل در طراحی شی گرا است . با این اصول برنامه نویس می تواند نرم افزاری تهیه کند که نگهداری و توسعه آن آسان است. همچنین از کد های بد بو جلوگیری می شود و ریفکتور کد راحت تر می شود." />
+<link rel="canonical" href="http://localhost:4000/programing/solid-cs.html" />
+<meta property="og:url" content="http://localhost:4000/programing/solid-cs.html" />
+<meta property="og:site_name" content="Esmaeil mazahery" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-11T00:00:00+03:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="اصول SOLID در سی شارپ C#" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"اسماعیل مظاهری"},"dateModified":"2022-11-11T00:00:00+03:30","datePublished":"2022-11-11T00:00:00+03:30","description":"حروف S.O.L.I.D مخففی برای پنج اصل در طراحی شی گرا است . با این اصول برنامه نویس می تواند نرم افزاری تهیه کند که نگهداری و توسعه آن آسان است. همچنین از کد های بد بو جلوگیری می شود و ریفکتور کد راحت تر می شود.","headline":"اصول SOLID در سی شارپ C#","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/programing/solid-cs.html"},"url":"http://localhost:4000/programing/solid-cs.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+  <h3 class="header-title">
+    <a href="/">Esmaeil mazahery</a>
+    <small class="header-subtitle">Programing</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/programing.html">Programing</a>
+    
+      <a href="/devops.html">Devops</a>
+    
+      <a href="/cv.html">cv</a>
+    
+      <a href="/contact.html">call</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://github.com/EsmaeilMazahery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/smaeilmazahery" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/esmaeilmazahery/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:smaeil.mazahery@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/rss-feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+    <div class="content-container">
+      <h1>
+  اصول SOLID در سی شارپ C#
+</h1>
+
+<article>
+  <p>
+  حروف S.O.L.I.D مخففی برای پنج اصل در طراحی شی گرا است . با این اصول برنامه
+  نویس می تواند نرم افزاری تهیه کند که نگهداری و توسعه آن آسان است. همچنین از کد
+  های بد بو جلوگیری می شود و ریفکتور کد راحت تر می شود.
+</p>
+
+<!--more-->
+
+<h2>اصل The Single Responsibility Principle:</h2>
+<p>
+  یک کلاس باید فقط و فقط یک دلیل برای بوجود آمدن داشته باشد و فقط یک وظیفه به آن
+  داده شود. در کد زیر کلاسی برای ارتباط با دیتابیس ساخته شده و در آن متدی داریم
+  برای افزودن اطلاعات بعد از افزودن اطلاعات تابع لاگ صدا زده شده است.
+  12345678class DataAccess { public static void InsertData() { //insert Data
+  into database Console.WriteLine( "Logged Time:" +
+  DateTime.Now.ToLongTimeString() + " Log Data insertion completed
+  successfully"); } } این کد اصل اول را نقض نموده است . این اصل می گوید که کلاس
+  شما فقط یک وظیفه دارد و لاگ کردن نباید در این کلاس قرار گیرد ممکن است ما
+  بخواهیم نوع لاگ کردن را عوض کنیم بجای کنسول در فایل ذخیره کنیم یا در دیتابیس
+  ذخیره شود نباید پیاده سازی این کلاس را تغییر دهیم. نوع درست این پیاده سازی به
+  شکل زیر خواهدبود: 123456789101112131415class DataAccess { public static void
+  InsertData() { //inserted into database Logger.WriteLog("Log Data insertion
+  completed successfully"); } } class Logger { public static void
+  WriteLog(string message) { Console.WriteLine( "Logged Time:" +
+  DateTime.Now.ToLongTimeString() +message); } } در اینجا اگر بخواهید هر تغییری
+  در روش لاگ شدن انجام دهیم کلاس لاگ را تغییر خواهیم داد. اصل The Open Closed
+  Principle : شما باید بتوانید عملکرد کلاس را بدون تغییر آن گسترش دهید یا به
+  عبارتی کلاس نسبت به تغییرات باید بسته باشد و نسبت به عملیات جدید باز باشد. ما
+  باید سعی کنیم کدی را بنویسیم که هر بار نیاز های سیستم تغییر کرد آن را تغییر
+  ندهیم. یک کلاس پایه با قابلیت های مورد نیاز ایجاد کنید و اطمینان حاصل کنید که
+  ما آن کلاس را تغییرنمی دهیم (برای تغییرات بسته باشد) و با وراثت از کلاس اصلی
+  کلاس دیگری ایجاد کنید (باز بودن برای عملکرد های جدید)
+  123456789101112131415161718192021public class Rectangle { public double Width
+  { get; set; } public double Height { get; set; } } public class AreaCalculator
+  { public double Area(object shape) { if (shape is Rectangle) { Rectangle
+  rectangle = (Rectangle) shape; return rectangle.Width*rectangle.Height; } else
+  { Circle circle = (Circle)shape; return circle.Radius * circle.Radius \*
+  Math.PI; } } } در این مثال کلاس AreaCalculator مساحت را محاسبه می کند اگر نوعی
+  دیگر اضاف شود مجبوریم داخل این کلاس را تغییر دهیم و نسبت به تغییرات بسته نیست.
+  در پروژه های بزرگتر این متد ممکن است محاسبات بسیار پیچیده ای را انجام دهد و
+  اینکه ما مجبور باشیم این محاسبات پیچیده را تغییر دهیم اصلا درست نیست. یک راه
+  حل استفاده از کلاس Base و مشتق کردن همه شی ها از آن است. به طوری که در کلاس
+  اصلی تابع محاسبه مساحت پیش بینی شده باشد.
+  123456789101112131415161718192021public abstract class Shape { public abstract
+  double Area(); } public class Rectangle : Shape { public double Width { get;
+  set; } public double Height { get; set; } public override double Area() {
+  return Width*Height; } } public class Circle : Shape { public double Radius {
+  get; set; } public override double Area() { return Radius*Radius\*Math.PI; } }
+  اصل The Liskov Substitution Principle : شما باید از هر کلاس مشتق شده از والد
+  بتوانید بجای نمونه ای از کلاس والد استفاده کنید و همان رفتار را بدون تغییرات
+  داشته باشید. باید اطمینان حاصل کنید که کلاس مشتق شده تاثیری در عملکرد کلاس
+  والد ندارد و بتوانید کلاس های مشتق شده از والد را در جای والد تعویض کنید. این
+  اصل زمانی نقض میشه که شما ارث بری از کلاس انجام بدین و در این ارث بری یکی یا
+  چند متد از کلاس در کلاس مشتق شده معنی دار نده. به زبان ساده تر ارث بری باید
+  شبیه زیرمجموعه در ریاضیات باشه یعنی تمام قابلیت ها و رفتار های کلاس والد در
+  کلاس مشتق شده معنی دار باشه و نباید صرف داشتن اشتراک با کلاس والد ارث بری را
+  انجام دهیم. در یک پیاده سازی واقعی فرض کنید در سیستم دو موجودیت مشترک و مدیر
+  را داشته باشیم و ابتدا مشترک را تعریف کنیم و سپس با این تصور که مدیر هم نوعی
+  مشترک هست با سطح دسترسی بیشتر مدیر را از مشترک ارث بری کنیم و خصوصیات خاصی که
+  مختص مشترک هست را نادیده بگیریم مثل موجودی ، نوع اشتراک و …
+  12345678910111213public class Customer { public string Name{set;get;} public
+  int CustomerType{set;get;} } public class Admin : Customer { public int
+  Role{set;get;} } Customer admin=new Admin(); admin.CustomerType // Exception
+  مشترک والد ادمین است و می توانیم این تخصیص را انجام دهیم اما مدیر نوع مشترک
+  ندارد!! 1234567891011121314151617public class User { public string
+  Name{set;get;} } public class Customer : User { public int
+  CustomerType{set;get;} } public class Admin : User { public int Role{set;get;}
+  } User admin=new Admin(); admin.CustomerType // Does not Have در این حالت نوع
+  کاربر به عنوان والد تعریف شده و نوع مشترک در آن تعریف نشده که به مشکل بخوریم و
+  این خطای کامپایلری خواهد بود. اصل The Interface Segregation Principle :
+  اینترفیس های کوچک را برای نیاز خود بسازید و از ساخت اینترفیس هایی با قابلیت
+  های زیاد و استفاده در هر جایی اجتناب کنید. نباید کلاسهای مشتق شده را مجبور به
+  پیاده سازی کنید که به آن نیاز ندارد. بجای یک کلاس بزرگ چند کلاس کوچک بسازید.
+  1234567891011121314151617181920212223interface IToy { void setPrice(int
+  price); void setColor(String color); void move(); void fly(); } class ToyHouse
+  :IToy { int price; String color; public void setPrice(double price) {
+  this.price = price; } public void setColor(String color) { this.color=color; }
+  public void move(){ throw new Exception(“Not allowed”); } public void fly(){
+  throw new Exception(“Not allowed”); } } اینترفیس IToy دو متد move و fly را
+  تعریف کرده اما همه اسباب بازیها این قابلیت ها را ندارند و در اینجا اسباب بازی
+  داریم که این موارد را ندارد ولی به خاطر این ارث بری مجبوریم متد ها را تعریف
+  کنم و خطا ارسال کنیم. راه حل تعریف اینترفیس هایی برای این موارد است که هر جا
+  نیاز بود می توانیم از چند اینترفیس ارث بری کنیم. 12345678910interface IToy {
+  void setPrice(int price); void setColor(String color); } interface IMovable {
+  void move(); } interface IFlyable { void fly(); }
+  1234567891011121314151617181920Class ToyPlane implements IToy, IMovable,
+  IFlyable { double price; String color; public void setPrice(int price) {
+  this.price = price; } public void setColor(String color) { this.color=color; }
+  public void move() { //code related to moving plane } public void fly() { //
+  code related to flying plane} } } اصل Dependency Inversion Principle : کلاس
+  های سطح بالاتر نباید به کلاس های سطح پایینتر وابسته باشند. هر دو باید به
+  انتزاعات وابسته باشند و انتزاعات نباید به جزییات دیگر وابسته باشند آنها هم
+  باید به انتزاعات وابسته باشند. این اصل به ما می گوید نباید در کدمان Coupling
+  داشته باشیم کاپلینگ Coupling چیست : درجه ای که بخش ها ، کلاس ها یا کامپوننت
+  های نرم افزار به هم وابسته هستند در کلاس زیر اصل اول S رعایت شده است اما این
+  کلاس به کلاس لاگ وابسته است و اگر کلاس لاگ را بخواهید به نوع دیگری عوض کنید
+  مجبورید به داخل این کلاس دست ببرید. 123456789101112131415class Customer {
+  private FileLogger obj = new FileLogger(); public virtual void Add() { try {
+  // Database code goes here } catch (Exception ex) { obj.Handle(ex.ToString());
+  } } } در اینجا اصل دوم نیز نقض شده است و ما نباید از FileLogger استفاده کنیم و
+  باید از اینترفیس آن استفاده کرده و چند نوع از آن اینترفیس ارث بری کنیم.
+  12345678910111213141516171819202122232425262728interface ILogger { void
+  Handle(string error); } class FileLogger : ILogger { public void Handle(string
+  error) { System.IO.File.WriteAllText(@"c:\Error.txt", error); } } class
+  EverViewerLogger : ILogger { public void Handle(string error) { // log errors
+  to event viewer } } class EmailLogger : ILogger { public void Handle(string
+  error) { // send errors in email } } برای حل این دو مشکل اینترفیس لاگر را در
+  سازنده کلاس می فرستیم. 12345678910111213141516171819class Customer { private
+  Ilogger obj; public Customer(ILogger i) { obj = i; } public virtual void Add()
+  { try { // Database code goes here } catch (Exception ex) {
+  obj.Handle(ex.ToString()); } } } راه حل های بهتر برای این مشکل Service Locator
+  و Dependency Injection می باشد. ممنون میشم با لایک کردن به هرچه بیشتر دیده شدن
+  این مطلب کمک کنید و حتماً نظرتون رو برام بنویسید.
+</p>
+
+</article>
+
+  <span class="post-date">
+  Written on
+  
+  November
+  11th,
+  2022
+  by
+  
+    اسماعیل مظاهری
+  
+</span>
+
+
+
+  <div class="post-date">Feel free to share!</div>
+<div class="sharing-icons">
+  <a href="https://twitter.com/intent/tweet?text=اصول SOLID در سی شارپ C#&amp;url=/programing/solid-cs.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=/programing/solid-cs.html&amp;title=اصول SOLID در سی شارپ C#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+</div>
+
+
+
+  <div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+        
+          <li>
+            <h3>
+              <a href="/programing/getting-started.html">
+                starting
+                <!--<img src="http://localhost:4000/images/">-->
+                <!--<small>March 6, 2022</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+    </div>
+    <footer class="footer">
+  
+  
+  
+    <a href="https://github.com/EsmaeilMazahery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/smaeilmazahery" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/esmaeilmazahery/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:smaeil.mazahery@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/rss-feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="footer-description"><a href="/">Esmaeil mazahery | Programing by Esmaeil mazahery</a></div>
+</footer>
+
+  </div>
+</body>
+
+</html>

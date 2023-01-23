@@ -19,10 +19,14 @@ highlighter: rouge
 permalink: none
 plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
+# lang: en
+# languages: ["en", "fa"]
+# permalink: /:categories/:year/:month/:day/:title/
+
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "اسماعیل مظاهری"
-description: "فیزیک,برنامه نویسی"
-author: "اسماعیل مظاهری"
+title: "Esmaeil mazahery"
+description: "Programing"
+author: "Esmaeil mazahery"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
