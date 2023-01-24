@@ -1,0 +1,269 @@
+---
+title: Git Flow
+description: _
+layout: libdoc/page
+
+#LibDoc specific below
+category: CheatSheet
+order: 1
+lang: en
+# unlisted: true
+---
+
+<ul id="markdown-toc">
+  <li>
+    <a href="#Git-flow-Commands" id="markdown-toc-Git-flow-Commands">Git flow Commands</a>
+  </li>
+  <li>
+    <a href="#Feature" id="markdown-toc-Feature">Feature</a>
+  </li>
+  <li>
+    <a href="#Release" id="markdown-toc-Release">Release</a>
+  </li>
+  <li>
+    <a href="#Hotfix" id="markdown-toc-Hotfix">Hotfix</a>
+  </li>
+  <li>
+    <a href="#In-Action" id="markdown-toc-In-Action">In Action</a>
+  </li>
+</ul>
+
+<h3 id="Git-flow-Commands">
+  Git flow Commands
+</h3>
+
+<p>
+  Start using git-flow by initializing it inside an existing git repository:
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow init
+  </code>
+</pre>
+
+<h3 id="Feature">Feature</h3>
+
+<p>
+  Start developing a new featurea
+  This action creates a new feature branch based on 'develop' and switches to it
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature start MYFEATURE
+  </code>
+</pre>
+
+<p>
+  Finish the development of a feature. This action performs the following
+  Merges MYFEATURE into 'develop'
+                                                Removes the feature branch
+                                                Switches back to 'develop' branch</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature finish MYFEATURE
+  </code>
+</pre>
+
+<mark>
+  if you get conflict after finish the feature, you must resolve it manually and complate merge then run command again
+</mark>
+<br>
+<mark>
+  if you want to keep the feature branch, use `git flow feature finish --keep-branch`
+</mark>
+
+<p>
+  Publish a feature to the remote server so it can be used by other users.
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature publish MYFEATURE
+  </code>
+</pre>
+
+<p>
+  Get a feature published by another user.
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature pull origin MYFEATURE
+  </code>
+</pre>
+
+<p>
+  You can track a feature on origin by using
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature track MYFEATURE
+  </code>
+</pre>
+
+<h3 id="Release">Release</h3>
+
+<p>
+  To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release start RELEASE [BASE]
+  </code>
+</pre>
+
+<p>
+  You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.
+  It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release publish RELEASE
+  </code>
+</pre>
+
+<p>
+  track a remote RELEASE
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release track RELEASE
+  </code>
+</pre>
+
+<p>
+  Finishing a release is one of the big steps in git branching. It performs several actions:
+  Merges the release branch back into 'master'
+                                                  Tags the release with its name
+                                                  Back-merges the release into 'develop'
+                                                  Removes the release branch</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release finish RELEASE
+  </code>
+</pre>
+
+<p>
+  Don't forget to push your tags with
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git push origin --tags
+  </code>
+</pre>
+
+<h3 id="Hotfix">Hotfix</h3>
+
+<p>
+  start hotfix
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow hotfix start VERSION [BASENAME]
+  </code>
+</pre>
+
+<p>
+  Finish a hotfix
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow hotfix finish VERSION
+  </code>
+</pre>
+
+<img src="/assets/user/images/git-flow.svg" class="w-100">
+
+<h3 id="In-Action">In Action</h3>
+
+<p>
+  add git flow
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow init
+  </code>
+</pre>
+
+<p>
+  start new feature
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature start comments
+  </code>
+</pre>
+
+<p>
+  finish feature
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature finish comments
+  </code>
+</pre>
+
+<p>
+  publish - push feature
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow feature publish comments
+  </code>
+</pre>
+
+<p>
+  start new release
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release start v1.0.2
+  </code>
+</pre>
+
+<p>
+  publish new release
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release publish v1.0.3
+  </code>
+</pre>
+
+<p>
+  it create a branch called 'release/v1.0.0' and push it to remote
+  you can fix bugs and commit to this branch no needs create new branch
+</p>
+<p>
+  finish release
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow release finish v1.0.3
+  </code>
+</pre>
+
+<p>
+  Finishing a release is one of the big steps in git branching. It performs several actions:
+  Merges the release branch back into 'master'
+                                                        Tags the release with its name
+                                                        Back-merges the release into 'develop'
+                                                        Removes the release branch</p>
+<p>
+  if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again
+</p>
+<p>
+  add hotfix
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow hotfix start v1.0.3
+  </code>
+</pre>
+
+<p>
+  Finish a hotfix
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git flow hotfix finish v1.0.4
+  </code>
+</pre>
