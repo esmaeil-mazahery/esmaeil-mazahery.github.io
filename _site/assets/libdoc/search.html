@@ -21,6 +21,8 @@
     content="Search results of the specified query">
   <meta name="application-name" content="Search results">
   
+    <meta name="author" content="Esmaeil Mazahery">
+  
 
   <!-- Favicons -->
   
@@ -88,6 +90,7 @@
   <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css">
   <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css">
   <link rel="stylesheet" href="/assets/user/css/style.css">
+  <link rel="stylesheet" href="/assets/user/fonts/icomoon/style.css">
 
   <!-- Prism syntax highlighter -->
   
@@ -235,7 +238,7 @@
           data-iframe-mode=""
           data-category="CheatSheet">
           
-            Linux Commands
+            linux
           
         </a>
       </li>
@@ -422,7 +425,7 @@
         
             
                 "posts-cheatsheet-linux-html": {
-                    "title": "Linux Commands",
+                    "title": "linux",
                     "author": "",
                     "category": "CheatSheet",
                     "content": "Step 1 :Checking the System for Swap Information:Method 1:      sudo swapon --show  output:      NAME      TYPE      SIZE USED PRIO    /swapfile file        4G 1.7G   -2    /dev/vda2 partition   2G   0B   -3  Method 1:      free -h  output:      total        used        free      shared  buff/cache   available    Mem:          7.8Gi       4.9Gi       1.3Gi       8.0Mi       1.6Gi       2.7Gi    Swap:         6.0Gi       1.6Gi       4.4Gi    Step 2 : Checking Available Space on the Hard Drive Partition      df -h  output:      Filesystem      Size  Used Avail Use% Mounted on    udev            3.9G     0  3.9G   0% /dev    tmpfs           797M  1.5M  795M   1% /run        /dev/vda1        97G   37G   57G  40% /        tmpfs           3.9G     0  3.9G   0% /dev/shm    tmpfs           5.0M     0  5.0M   0% /run/lock    tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup    tmpfs           797M     0  797M   0% /run/user/0    Step 3 :Creating a Swap Filecreates a file of the specified size      sudo fallocate -l 1G /swapfile  check amount of space was reserved      ls -lh /swapfile  output:      -rw-r--r-- 1 root root 1.0G Apr 25 11:14 /swapfile    Step 4 :Enabling the Swap Filechange permissions to root privileges can read      sudo chmod 600 /swapfile  Verify the permissions change      ls -lh /swapfile  output:      -rw------- 1 root root 1.0G Apr 25 11:14 /swapfile  mark the file as swap space      sudo mkswap /swapfile  output:      Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)    no label, UUID=6e965805-2ab9-450f-aed6-577e74089dbf  enable the swap file      sudo swapon /swapfile  Verify that the swap is available      sudo swapon --show  output:      NAME      TYPE  SIZE USED PRIO    /swapfile file 1024M   0B   -2        free -h  output:      total        used        free      shared  buff/cache   available    Mem:          981Mi       123Mi       644Mi       0.0Ki       213Mi       714Mi    Swap:         1.0Gi          0B       1.0Gi    Step 5 : Making the Swap File PermanentBack up the /etc/fstab file in case anything goes wrong      sudo cp /etc/fstab /etc/fstab.bak  Add the swap file information to the end of your /etc/fstab file      echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab  ",
@@ -469,7 +472,7 @@
                 <ul class="u-ls-none u-mb-md--sm">
                     <li>
                         <a href="http://localhost:4000" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
-                        A place where I share my experience about programming and technology. 
+                        A place where I share my experience about programming and technology. © Esmaeil Mazahery
                     </li>
                     
                 </ul>
@@ -503,6 +506,8 @@
             <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-java.min.js"></script>
         
             <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markdown.min.js"></script>
+        
+            <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-regex.min.js"></script>
         
             <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-scss.min.js"></script>
         

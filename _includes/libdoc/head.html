@@ -182,6 +182,7 @@
   <link rel="stylesheet" href="{{ '/assets/libdoc/fonts/icomoon/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/libdoc/css/libdoc.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/user/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/user/fonts/icomoon/style.css' | relative_url }}">
 
   <!-- Prism syntax highlighter -->
   {% if site.prism.theme %}
@@ -214,12 +215,9 @@
       baseurl: '{{ site.baseurl }}',
       playground: {
         min_height: '{{ site.min_height | default: "300px" }}',
-        stylesheets: [{% for item in site.stylesheets %}
-            '{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
-      scripts_head: [{% for item in site.scripts_head %}
-          '{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
-    scripts_body: [{% for item in site.scripts_body %}
-        '{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}]
+        stylesheets: [{% for item in site.stylesheets %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
+      scripts_head: [{% for item in site.scripts_head %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
+    scripts_body: [{% for item in site.scripts_body %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}]
 }}
   </script>
 </head>

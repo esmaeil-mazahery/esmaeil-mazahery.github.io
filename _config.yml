@@ -40,7 +40,7 @@ playground:
   # Absolute URL starting with 'http'
   stylesheets:
     - /demo-only/css/normalize.css
-    # - /demo-only/css/photoswipe.css
+    # - /assets/user/fonts/icomoon/css/style.css
 
   # PLAYGROUND HEAD JAVASCRIPTS
   # Javascript in <head>. Can be either:
@@ -132,7 +132,7 @@ metadata:
 
   # AUTHOR NAME
   # Name of the author of the site/project, used into various places of the theme like footer. Default is empty
-  author:
+  author: Esmaeil Mazahery
 
   # THEME COLOR
   # Theme color metadata used in some browsers like Chrome that applies this color on browser address bar.
@@ -464,7 +464,7 @@ prism:
     #- jsx
     #- tsx
     #- reason
-    #- regex
+    - regex
     #- rego
     #- renpy
     #- rest
