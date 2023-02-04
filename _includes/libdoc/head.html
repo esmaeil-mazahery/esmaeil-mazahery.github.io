@@ -206,6 +206,26 @@
   <!-- Head scripts -->
   <script type="text/javascript" src="{{ '/assets/libdoc/js/jquery-3.5.1.slim.min.js' | relative_url }}"></script>
 
+
+  <!-- metype -->
+  <script type='text/javascript'>
+    window.talktype = window.talktype || function(f) {
+    if (talktype.loaded)
+                          f();
+                        else
+                          (talktype.q = talktype.q || []).push(arguments);
+                      };</script>
+  <script src='https://www.metype.com/quintype-metype/assets/metype.js'></script>
+
+  <script type="text/javascript">
+    talktype(function() {
+    var pageUrl = window.location.href;
+                var pageMetadata = < metadata - object - here > ;
+                var accountId = '1003356';
+                var metypeHost = 'https://www.metype.com/';
+                talktype.pageMetadataSetter(accountId, pageUrl, pageMetadata, metypeHost);
+              });</script>
+
   <!-- LibDoc config -->
   <script>
     window.site = {

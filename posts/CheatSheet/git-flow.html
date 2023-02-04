@@ -2,6 +2,7 @@
 title: Git Flow
 description: _
 layout: libdoc/page
+comments: true
 
 #LibDoc specific below
 category: CheatSheet
@@ -56,8 +57,8 @@ lang: en
 <p>
   Finish the development of a feature. This action performs the following
   Merges MYFEATURE into 'develop'
-                                                Removes the feature branch
-                                                Switches back to 'develop' branch</p>
+                                                  Removes the feature branch
+                                                  Switches back to 'develop' branch</p>
 <pre class="language-bash">
   <code class="language-bash">
     git flow feature finish MYFEATURE
@@ -132,9 +133,9 @@ lang: en
 <p>
   Finishing a release is one of the big steps in git branching. It performs several actions:
   Merges the release branch back into 'master'
-                                                  Tags the release with its name
-                                                  Back-merges the release into 'develop'
-                                                  Removes the release branch</p>
+                                                    Tags the release with its name
+                                                    Back-merges the release into 'develop'
+                                                    Removes the release branch</p>
 <pre class="language-bash">
   <code class="language-bash">
     git flow release finish RELEASE
@@ -244,9 +245,9 @@ lang: en
 <p>
   Finishing a release is one of the big steps in git branching. It performs several actions:
   Merges the release branch back into 'master'
-                                                        Tags the release with its name
-                                                        Back-merges the release into 'develop'
-                                                        Removes the release branch</p>
+                                                          Tags the release with its name
+                                                          Back-merges the release into 'develop'
+                                                          Removes the release branch</p>
 <p>
   if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again
 </p>

@@ -25,6 +25,9 @@ layout: libdoc/default
     <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
       {{ content }}
     </div>
+    {% if page.comments %}
+      {% include comments.html %}
+    {% endif %}
   </div>
   <div
     id="libdoc-toc-container"
