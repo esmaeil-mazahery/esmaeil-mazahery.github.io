@@ -2,7 +2,12 @@
 layout: libdoc/page
 permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
 unlisted: true
+excerpt: 
 ---
+
+<!-- summery -->
+<div class="summery"></div>
+<!--end summery -->
 
 
 <ul id="markdown-toc">
@@ -27,5 +32,39 @@ unlisted: true
       Telegram
     </a>
   </li>
-
+  <li>
+    <a href="mailto:smaeil.mazahery@gmail.com" id="markdown-toc-gmail">
+      <span class="uicon-google u-mr-xxs"></span>
+      Mail
+    </a>
+  </li>
 </ul>
+
+{% assign sorted_pages = site.html_pages %}
+{% assign sorted_pages = sorted_pages | sort: "date" | reverse %}
+{% assign sorted_pages = sorted_pages | where_exp: "item", "item.name != '404.html'" | where_exp: "item", "item.name != 'search.md'" %}
+{% assign sorted_pages = sorted_pages | where_exp: "item", "item.url != '/'" | where_exp: "item", "item.unlisted != true" %}
+
+{% for sorted_page in sorted_pages limit: 10 %}
+  <li class="u-relative u-o-hidden libdoc-sidebar-item">
+    <a
+      href="{{ sorted_page.url | relative_url | default: '#' }}"
+      class="c-text m-reset"
+      data-iframe-mode="{{ sorted_page.iframe_mode }}"
+      data-category="{{ sorted_page.category }}">
+      <h3 class="mb-0">
+        {% if sorted_page.title %}
+          {{ sorted_page.title }}
+        {% else %}
+          {{ sorted_page.name }}
+        {% endif %}
+      </h3>
+    </a>
+    {{ sorted_page.summery }}
+    <div class="d-flex">
+      <h6 class="mr-16">{{ sorted_page.category }}</h6>
+      <h6 class="mr-16">{{ sorted_page.date }}</h6>
+    </div>
+  </li>
+  <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs u-mb-xs"></li>
+{% endfor %}
