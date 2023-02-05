@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebPage"
+  prefix="og:http://ogp.me/ns#">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+  
+
+  <!-- LibDoc metadata -->
+  <title>Configuration</title>
+  <meta name="description" content="Every setting details available for LibDoc Jekyll Theme.">
+  <meta itemprop="name" content="Configuration">
+  <meta
+    name="description"
+    itemprop="description"
+    content="Every setting details available for LibDoc Jekyll Theme.">
+  <meta name="application-name" content="Configuration">
+  
+    <meta name="author" content="Esmaeil Mazahery">
+  
+
+  <!-- Favicons -->
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+      
+        <link
+          rel="icon"
+          type="image/png"
+          href="http://localhost:4000/assets/libdoc/img/favicon/favicon-32x32.png">
+      
+    
+  
+
+  <meta name="msapplication-TileColor" content="#123456">
+  <meta name="theme-color" content="#123456">
+
+  <!-- Microsoft -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="msapplication-starturl" content="http://localhost:4000/languages/en/libdoc/libdoc-config.html">
+  <meta name="msapplication-tooltip" content="Configuration">
+  <meta name="msapplication-TileColor" content="#123456">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/languages/en/libdoc/libdoc-config.html">
+  <meta property="og:title" content="Configuration">
+  <meta property="og:description" content="Every setting details available for LibDoc Jekyll Theme.">
+  
+    
+      <meta property="og:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+    
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Configuration">
+  <meta name="twitter:description" content="Every setting details available for LibDoc Jekyll Theme.">
+  <meta name="twitter:url" content="http://localhost:4000/languages/en/libdoc/libdoc-config.html">
+  
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+    
+  
+
+  <!-- iOS -->
+  <meta name="apple-mobile-web-app-title" content="Configuration">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#123456">
+
+  <!-- Android -->
+  <meta name="theme-color" content="#123456">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Style sheets -->
+  <link rel="stylesheet" href="/assets/libdoc/css/normalize.css">
+  <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css">
+  <link rel="stylesheet" href="/assets/user/css/style.css">
+  <link rel="stylesheet" href="/assets/user/fonts/icomoon/style.css">
+
+  <!-- Prism syntax highlighter -->
+  
+    <link rel="stylesheet" href="http://localhost:4000/assets/libdoc/css/prism/prism-tomorrow.css">
+  
+  
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 0.9em
+        ;
+        line-height: 1.4em
+        ;
+        font-family: var(--sg-font-family-monospace);
+      }
+    </style>
+  
+
+  <!-- Head scripts -->
+  <script type="text/javascript" src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"></script>
+
+
+  <!-- metype -->
+  <script type='text/javascript'>
+    window.talktype = window.talktype || function(f) {
+    if (talktype.loaded)
+                          f();
+                        else
+                          (talktype.q = talktype.q || []).push(arguments);
+                      };</script>
+  <script src='https://www.metype.com/quintype-metype/assets/metype.js'></script>
+
+  <script type="text/javascript">
+    talktype(function() {
+    var pageUrl = window.location.href;
+                var pageMetadata = < metadata - object - here > ;
+                var accountId = '1003356';
+                var metypeHost = 'https://www.metype.com/';
+                talktype.pageMetadataSetter(accountId, pageUrl, pageMetadata, metypeHost);
+              });</script>
+
+  <!-- LibDoc config -->
+  <script>
+    window.site = {
+      title: 'Esmaeil Mazahery',
+      description: 'A place where I share my experience about programming and technology.',
+      url: 'http://localhost:4000',
+      baseurl: '',
+      playground: {
+        min_height: '300px',
+        stylesheets: [],
+      scripts_head: [],
+    scripts_body: []
+}}
+  </script>
+</head>
+  <body class="u-bc-primary-edge">
+    <div class="c-grid m-nowrap">
+      
+<div    class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right" 
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"></div>
+<nav    class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md" 
+        m-fw-medium="md,xl"
+        u-fixed="sm,md" 
+        u-sticky="xl"
+        id="libdoc-sidebar">
+    <div class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt" style="width:1px;"></div>
+    <button class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm" 
+            u-none="xl" 
+            onclick="sidebar()">
+        <span class="i-menu u-fs-md"></span>
+    </button>
+    <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
+        <li>
+            <a rel="author" href="http://localhost:4000" class="c-btn m-translucid m-block-right u-p-md">
+                
+                    <img    src="http://localhost:4000/assets/libdoc/img/favicon/android-chrome-512x512.png" 
+                            
+                                style="max-height:40px"
+                            
+                            alt="Esmaeil Mazahery">
+                
+            </a>
+        </li>
+        
+            
+                <li id="libdoc-sidebar-item-search">
+                    <form class="c-form" action="/assets/libdoc/search.html" method="get">
+                        <input  type="search" 
+                                id="libdoc-search-box" 
+                                name="query" 
+                                class="u-bl-none u-bt-thin-dashed-alt u-br-none u-bb-none u-bg-search"
+                                u-fs-xs="sm,md"
+                                u-p-xs="sm,md">
+                        <label for="libdoc-search-box" u-fs-xs="sm">Search</label>
+                        <input type="submit" value="Search" class="u-none">
+                    </form>
+                </li>
+            
+            
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt ">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            CheatSheet
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/linux.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            linux
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/markdown.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            Mark Down
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/git-flow.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            Git Flow
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            Linux
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/ddd.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            Useful links
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/Linux/add-swap-space-on-ubuntu.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            Add swap space on ubuntu
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+        
+    </ul>
+</nav>
+
+      <main class="m-grow m-w-1 c-grid m-nowrap m-center">
+  <div class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt">
+    <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+      <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
+        
+          Configuration
+        
+      </h1>
+      
+        <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
+          
+            Every setting details available for LibDoc Jekyll Theme.
+          
+          
+        </p>
+      
+    </header>
+    <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+      <ul>
+  <li></li>
+</ul>
+
+<p>LibDoc is a <a href="https://www.jekyllrb.org">Jekyll</a> theme which supports all <a href="https://jekyllrb.com/docs/configuration/">Jekyll configuration settings</a>. You can use default <code>config.yml</code> or create your own <code>_any-name-config.yml</code> file. This page is dedicated to all the specific settings of LibDoc.</p>
+
+<h2 id="playground">Playground</h2>
+
+<p><a href="libdoc-playground.html">Playground</a> is an user context completely separated from LibDoc theme resources, it can be embedded mulitple times with different contents on your pages as an extension of syntax highlighter or simply used as a <a href="libdoc-layouts.html#playground">layout</a>. Here are available settings:</p>
+
+<ul>
+  <li><code>playground.stylesheets</code> <br /> Style sheets files in <code>&lt;head&gt;</code>. Can be either relative URL from site root starting with slash / or absolute URL starting with <em>http</em>.</li>
+  <li><code>playground.scripts_head</code> <br /> Javascripts files in <code>&lt;head&gt;</code>. Can be either relative URL from site root starting with slash / or absolute URL starting with <em>http</em>.</li>
+  <li><code>playground.scripts_body_modules</code> <br /> Javascripts files <em>type=”module”</em> are set before <em>text/javascript</em> files. JS modules do not work with a file:// URL. JS modules need a web server.</li>
+  <li><code>playground.scripts_body</code> <br /> Javascript files <code>type="text/javascript"</code> near <em>&lt;/body&gt;</em>. Can be either relative URL from site root starting with slash / or absolute URL starting with ‘http’.</li>
+  <li><code>playground.min_height</code> <br /> Sets a minimum height for each playground, default is 300px.</li>
+  <li><code>playground.metadata.lang</code> <br /> Sets the language of the playground, default is <em>en</em>.</li>
+  <li><code>playground.metadata.cache</code> <br /> Enable or disable browser cache metadata controls for the playground <em>true</em> or <em>false</em> (default).</li>
+  <li><code>playground.metadata.favicon</code> <br /> Path from root or absolute/remote URL - Square 32x32 pixels icon png format or ico for old browsers. Default favicon is LibDoc’s favicon.</li>
+  <li><code>playground.metadata.favicon_auto</code> <br /> Automatic generation of multiple PNG favicons URL. Generates proper favicon files sizes for multiple devices. Must be an absolute URL starting with ‘http’. favicon_auto must be a public URL image file with a minimum 192x192 pixels.</li>
+  <li><code>playground.metadata.author</code> <br /> Sets the name of the author for the playground. Default is empty.</li>
+  <li><code>playground.metadata.color</code> <br /> Theme color metadata used in some browsers like Chrome that applies this color on browser address bar. Color must be in HEX, default is LibDoc’s color.</li>
+  <li><code>playground.metadata.image</code> <br /> Open Graph image file for social networks. Can be either relative URL from site root, absolute URL starting with ‘http’. Default is LibDoc’s splash screen.</li>
+</ul>
+
+<h2 id="metadata">Metadata</h2>
+
+<p>Metadata settings related to the site/project itself.</p>
+
+<ul>
+  <li><code>metadata.lang</code> <br /> Sets the language of the site/project, default is <em>en</em>.</li>
+  <li><code>metadata.cache</code> <br /> Enable or disable browser cache metadata controls for the site/project <em>true</em> or <em>false</em> (default).</li>
+  <li><code>metadata.favicon</code> <br /> Path from root or absolute/remote URL - Square 32x32 pixels icon png format or ico for old browsers. Default favicon is LibDoc’s favicon.</li>
+  <li><code>metadata.favicon_auto</code> <br /> Automatic generation of multiple PNG favicons URL. Generates proper favicon files sizes for multiple devices. Must be an absolute URL starting with ‘http’. favicon_auto must be a public URL image file with a minimum 192x192 pixels.</li>
+  <li><code>metadata.author</code> <br /> Sets the name of the author for the site/project. Default is empty.</li>
+  <li><code>metadata.color</code> <br /> Theme color metadata used in some browsers like Chrome that applies this color on browser address bar. Color must be in HEX, default is LibDoc’s color.</li>
+  <li><code>metadata.image</code> <br /> Open Graph image file for social networks. Can be either relative URL from site root, absolute URL starting with ‘http’. Default is LibDoc’s splash screen.</li>
+</ul>
+
+<h2 id="sidebar">Sidebar</h2>
+
+<p>Main navigation containing site/project’s logo, pages links and search form.</p>
+
+<ul>
+  <li><code>sidebar.disable_search</code> <br /> Enable or disable search feature. Default is <code>true</code>.</li>
+  <li><code>sidebar.logo.url</code> <br /> Can be either relative URL from site root starting with slash / or absolute URL starting with <em>http</em>. Local example <em>/img/logo.png</em> or remote URL <em>https://remotesite.com/img/logo.png</em>.</li>
+  <li><code>sidebar.logo.max_height</code> <br /> Logo image max height, applies only if url is set. Default is 40px.</li>
+  <li><code>sidebar.logo.font_size</code> <br /> If no logo url, font size of the site title, ignored if url is set. Default is 32px.</li>
+  <li><code>sidebar.additional_links</code> <br /> Allows to add links that are not pages included into the project, anywhere into the sidebar. For each item:
+    <ul>
+      <li><code>url</code> relative or absolute URL</li>
+      <li><code>title</code> Text into the link</li>
+      <li><code>order</code> Integer related to the <a href="libdoc-front-matter.html#order">position of the item in the sidebar</a>. Sidebar items are ordered by this value. Sets the rank of the page link into the sidebar, higher values give lower rank for the page link. Additional links are treated like any other page order.</li>
+      <li><code>category</code> Adds a separator above the item link with the name of the category if the previous item has not the same category.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="assets">Assets</h2>
+
+<p>The following parameters are available only for the <a href="libdoc-layouts.html#assets">assets layout</a></p>
+
+<ul>
+  <li><code>assets.path_from_root</code> <br /> The path from which files are available to download. ‘/’ is the root.</li>
+  <li><code>assets.extensions_enabled</code> <br /> List of extension files you wish to display on assets layout.</li>
+  <li><code>assets.image_extensions</code> <br /> List of image extensions (without point) to display as image into asset grid</li>
+</ul>
+
+<h2 id="prismjs-syntax-highlighter">Prism.js syntax highlighter</h2>
+
+<p>LibDoc uses <a href="https://prismjs.com">Prism.js</a> as syntax highlighter. It is possible to customize few parameters through the config file:</p>
+
+<ul>
+  <li><code>prism.theme</code> <br /> Just enter the name of the theme you wish to use from available ones: coy, dark, funky, okaidia, twilight, solarizedlight, tomorrow (default).</li>
+  <li><code>prism.font_size</code> <br /> Sets the font size for Prism syntax highlighter, default is 0.9em.</li>
+  <li><code>prism.line_height</code> <br /> Sets the line height for Prism syntax highlighter, default is 1.4em.</li>
+  <li><code>prism.languages</code> <br /> The list of languages to enable. Just uncomment to enable.</li>
+</ul>
+
+<h2 id="current-configuration">Current configuration</h2>
+
+<p>The following YAML is the configuration of the current documentation.</p>
+
+<pre><code class="language-yaml"># ---------
+# JEKYLL CONFIGURATION
+# More info at https://jekyllrb.com/docs/configuration/options/
+# ---------
+
+# TO USE JEKYLL LIBDOC AS REMOTE THEME, UNCOMMENT (available only on Github)
+# remote_theme: olivier3lanc/Jekyll-LibDoc
+title: LibDoc # title of the documentation
+description:
+  &gt;- # Description of the docs. (&gt;- means to ignore newlines until next param)
+  A Jekyll documentation theme with built-in search and playground
+# IMPORTANT: on Github Pages deploys, url and baseurl must be commented or set to proper settings, otherwise links and resources URL are wrong
+url: http://localhost # the base hostname &amp; protocol for your site, e.g. http://example.com::
+baseurl: /Jekyll-LibDoc/_site # the subpath of your site, e.g. /blog
+#permalink: /:path/:basename/:output_ext
+#destination: ../your/new/path # Build relative path destination. The destination directory e.g. /blog
+#keep_files: [cache]
+#markdown: kramdown
+# defaults:
+#   -
+#     values:
+#       layout: libdoc/page # Uncommenting brings pbms on static files that must not be associated to any layout
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  style: compressed
+#exclude: ['/misc']
+
+# ---------
+# LIBDOC CONFIGURATION
+# https://olivier3lanc.github.io/Jekyll-LibDoc/libdoc-config.html
+# ---------
+
+# PLAYGROUND
+# The user context entirely separated from LibDoc theme
+playground:
+  # PLAYGROUND STYLESHEETS
+  # Style sheets in &lt;head&gt;. Can be either:
+  # Relative URL from site root starting with slash /
+  # Absolute URL starting with 'http'
+  stylesheets:
+    - /demo-only/css/normalize.css
+    # - /demo-only/css/photoswipe.css
+
+  # PLAYGROUND HEAD JAVASCRIPTS
+  # Javascript in &lt;head&gt;. Can be either:
+  # Relative URL from site root starting with slash /
+  # Absolute URL starting with 'http'
+  scripts_head:
+    # - /assets/libdoc/js/my-toggles.js
+
+  # PLAYGROUND MODULES JAVASCRIPTS
+  # Javascript type="module" are set before text/javascript files
+  # JS modules do not work with a file:// URL
+  # JS modules need a web server.
+  scripts_body_modules:
+    - /demo-only/js/demo.js
+
+  # PLAYGROUND BODY JAVASCRIPTS
+  # Javascript type="text/javascript" near &lt;/body&gt;. Can be either:
+  # Relative URL from site root starting with slash /
+  # Absolute URL starting with 'http'
+  scripts_body: # Javascript files near &lt;/body&gt;. Can be either relative URL from site root, absolute URL starting with 'http'
+    - /demo-only/js/ola.min.js
+    - /demo-only/js/scroll-btween.js
+    # - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    # - /demo-only/js/demo.js
+
+  # PLAYGROUND MINIMUM HEIGHT
+  # Sets a minimum height for each playground, default is 300px
+  min_height: 300px
+
+  # PLAYGROUND METADATA
+  # Metadata for the playground only
+  metadata:
+    # PLAYGROUND LANGUAGE
+    # Change the language of the playground, default is en
+    lang: en
+
+    # PLAYGROUND CACHE
+    # Enable or not browser cache for the playground
+    cache: false
+
+    # PLAYGROUND PNG favicon file
+    # Path from root or absolute/remote URL - Square 32x32 pixels icon png format or .ico for old browsers
+    favicon: /assets/libdoc/img/favicon/playground-android-chrome-512x512.png
+
+    # PLAYGROUND SVG favicon example - NOT supported on Safari
+    # favicon: data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22&gt;&lt;/rect&gt;&lt;path fill=%22%23fff%22 d=%22M36.63 22.42L66.52 22.42Q66.78 22.87 67.06 23.63Q67.32 24.40 67.32 25.30L67.32 25.30Q67.32 26.83 66.60 27.73Q65.88 28.63 64.53 28.63L64.53 28.63L40.05 28.63L40.05 47.35L63.36 47.35Q63.63 47.80 63.91 48.56Q64.17 49.33 64.17 50.23L64.17 50.23Q64.17 51.76 63.45 52.66Q62.73 53.56 61.38 53.56L61.38 53.56L40.05 53.56L40.05 77.05Q39.60 77.23 38.66 77.41Q37.71 77.59 36.72 77.59L36.72 77.59Q32.67 77.59 32.67 74.34L32.67 74.34L32.67 26.38Q32.67 24.58 33.75 23.50Q34.84 22.42 36.63 22.42L36.63 22.42Z%22&gt;&lt;/path&gt;&lt;/svg&gt;
+
+    # PLAYGROUND AUTOMATIC FAVICON
+    # Automatic generation of multiple PNG favicons URL. Generates proper favicon files sizes for multiple devices. Must be an absolute URL starting with 'http'
+    # favicon_auto must be a public URL image file with a minimum 192x192 pixels
+    # favicon_auto: https://i.ibb.co/cNmfL3D/android-chrome-512x512.png
+
+    # PLAYGROUND AUTHOR NAME
+    # Sets the name of the author for the playground. Default is empty.
+    author:
+
+    # PLAYGROUND THEME COLOR
+    # Theme color metadata used in some browsers like Chrome that applies this color on browser address bar.
+    # Color must be in HEX, default is LibDoc's color
+    color: "#556e1e"
+
+    # PLAYGROUND IMAGE
+    # Open Graph image file for social networks. Can be either relative URL from site root, absolute URL starting with 'http'. Default is LibDoc's splash screen.
+    # image: /img/custom_image.webp
+    image: /assets/libdoc/img/meta-image-playground.jpg
+
+# METADATA
+# Metadata informations for the site/project
+metadata:
+  # LANGUAGE
+  # Change the language of the playground, default is en
+  lang: en
+
+  # CACHE
+  # Enable or not browser cache for the playground
+  cache: false
+
+  # PNG favicon file
+  # Path from root or absolute/remote URL - Square 32x32 pixels icon png format or .ico for old browsers
+  favicon: /assets/libdoc/img/favicon/favicon-32x32.png
+
+  # SVG favicon example - NOT supported on Safari
+  # favicon: data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22&gt;&lt;/rect&gt;&lt;path fill=%22%23fff%22 d=%22M36.63 22.42L66.52 22.42Q66.78 22.87 67.06 23.63Q67.32 24.40 67.32 25.30L67.32 25.30Q67.32 26.83 66.60 27.73Q65.88 28.63 64.53 28.63L64.53 28.63L40.05 28.63L40.05 47.35L63.36 47.35Q63.63 47.80 63.91 48.56Q64.17 49.33 64.17 50.23L64.17 50.23Q64.17 51.76 63.45 52.66Q62.73 53.56 61.38 53.56L61.38 53.56L40.05 53.56L40.05 77.05Q39.60 77.23 38.66 77.41Q37.71 77.59 36.72 77.59L36.72 77.59Q32.67 77.59 32.67 74.34L32.67 74.34L32.67 26.38Q32.67 24.58 33.75 23.50Q34.84 22.42 36.63 22.42L36.63 22.42Z%22&gt;&lt;/path&gt;&lt;/svg&gt;
+
+  # AUTOMATIC FAVICON
+  # Automatic generation of multiple PNG favicons URL. Generates proper favicon files sizes for multiple devices. Must be an absolute URL starting with 'http'
+  # favicon_auto must be a public URL image file with a minimum 192x192 pixels
+  # favicon_auto: https://i.ibb.co/cNmfL3D/android-chrome-512x512.png
+
+  # AUTHOR NAME
+  # Name of the author of the site/project, used into various places of the theme like footer. Default is empty
+  author:
+
+  # THEME COLOR
+  # Theme color metadata used in some browsers like Chrome that applies this color on browser address bar.
+  # Color must be in HEX, default is LibDoc's color
+  color: "#123456"
+
+  # IMAGE
+  # Open Graph image file for social networks. Can be either relative URL from site root, absolute URL starting with 'http'. Default is LibDoc's splash screen.
+  # image: /img/custom_image.webp
+  image: /assets/libdoc/img/libdoc.png
+
+# SIDEBAR
+# Main navigation containing site/project's logo, pages links and search form.
+sidebar:
+  # SEARCH FEATURE
+  # Enable or disable search feature
+  disable_search: false
+
+  # LOGO
+  # Top left branding/homepage link, specified image URL or site title if no URL is set
+  logo:
+    # LOGO URL
+    # Image URL: Can be local e.g. '/img/logo.png' or remote 'https://remotesite.com/img/logo.png'
+    url: /assets/libdoc/img/favicon/android-chrome-512x512.png
+
+    # LOGO MAX HEIGHT
+    # Logo image max height, applies only if url is set
+    max_height: 40px
+
+    # LOGO FONT SIZE FALLBACK
+    # If no logo url, font size of the site title, ignored if url is set
+    font_size: 32px
+
+  # ADDITIONAL LINKS
+  # Allows to add links that are not pages included into the project
+  # Display additional links anywhere into the sidebar
+  additional_links:
+    - url: https://github.com/olivier3lanc/Jekyll-LibDoc # Local or remote URL
+      title: &lt;span class="i-github u-mr-xxs"&gt;&lt;/span&gt; View on GitHub # Link text
+      order: 0 # Sets the rank of the page link into the sidebar, higher values give lower rank for the page link
+      # category: Showcase # Add this this link into a category just like pages
+    # -   url: https://www.youtube.com/embed/iWowJBRMtpc # Local or remote URL
+    #     title: Iframe mode example # Link text
+    #     order: 100 # Sets the rank of the page link into the sidebar, higher values give lower rank for the page link
+    #     iframe_mode: true
+    #     category: Features
+    # Example URL
+    - url: https://olivier3lanc.github.io/Scroll-Btween/
+      title: Scroll Btween
+      order: 500
+      category: Showcase
+    - url: https://olivier3lanc.github.io/Scroll-Frames/
+      title: Scroll Frames
+      order: 500
+      category: Showcase
+    # Example remote URL
+    - url: https://pages.github.com
+      title: Github Pages
+      order: 510
+      category: External resources
+    - url: https://jekyllrb.com
+      title: Jekyll
+      order: 510
+      category: External resources
+
+# BADGES
+# Feature that allows to display badges into the footer https://shields.io image html and url
+shields:
+  - image_html: &lt;img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/Jekyll-LibDoc?logo=github&amp;style=flat-square"&gt;
+    link_url: https://github.com/olivier3lanc/Jekyll-LibDoc
+  - image_html: &lt;img alt="no trackers, no cookies and no analytics" title="This website has no trackers, no cookies and no analytics. Only feedback is important :)" src="https://img.shields.io/badge/no%20trackers|cookies|analytics-Just%20feedback-green?style=flat-square"&gt;
+    link_url: "mailto:olivier3lanc@gmail.com"
+
+# ASSETS
+# Settings for the assets layout
+assets:
+  # START PATH
+  # The path from which files are available to download. '/' is the root
+  path_from_root: /
+  # List of extension files you wish to display on assets layout
+  extensions_enabled:
+    - pdf
+    - js
+    - css
+    - ttf
+    - woff
+    - woff2
+    - otf
+    - zip
+    - sketch
+    - svg
+    - jpg
+    - jpeg
+    - gif
+    - png
+    - webp
+    - psd
+    - ai
+    - heic
+    - mp4
+    - webm
+    - ogv
+
+  # IMAGES
+  # Array list of image extensions (without point) to display as image into asset grid
+  image_extensions:
+    - svg
+    - jpg
+    - jpeg
+    - gif
+    - png
+    - webp
+
+# SYNTAX HIGHLIGHTER / PRISM
+# Settings for Prism syntax highlighter used in LibDoc
+# https://prismjs.com/
+prism:
+  # THEME
+  # coy, dark, funky, okaidia, twilight, solarizedlight, tomorrow,
+  theme: tomorrow
+
+  # FONT SIZE
+  # CSS font-size property override for &lt;code&gt;
+  font_size: 0.9em
+
+  # LINE HEIGHT
+  # CSS line-height property override for &lt;code&gt;
+  line_height: 1.4em
+
+  # LANGUAGES TO ENABLE
+  # Uncomment lines to enable language
+  languages:
+    - markup
+    - css
+    - clike
+    - javascript
+    #- abap
+    #- abnf
+    #- actionscript
+    #- ada
+    #- agda
+    #- al
+    #- antlr4
+    #- apacheconf
+    #- apex
+    #- apl
+    #- applescript
+    #- aql
+    #- arduino
+    #- arff
+    #- asciidoc
+    #- aspnet
+    #- asm6502
+    #- autohotkey
+    #- autoit
+    #- bash
+    #- basic
+    #- batch
+    #- bbcode
+    #- birb
+    #- bison
+    #- bnf
+    #- brainfuck
+    #- brightscript
+    #- bro
+    #- bsl
+    #- c
+    #- csharp
+    #- cpp
+    #- cfscript
+    #- chaiscript
+    #- cil
+    #- clojure
+    #- cmake
+    #- cobol
+    #- coffeescript
+    #- concurnas
+    #- csp
+    #- coq
+    #- crystal
+    #- css-extras
+    #- csv
+    #- cypher
+    #- d
+    #- dart
+    #- dataweave
+    #- dax
+    #- dhall
+    #- diff
+    #- django
+    #- dns-zone-file
+    #- docker
+    #- dot
+    #- ebnf
+    #- editorconfig
+    #- eiffel
+    #- ejs
+    #- elixir
+    #- elm
+    #- etlua
+    #- erb
+    #- erlang
+    #- excel-formula
+    #- fsharp
+    #- factor
+    #- false
+    #- firestore-security-rules
+    #- flow
+    #- fortran
+    #- ftl
+    #- gml
+    #- gcode
+    #- gdscript
+    #- gedcom
+    #- gherkin
+    #- git
+    #- glsl
+    #- go
+    #- graphql
+    #- groovy
+    #- haml
+    #- handlebars
+    #- haskell
+    #- haxe
+    #- hcl
+    #- hlsl
+    #- hoon
+    #- http
+    #- hpkp
+    #- hsts
+    #- ichigojam
+    #- icon
+    #- icu-message-format
+    #- idris
+    #- ignore
+    #- inform7
+    #- ini
+    #- io
+    #- j
+    #- java
+    #- javadoc
+    #- javadoclike
+    #- javastacktrace
+    #- jexl
+    #- jolie
+    #- jq
+    #- jsdoc
+    #- js-extras
+    #- json
+    #- json5
+    #- jsonp
+    #- jsstacktrace
+    #- js-templates
+    #- julia
+    #- keyman
+    #- kotlin
+    #- kumir
+    #- latex
+    #- latte
+    #- less
+    #- lilypond
+    #- liquid
+    #- lisp
+    #- livescript
+    #- llvm
+    #- log
+    #- lolcode
+    #- lua
+    #- makefile
+    - markdown
+    # - markup-templating
+    #- matlab
+    #- mel
+    #- mizar
+    #- mongodb
+    #- monkey
+    #- moonscript
+    #- n1ql
+    #- n4js
+    #- nand2tetris-hdl
+    #- naniscript
+    #- nasm
+    #- neon
+    #- nevod
+    #- nginx
+    #- nim
+    #- nix
+    #- nsis
+    #- objectivec
+    #- ocaml
+    #- opencl
+    #- openqasm
+    #- oz
+    #- parigp
+    #- parser
+    #- pascal
+    #- pascaligo
+    #- psl
+    #- pcaxis
+    #- peoplecode
+    #- perl
+    #- php
+    #- phpdoc
+    #- php-extras
+    #- plsql
+    #- powerquery
+    #- powershell
+    #- processing
+    #- prolog
+    #- promql
+    #- properties
+    #- protobuf
+    #- pug
+    #- puppet
+    #- pure
+    #- purebasic
+    #- purescript
+    #- python
+    #- qsharp
+    #- q
+    #- qml
+    #- qore
+    #- r
+    #- racket
+    #- jsx
+    #- tsx
+    #- reason
+    #- regex
+    #- rego
+    #- renpy
+    #- rest
+    #- rip
+    #- roboconf
+    #- robotframework
+    #- ruby
+    #- rust
+    #- sas
+    #- sass
+    - scss
+    #- scala
+    #- scheme
+    #- shell-session
+    #- smali
+    #- smalltalk
+    #- smarty
+    #- sml
+    #- solidity
+    #- solution-file
+    #- soy
+    #- sparql
+    #- splunk-spl
+    #- sqf
+    #- sql
+    #- squirrel
+    #- stan
+    #- iecst
+    #- stylus
+    #- swift
+    #- t4-templating
+    #- t4-cs
+    #- t4-vb
+    #- tap
+    #- tcl
+    #- tt2
+    #- textile
+    #- toml
+    #- turtle
+    #- twig
+    #- typescript
+    #- typoscript
+    #- unrealscript
+    #- uri
+    #- v
+    #- vala
+    #- vbnet
+    #- velocity
+    #- verilog
+    #- vhdl
+    #- vim
+    #- visual-basic
+    #- warpscript
+    #- wasm
+    #- wiki
+    #- wolfram
+    #- xeora
+    # - xml-doc
+    #- xojo
+    #- xquery
+    - yaml
+    #- yang
+    #- zig
+# LIBDOC BACKLINK
+# Link powered by LibDoc - Uncomment to remove
+# disable_powered_by_link: true
+</code></pre>
+
+<h2 id="credits-for-libdoc">Credits for LibDoc</h2>
+
+<p>LibDoc theme comes with a link at the bottom of the page that links to its Github repository. You can disable it:</p>
+
+<p><code>disable_powered_by_link</code> <br /> Just uncomment to remove link.</p>
+
+    </div>
+    
+  </div>
+  <div
+    id="libdoc-toc-container"
+    class="m-fw-mini c-position m-top-right m-anchor-top-left u-bc-primary-edge u-z-10"
+    u-fixed="sm"
+    u-none="sm"></div>
+</main>
+    </div>
+
+    <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+      <nav class="c-grid m-space-between m-bottom">
+        <ul class="u-ls-none u-mb-md--sm">
+          <li>
+            <a href="http://localhost:4000" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
+            A place where I share my experience about programming and technology.
+            © Esmaeil Mazahery
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </footer>
+    <script type="text/javascript" src="/assets/libdoc/js/prism/prism-core.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markup.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-css.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-clike.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-javascript.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-bash.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-csharp.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-dart.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-docker.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-go.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-graphql.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-http.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-java.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markdown.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-regex.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-scss.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-sql.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-yaml.min.js"></script>
+    
+    <script type="text/javascript" src="/assets/libdoc/js/my-toggles.js"></script>
+    <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+    <script type="text/javascript" src="/assets/libdoc/js/playground.js"></script>
+
+    <aside my-toggle-name="libdoc-modal" class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100">
+      <div class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100">
+        <div class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded" my-toggle="libdoc-modal"></div>
+        <div class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto">
+          <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+            <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">Playground settings</h4>
+            <nav>
+              <button class="c-btn u-p-sm u-bl-thin-dashed-alt" my-toggle="libdoc-modal">Close
+                <span class="i-x u-ml-xs"></span>
+              </button>
+            </nav>
+          </header>
+          <div
+            id="libdoc-modal-content"
+            class="u-p-lg"
+            u-pl-md="sm"
+            u-pr-md="sm">content</div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

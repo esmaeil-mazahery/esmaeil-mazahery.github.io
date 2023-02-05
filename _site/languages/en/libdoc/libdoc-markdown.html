@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebPage"
+  prefix="og:http://ogp.me/ns#">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+  
+
+  <!-- LibDoc metadata -->
+  <title>Markdown</title>
+  <meta name="description" content="Page example for Github Flavoured Markdown">
+  <meta itemprop="name" content="Markdown">
+  <meta
+    name="description"
+    itemprop="description"
+    content="Page example for Github Flavoured Markdown">
+  <meta name="application-name" content="Markdown">
+  
+    <meta name="author" content="Esmaeil Mazahery">
+  
+
+  <!-- Favicons -->
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+      
+        <link
+          rel="icon"
+          type="image/png"
+          href="http://localhost:4000/assets/libdoc/img/favicon/favicon-32x32.png">
+      
+    
+  
+
+  <meta name="msapplication-TileColor" content="#123456">
+  <meta name="theme-color" content="#123456">
+
+  <!-- Microsoft -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="msapplication-starturl" content="http://localhost:4000/languages/en/libdoc/libdoc-markdown.html">
+  <meta name="msapplication-tooltip" content="Markdown">
+  <meta name="msapplication-TileColor" content="#123456">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/languages/en/libdoc/libdoc-markdown.html">
+  <meta property="og:title" content="Markdown">
+  <meta property="og:description" content="Page example for Github Flavoured Markdown">
+  
+    
+      <meta property="og:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+    
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Markdown">
+  <meta name="twitter:description" content="Page example for Github Flavoured Markdown">
+  <meta name="twitter:url" content="http://localhost:4000/languages/en/libdoc/libdoc-markdown.html">
+  
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
+    
+  
+
+  <!-- iOS -->
+  <meta name="apple-mobile-web-app-title" content="Markdown">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#123456">
+
+  <!-- Android -->
+  <meta name="theme-color" content="#123456">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Style sheets -->
+  <link rel="stylesheet" href="/assets/libdoc/css/normalize.css">
+  <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css">
+  <link rel="stylesheet" href="/assets/user/css/style.css">
+  <link rel="stylesheet" href="/assets/user/fonts/icomoon/style.css">
+
+  <!-- Prism syntax highlighter -->
+  
+    <link rel="stylesheet" href="http://localhost:4000/assets/libdoc/css/prism/prism-tomorrow.css">
+  
+  
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 0.9em
+        ;
+        line-height: 1.4em
+        ;
+        font-family: var(--sg-font-family-monospace);
+      }
+    </style>
+  
+
+  <!-- Head scripts -->
+  <script type="text/javascript" src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"></script>
+
+
+  <!-- metype -->
+  <script type='text/javascript'>
+    window.talktype = window.talktype || function(f) {
+    if (talktype.loaded)
+                          f();
+                        else
+                          (talktype.q = talktype.q || []).push(arguments);
+                      };</script>
+  <script src='https://www.metype.com/quintype-metype/assets/metype.js'></script>
+
+  <script type="text/javascript">
+    talktype(function() {
+    var pageUrl = window.location.href;
+                var pageMetadata = < metadata - object - here > ;
+                var accountId = '1003356';
+                var metypeHost = 'https://www.metype.com/';
+                talktype.pageMetadataSetter(accountId, pageUrl, pageMetadata, metypeHost);
+              });</script>
+
+  <!-- LibDoc config -->
+  <script>
+    window.site = {
+      title: 'Esmaeil Mazahery',
+      description: 'A place where I share my experience about programming and technology.',
+      url: 'http://localhost:4000',
+      baseurl: '',
+      playground: {
+        min_height: '300px',
+        stylesheets: [],
+      scripts_head: [],
+    scripts_body: []
+}}
+  </script>
+</head>
+  <body class="u-bc-primary-edge">
+    <div class="c-grid m-nowrap">
+      
+<div    class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right" 
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"></div>
+<nav    class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md" 
+        m-fw-medium="md,xl"
+        u-fixed="sm,md" 
+        u-sticky="xl"
+        id="libdoc-sidebar">
+    <div class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt" style="width:1px;"></div>
+    <button class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm" 
+            u-none="xl" 
+            onclick="sidebar()">
+        <span class="i-menu u-fs-md"></span>
+    </button>
+    <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
+        <li>
+            <a rel="author" href="http://localhost:4000" class="c-btn m-translucid m-block-right u-p-md">
+                
+                    <img    src="http://localhost:4000/assets/libdoc/img/favicon/android-chrome-512x512.png" 
+                            
+                                style="max-height:40px"
+                            
+                            alt="Esmaeil Mazahery">
+                
+            </a>
+        </li>
+        
+            
+                <li id="libdoc-sidebar-item-search">
+                    <form class="c-form" action="/assets/libdoc/search.html" method="get">
+                        <input  type="search" 
+                                id="libdoc-search-box" 
+                                name="query" 
+                                class="u-bl-none u-bt-thin-dashed-alt u-br-none u-bb-none u-bg-search"
+                                u-fs-xs="sm,md"
+                                u-p-xs="sm,md">
+                        <label for="libdoc-search-box" u-fs-xs="sm">Search</label>
+                        <input type="submit" value="Search" class="u-none">
+                    </form>
+                </li>
+            
+            
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt ">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            CheatSheet
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/linux.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            linux
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/markdown.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            Mark Down
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/CheatSheet/git-flow.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="CheatSheet">
+          
+            Git Flow
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            Linux
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/ddd.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            Useful links
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+    
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/Linux/add-swap-space-on-ubuntu.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            Add swap space on ubuntu
+          
+        </a>
+      </li>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+        
+    </ul>
+</nav>
+
+      <main class="m-grow m-w-1 c-grid m-nowrap m-center">
+  <div class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt">
+    <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+      <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
+        
+          Markdown
+        
+      </h1>
+      
+        <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
+          
+            Page example for Github Flavoured Markdown
+          
+          
+        </p>
+      
+    </header>
+    <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+      <ul>
+  <li></li>
+</ul>
+
+<h2 id="table-of-content-support">Table of Content support</h2>
+
+<p>LibDoc supports <a href="https://kramdown.gettalong.org/converter/html.html#toc">automatically generated kramdown TOC</a> styling the table of content onto a right sidebar as follows. Just add the following code at the beginning of your markdown file to automatically generate a TOC - Table Of Content.</p>
+
+<pre><code class="language-markdown">- {:toc}
+</code></pre>
+
+<h2 id="no-toc-support">No TOC support</h2>
+
+<p>Want to remove a title from the table of content? Just add <code>{:.no_toc}</code> after the element as follows:</p>
+
+<pre><code class="language-markdown"># Heading not to be seen into the TOC
+
+{:.no_toc}
+</code></pre>
+
+<h1 id="the-largest-heading">The largest heading</h1>
+
+<h2 class="no_toc" id="the-second-largest-heading">The second largest heading</h2>
+
+<h6 class="no_toc" id="the-smallest-heading">The smallest heading</h6>
+
+<pre class="no_toc"><code class="language-markdown"># The largest heading
+
+## The second largest heading
+
+###### The smallest heading
+</code></pre>
+
+<h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h2>
+
+<p>A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line – a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+
+<p>The implication of the “one or more consecutive lines of text” rule is
+that Markdown supports “hard-wrapped” text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type’s “Convert Line Breaks” option) which translate every line break
+character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
+
+<p>When you <em>do</em> want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you
+end a line with two or more spaces, then type return.</p>
+
+<pre><code class="language-markdown">A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line -- a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.
+
+The implication of the "one or more consecutive lines of text" rule is
+that Markdown supports "hard-wrapped" text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type's "Convert Line Breaks" option) which translate every line break
+character in a paragraph into a `&lt;br /&gt;` tag.
+
+When you _do_ want to insert a `&lt;br /&gt;` break tag using Markdown, you
+end a line with two or more spaces, then type return.
+</code></pre>
+
+<h2 id="styling-text">Styling text</h2>
+
+<p>You can indicate emphasis with bold, italic, or strikethrough text.</p>
+
+<p><strong>This is bold text</strong></p>
+
+<p><em>This text is italicized</em></p>
+
+<p><del>This was mistaken text</del></p>
+
+<p><strong>This text is <em>extremely</em> important</strong></p>
+
+<p><strong><em>All this text is important</em></strong></p>
+
+<pre><code class="language-markdown">**This is bold text**
+
+_This text is italicized_
+
+~~This was mistaken text~~
+
+**This text is _extremely_ important**
+
+**_All this text is important_**
+</code></pre>
+
+<h2 id="links">Links</h2>
+
+<p>Markdown supports two style of links: <em>inline</em> and <em>reference</em>.</p>
+
+<p>In both styles, the link text is delimited by [square brackets].</p>
+
+<p>To create an inline link, use a set of regular parentheses immediately
+after the link text’s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an <em>optional</em>
+title for the link, surrounded in quotes. For example:</p>
+
+<p>This is <a href="libdoc-markdown.html">an example of local link</a> inline link.</p>
+
+<p><a href="libdoc-markdown.html">Local link</a> has no title attribute.</p>
+
+<p>This is <a href="https://jekyllrb.com">an example of outgoing link</a> inline link.</p>
+
+<p><a href="https://jekyllrb.com">Outgoing link</a> has no title attribute.</p>
+
+<pre><code class="language-markdown">This is [an example of local link](libdoc-markdown.html) inline link.
+
+[Local link](libdoc-markdown.html) has no title attribute.
+
+This is [an example of outgoing link](https://jekyllrb.com) inline link.
+
+[Outgoing link](https://jekyllrb.com) has no title attribute.
+</code></pre>
+
+<h3 id="backward-link">Backward link</h3>
+
+<p>Defining a reference link:</p>
+
+<p>Then we reference <a href="https://wikipedia.org" title="Title of the backward link">the backward link</a>.</p>
+
+<pre><code class="language-markdown">Defining a reference link:
+
+[link]: https://wikipedia.org "Title of the backward link"
+
+Then we reference [the forward link][link].
+</code></pre>
+
+<h3 id="forward-link">Forward link</h3>
+
+<p>Use a <a href="https://jekyllrb.com">forward link</a>, then define it.</p>
+
+<p>Unlike backward link, the link definition doesn’t contain a title.</p>
+
+<pre><code class="language-markdown">Use a [forward link][forwardlink], then define it.
+
+Unlike backward link, the link definition doesn't contain a title.
+
+[forwardlink]: https://jekyllrb.com
+</code></pre>
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<p>Markdown uses email-style <code>&gt;</code> characters for blockquoting. If you’re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a <code>&gt;</code> before every line:</p>
+
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+
+<pre><code class="language-markdown">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&gt;
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&gt; id sem consectetuer libero luctus adipiscing.
+</code></pre>
+
+<p>Markdown allows you to be lazy and only put the <code>&gt;</code> before the first
+line of a hard-wrapped paragraph:</p>
+
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+
+<pre><code class="language-markdown">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+</code></pre>
+
+<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of <code>&gt;</code>:</p>
+
+<blockquote>
+  <p>This is the first level of quoting.</p>
+
+  <blockquote>
+    <p>This is nested blockquote.</p>
+  </blockquote>
+
+  <p>Back to the first level.</p>
+</blockquote>
+
+<pre><code class="language-markdown">&gt; This is the first level of quoting.
+&gt;
+&gt; &gt; This is nested blockquote.
+&gt;
+&gt; Back to the first level.
+</code></pre>
+
+<h2 id="lists">Lists</h2>
+
+<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+
+<p>Unordered lists use asterisks, pluses, and hyphens – interchangably
+– as list markers:</p>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<p>is equivalent to:</p>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<p>and:</p>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<pre><code class="language-markdown">- Red
+- Green
+- Blue
+
+is equivalent to:
+
+- Red
+- Green
+- Blue
+
+and:
+
+- Red
+- Green
+- Blue
+</code></pre>
+
+<p>Ordered lists use numbers followed by periods:</p>
+
+<ol>
+  <li>Bird</li>
+  <li>McHale</li>
+  <li>Parish</li>
+</ol>
+
+<p>It’s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:</p>
+
+<p>If you instead wrote the list in Markdown like this:</p>
+
+<ol>
+  <li>Bird</li>
+  <li>McHale</li>
+  <li>Parish</li>
+</ol>
+
+<p>or even:</p>
+
+<ol>
+  <li>Bird</li>
+  <li>McHale</li>
+  <li>Parish</li>
+</ol>
+
+<pre><code class="language-markdown">1.  Bird
+2.  McHale
+3.  Parish
+
+It's important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:
+
+If you instead wrote the list in Markdown like this:
+
+1.  Bird
+1.  McHale
+1.  Parish
+
+or even:
+
+3. Bird
+1. McHale
+1. Parish
+</code></pre>
+
+<p>you’d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don’t have to.</p>
+
+<p>To make lists look nice, you can wrap items with hanging indents:</p>
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+  <li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+
+<p>But if you want to be lazy, you don’t have to:</p>
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+  <li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+
+<pre><code class="language-markdown">- Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
+- Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
+
+But if you want to be lazy, you don't have to:
+
+- Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
+- Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre>
+
+<p>List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:</p>
+
+<ol>
+  <li>
+    <p>This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.</p>
+
+    <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.</p>
+  </li>
+  <li>
+    <p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+  </li>
+</ol>
+
+<pre><code class="language-markdown">1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre>
+
+<p>It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:</p>
+
+<ul>
+  <li>
+    <p>This is a list item with two paragraphs.</p>
+
+    <pre><code>This is the second paragraph in the list item. You're
+</code></pre>
+
+    <p>only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.</p>
+  </li>
+  <li>
+    <p>Another item in the same list.</p>
+  </li>
+</ul>
+
+<p>To put a blockquote within a list item, the blockquote’s <code>&gt;</code>
+delimiters need to be indented:</p>
+
+<ul>
+  <li>
+    <p>A list item with a blockquote:</p>
+
+    <blockquote>
+      <p>This is a blockquote
+inside a list item.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>To put a code block within a list item, the code block needs
+to be indented <em>twice</em> – 8 spaces or two tabs:</p>
+
+<ul>
+  <li>
+    <p>A list item with a code block:</p>
+
+    <pre><code>&lt;code goes here&gt;
+</code></pre>
+  </li>
+</ul>
+
+<pre><code class="language-markdown">- This is a list item with two paragraphs.
+
+      This is the second paragraph in the list item. You're
+
+  only required to indent the first line. Lorem ipsum dolor
+  sit amet, consectetuer adipiscing elit.
+
+- Another item in the same list.
+
+To put a blockquote within a list item, the blockquote's `&gt;`
+delimiters need to be indented:
+
+- A list item with a blockquote:
+
+  &gt; This is a blockquote
+  &gt; inside a list item.
+
+To put a code block within a list item, the code block needs
+to be indented _twice_ -- 8 spaces or two tabs:
+
+- A list item with a code block:
+
+      &lt;code goes here&gt;
+</code></pre>
+
+<h2 id="code-blocks">Code Blocks</h2>
+
+<p>LibDoc uses <a href="https://prismjs.com">PrismJS</a> to syntax highlight code blocks. Prism js configuration can be set in the <a href="libdoc-config.html#prism">config file</a></p>
+
+<pre><code class="language-markdown">    ```name_of_the_language
+        &lt;code goes here&gt;
+    ```
+</code></pre>
+
+<p>Example for HTML</p>
+
+<pre><code class="language-html">&lt;h1&gt;A title&lt;/h1&gt;
+&lt;p&gt;A paragraph&lt;/p&gt;
+</code></pre>
+
+<pre><code class="language-markdown">    ```html
+        &lt;h1&gt;A title&lt;/h1&gt;
+        &lt;p&gt;A paragraph&lt;/p&gt;
+    ```
+</code></pre>
+
+<p>Example for SCSS</p>
+
+<pre><code class="language-scss">code {
+  background-color: my-color(primary-edge);
+  padding-right: my-spacing(xxs);
+  letter-spacing: -0.015em;
+  font-family: my-font-family("monospace");
+  &amp;:not([class]) {
+    padding-left: my-spacing(xxs);
+    padding-right: my-spacing(xxs);
+    font-size: my-font-size(sm);
+    position: relative;
+    background-color: my-color(primary);
+    color: my-color(primary-max);
+    &amp;::after,
+    &amp;::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 4px;
+      top: -4px;
+      left: 0;
+      background-color: my-color(primary);
+      border-radius: 5px 5px 0px 0px;
+    }
+    &amp;::before {
+      top: 100%;
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+</code></pre>
+
+<pre><code class="language-markdown">    ```scss
+    code {
+        background-color: my-color(primary-edge);
+        padding-right: my-spacing(xxs);
+        letter-spacing: -0.015em;
+        font-family: my-font-family('monospace');
+        &amp;:not([class]) {
+            padding-left: my-spacing(xxs);
+            padding-right: my-spacing(xxs);
+            font-size: my-font-size(sm);
+            position: relative;
+            background-color: my-color(primary);
+            color: my-color(primary-max);
+            &amp;::after,
+            &amp;::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 4px;
+                top: -4px;
+                left: 0;
+                background-color: my-color(primary);
+                border-radius: 5px 5px 0px 0px;
+            }
+            &amp;::before {
+                top: 100%;
+                border-radius: 0px 0px 5px 5px;
+            }
+        }
+    }
+    ```
+</code></pre>
+
+<p>Example for Javascript</p>
+
+<pre><code class="language-javascript">// RESPONSIVE TABLES
+document.querySelectorAll("main table").forEach(function (el_table) {
+  el_table.querySelectorAll("th").forEach(function (el_th, index_th) {
+    const nth_child = index_th + 1;
+    const title = el_th.innerText;
+    el_table
+      .querySelectorAll("tbody tr td:nth-child(" + nth_child + ")")
+      .forEach(function (el_td) {
+        el_td.setAttribute("data-title", title);
+      });
+  });
+});
+</code></pre>
+
+<pre><code class="language-markdown">    ```javascript
+        // RESPONSIVE TABLES
+        document.querySelectorAll('main table').forEach(function(el_table) {
+            el_table.querySelectorAll('th').forEach(function(el_th, index_th) {
+                const nth_child = index_th + 1;
+                const title = el_th.innerText;
+                el_table.querySelectorAll('tbody tr td:nth-child('+nth_child+')').forEach(function(el_td) {
+                    el_td.setAttribute('data-title', title);
+                });
+            });
+        });
+    ```
+</code></pre>
+
+<h2 id="task-lists">Task lists</h2>
+
+<p>To create a task list, preface list items with a regular space character followed by [ ]. To mark a task as complete, use [x].</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Finish my changes</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Push my commits to GitHub</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open a pull request</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />(Optional) Open a followup issue</li>
+</ul>
+
+<pre><code class="language-markdown">    - [x] Finish my changes
+    - [ ] Push my commits to GitHub
+    - [ ] Open a pull request
+    - [ ] \(Optional) Open a followup issue
+</code></pre>
+
+<h2 id="images-and-media">Images and media</h2>
+
+<p><img src="assets/libdoc/img/150x150.webp" alt="Alt text" /> This is a text next to an image that is not as large as the page width.</p>
+
+<p><img src="assets/libdoc/img/850x150.webp" alt="Alt text" /> This is a text next to an image that is at least as large as the page width.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iWowJBRMtpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<pre><code class="language-markdown">![Alt text](assets/libdoc/img/150x150.webp) This is a text next to an image that is not as large as the page width.
+
+![Alt text](assets/libdoc/img/850x150.webp) This is a text next to an image that is at least as large as the page width.
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/iWowJBRMtpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
+
+<h2 id="ignoring-markdown-formatting">Ignoring Markdown formatting</h2>
+
+<p>You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.</p>
+
+<p>Let’s rename *our-new-project* to *our-old-project*.</p>
+
+<pre><code class="language-markdown">    Let's rename \*our-new-project\* to \*our-old-project\*.
+</code></pre>
+
+<h2 id="creating-a-table">Creating a table</h2>
+
+<p>You can create tables with pipes <code>|</code> and hyphens <code>-</code>. Hyphens are used to create each column’s header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-markdown">    | First Header  | Second Header |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
+</code></pre>
+
+<p>The pipes on either end of the table are optional.</p>
+
+<p>Cells can vary in width and do not need to be perfectly aligned within columns. There must be at least three hyphens in each column of the header row.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>git status</td>
+      <td>List all new or modified files</td>
+    </tr>
+    <tr>
+      <td>git diff</td>
+      <td>Show file differences that haven’t been staged</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-markdown">    | Command | Description |
+    | --- | --- |
+    | git status | List all new or modified files |
+    | git diff | Show file differences that haven't been staged |
+</code></pre>
+
+<h2 id="formatting-content-within-your-table">Formatting content within your table</h2>
+
+<p>You can use formatting such as links, inline code blocks, and text styling within your table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>git status</code></td>
+      <td>List all <em>new or modified</em> files</td>
+    </tr>
+    <tr>
+      <td><code>git diff</code></td>
+      <td>Show file differences that <strong>haven’t been</strong> staged</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-markdown">    | Command | Description |
+    | --- | --- |
+    | `git status` | List all *new or modified* files |
+    | `git diff` | Show file differences that **haven't been** staged |
+</code></pre>
+
+<p>You can align text to the left, right, or center of a column by including colons : to the left, right, or on both sides of the hyphens within the header row.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Left-aligned</th>
+      <th style="text-align: center">Center-aligned</th>
+      <th style="text-align: right">Right-aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">git status</td>
+      <td style="text-align: center">git status</td>
+      <td style="text-align: right">git status</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">git diff</td>
+      <td style="text-align: center">git diff</td>
+      <td style="text-align: right">git diff</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-markdown">    | Left-aligned | Center-aligned | Right-aligned |
+    | :---         |     :---:      |          ---: |
+    | git status   | git status     | git status    |
+    | git diff     | git diff       | git diff      |
+</code></pre>
+
+<table>
+  <tbody>
+    <tr>
+      <td>To include a pipe</td>
+      <td>as content within your cell, use a \ before the pipe:</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Character</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Backtick</td>
+      <td>`</td>
+    </tr>
+    <tr>
+      <td>Pipe</td>
+      <td>|</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-markdown">    | Name     | Character |
+    | ---      | ---       |
+    | Backtick | `         |
+    | Pipe     | \|        |
+</code></pre>
+
+<h2 id="cheatsheet">Cheatsheet</h2>
+
+<p><img src="assets/libdoc/img/gfm-cheatsheet.webp" alt="Github Markdown cheatsheet" /></p>
+
+<p>Here is the official <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Github Markdown cheatsheet</a></p>
+
+    </div>
+    
+  </div>
+  <div
+    id="libdoc-toc-container"
+    class="m-fw-mini c-position m-top-right m-anchor-top-left u-bc-primary-edge u-z-10"
+    u-fixed="sm"
+    u-none="sm"></div>
+</main>
+    </div>
+
+    <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+      <nav class="c-grid m-space-between m-bottom">
+        <ul class="u-ls-none u-mb-md--sm">
+          <li>
+            <a href="http://localhost:4000" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
+            A place where I share my experience about programming and technology.
+            © Esmaeil Mazahery
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </footer>
+    <script type="text/javascript" src="/assets/libdoc/js/prism/prism-core.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markup.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-css.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-clike.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-javascript.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-bash.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-csharp.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-dart.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-docker.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-go.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-graphql.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-http.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-java.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markdown.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-regex.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-scss.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-sql.min.js"></script>
+    
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-yaml.min.js"></script>
+    
+    <script type="text/javascript" src="/assets/libdoc/js/my-toggles.js"></script>
+    <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+    <script type="text/javascript" src="/assets/libdoc/js/playground.js"></script>
+
+    <aside my-toggle-name="libdoc-modal" class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100">
+      <div class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100">
+        <div class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded" my-toggle="libdoc-modal"></div>
+        <div class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto">
+          <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+            <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">Playground settings</h4>
+            <nav>
+              <button class="c-btn u-p-sm u-bl-thin-dashed-alt" my-toggle="libdoc-modal">Close
+                <span class="i-x u-ml-xs"></span>
+              </button>
+            </nav>
+          </header>
+          <div
+            id="libdoc-modal-content"
+            class="u-p-lg"
+            u-pl-md="sm"
+            u-pr-md="sm">content</div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

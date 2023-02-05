@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta http-equiv="Expires" content="0">
+        
+
+        <!-- Playground metadata -->
+        <title>Esmaeil Mazahery</title>
+        <meta name="description" content="A place where I share my experience about programming and technology.">
+        <meta itemprop="name" content="Esmaeil Mazahery">
+        <meta name="description" itemprop="description" content="A place where I share my experience about programming and technology.">
+        <meta name="application-name" content="Esmaeil Mazahery">
+        
+
+        <!-- Favicons -->
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+                
+                    <link rel="icon" type="image/png" href="http://localhost:4000/assets/libdoc/img/favicon/playground-android-chrome-512x512.png">
+                
+            
+        
+        
+        <meta name="msapplication-TileColor" content="#556e1e">
+        <meta name="theme-color" content="#556e1e">
+
+        <!-- Microsoft -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="msapplication-starturl" content="http://localhost:4000/assets/libdoc/playground.html">
+        <meta name="msapplication-tooltip" content="Esmaeil Mazahery">
+        <meta name="msapplication-TileColor" content="#556e1e">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://localhost:4000/assets/libdoc/playground.html">
+        <meta property="og:title" content="Esmaeil Mazahery">
+        <meta property="og:description" content="A place where I share my experience about programming and technology.">
+        
+            
+                <meta property="og:image" content="http://localhost:4000/assets/libdoc/img/meta-image-playground.jpg">
+            
+        
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Esmaeil Mazahery">
+        <meta name="twitter:description" content="A place where I share my experience about programming and technology.">
+        <meta name="twitter:url" content="http://localhost:4000/assets/libdoc/playground.html">
+        
+            
+                <meta name="twitter:image" content="http://localhost:4000/assets/libdoc/img/meta-image-playground.jpg">
+            
+        
+
+        <!-- iOS -->
+        <meta name="apple-mobile-web-app-title" content="Esmaeil Mazahery">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#556e1e">
+
+        <!-- Android -->
+        <meta name="theme-color" content="#556e1e">
+        <meta name="color-scheme" content="light">
+        <meta name="mobile-web-app-capable" content="yes">
+        
+        
+            
+                <link rel="stylesheet" href="http://localhost:4000/demo-only/css/normalize.css">
+            
+        
+        
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            function isJson(str) {
+                try {
+                    return JSON.parse(str);
+                } catch (e) {
+                    return false;
+                }
+            }
+            function isBase64(str) {
+                try {
+                    return atob(str);
+                } catch (e) {
+                    return false;
+                }
+            }
+            let hash = window.location.hash;
+            if (hash != '') {
+                hash = hash.replace('#', '');
+                if (isBase64(hash)) {
+                    const stringifiedSentObject = atob(hash);
+                    if (isJson(stringifiedSentObject)) {
+                        const sentObject = JSON.parse(stringifiedSentObject);
+                        document.body.insertAdjacentHTML('afterbegin', sentObject.content);
+                        // console.log(sentObject.options);
+                        // Sets the optional title of the Playground
+                        document.title = sentObject.options.title;
+                    }
+                }
+            }
+            // console.log('HTML included');
+        </script>
+        
+        
+            <!-- JS type="text/javascript" -->
+            
+                <script type="text/javascript" src="http://localhost:4000/demo-only/js/ola.min.js"></script>
+            
+        
+            <!-- JS type="text/javascript" -->
+            
+                <script type="text/javascript" src="http://localhost:4000/demo-only/js/scroll-btween.js"></script>
+            
+        
+    </body>
+</html>
