@@ -44,7 +44,7 @@
         <link
           rel="icon"
           type="image/png"
-          href="https://www.esmaeilmazahery.ir/assets/libdoc/img/favicon/favicon-32x32.png">
+          href="http://localhost:4000/assets/libdoc/img/favicon/favicon-32x32.png">
       
     
   
@@ -54,18 +54,18 @@
 
   <!-- Microsoft -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="msapplication-starturl" content="https://www.esmaeilmazahery.ir/assets/libdoc/search.html">
+  <meta name="msapplication-starturl" content="http://localhost:4000/assets/libdoc/search.html">
   <meta name="msapplication-tooltip" content="Search results">
   <meta name="msapplication-TileColor" content="#123456">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.esmaeilmazahery.ir/assets/libdoc/search.html">
+  <meta property="og:url" content="http://localhost:4000/assets/libdoc/search.html">
   <meta property="og:title" content="Search results">
   <meta property="og:description" content="Search results of the specified query">
   
     
-      <meta property="og:image" content="https://www.esmaeilmazahery.ir/assets/libdoc/img/libdoc.png">
+      <meta property="og:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
     
   
 
@@ -73,10 +73,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Search results">
   <meta name="twitter:description" content="Search results of the specified query">
-  <meta name="twitter:url" content="https://www.esmaeilmazahery.ir/assets/libdoc/search.html">
+  <meta name="twitter:url" content="http://localhost:4000/assets/libdoc/search.html">
   
     
-      <meta name="twitter:image" content="https://www.esmaeilmazahery.ir/assets/libdoc/img/libdoc.png">
+      <meta name="twitter:image" content="http://localhost:4000/assets/libdoc/img/libdoc.png">
     
   
 
@@ -99,7 +99,7 @@
 
   <!-- Prism syntax highlighter -->
   
-    <link rel="stylesheet" href="https://www.esmaeilmazahery.ir/assets/libdoc/css/prism/prism-tomorrow.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/libdoc/css/prism/prism-tomorrow.css">
   
   
     <style>
@@ -142,7 +142,7 @@
     window.site = {
       title: 'Esmaeil Mazahery',
       description: 'A place where I share my experience about programming and technology.',
-      url: 'https://www.esmaeilmazahery.ir',
+      url: 'http://localhost:4000',
       baseurl: '',
       playground: {
         min_height: '300px',
@@ -155,49 +155,61 @@
   <body class="u-bc-primary-edge">
     <div class="c-grid m-nowrap">
       
-<div    class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right" 
-        u-none="xl"
-        id="libdoc-sidebar-overlay"
-        onclick="sidebar();"></div>
-<nav    class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md" 
-        m-fw-medium="md,xl"
-        u-fixed="sm,md" 
-        u-sticky="xl"
-        id="libdoc-sidebar">
-    <div class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt" style="width:1px;"></div>
-    <button class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm" 
-            u-none="xl" 
-            onclick="sidebar()">
-        <span class="i-menu u-fs-md"></span>
-    </button>
-    <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
-        <li>
-            <a rel="author" href="https://www.esmaeilmazahery.ir" class="c-btn m-translucid m-block-right u-p-md">
-                
-                    <img    src="https://www.esmaeilmazahery.ir/assets/libdoc/img/favicon/android-chrome-512x512.png" 
-                            
-                                style="max-height:40px"
-                            
-                            alt="Esmaeil Mazahery">
-                
-            </a>
-        </li>
+<div
+  class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right"
+  u-none="xl"
+  id="libdoc-sidebar-overlay"
+  onclick="sidebar();"></div>
+<nav
+  class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md"
+  m-fw-medium="md,xl"
+  u-fixed="sm,md"
+  u-sticky="xl"
+  id="libdoc-sidebar">
+  <div class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt" style="width:1px;"></div>
+  <button
+    class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm"
+    u-none="xl"
+    onclick="sidebar()">
+    <span class="i-menu u-fs-md"></span>
+  </button>
+  <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
+    <li>
+
+      <a
+        rel="author"
+        href="http://localhost:4000"
+        class="c-btn m-translucid m-block-right u-p-md">
         
-            
-                <li id="libdoc-sidebar-item-search">
-                    <form class="c-form" action="/assets/libdoc/search.html" method="get">
-                        <input  type="search" 
-                                id="libdoc-search-box" 
-                                name="query" 
-                                class="u-bl-none u-bt-thin-dashed-alt u-br-large-solid u-bb-none u-bg-search"
-                                u-fs-xs="sm,md"
-                                u-p-xs="sm,md">
-                        <label for="libdoc-search-box" u-fs-xs="sm">Search</label>
-                        <input type="submit" value="Search" class="u-none">
-                    </form>
-                </li>
-            
-            
+          <!-- Without logo -->
+          <span style="font-size: 32px; line-height: 1em;">Esmaeil Mazahery</span>
+        
+      </a>
+
+    </li>
+    
+      
+        <li id="libdoc-sidebar-item-search">
+          <form
+            class="c-form"
+            action="/assets/libdoc/search.html"
+            method="get">
+            <input
+              type="search"
+              id="libdoc-search-box"
+              name="query"
+              class="u-bl-none u-bt-thin-dashed-alt u-br-large-solid u-bb-none u-bg-search"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md">
+            <label for="libdoc-search-box" u-fs-xs="sm">Search</label>
+            <input
+              type="submit"
+              value="Search"
+              class="u-none">
+          </form>
+        </li>
+      
+      
 
 
 
@@ -222,6 +234,38 @@
       
         <li class="c-grid m-right u-bt-thin-dashed-alt ">
           <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            Linux
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
+        
+        <a
+          href="/posts/Linux/add-swap-space-on-ubuntu.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Linux">
+          
+            Add swap space on ubuntu
+          
+        </a>
+      </li>
+
+      
+    
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
             CheatSheet
           </div>
         </li>
@@ -243,6 +287,7 @@
           
         </a>
       </li>
+
       
     
   
@@ -267,30 +312,7 @@
           
         </a>
       </li>
-      
-    
-  
 
-  
-    
-      
-      
-      
-
-      <li class="u-relative u-o-hidden libdoc-sidebar-item ">
-        
-        <a
-          href="/posts/CheatSheet/git-flow.html"
-          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
-          u-fs-xs="sm,md"
-          u-p-xs="sm,md"
-          data-iframe-mode=""
-          data-category="CheatSheet">
-          
-            Git Flow
-          
-        </a>
-      </li>
       
     
   
@@ -322,6 +344,7 @@
           
         </a>
       </li>
+
       
     
   
@@ -329,23 +352,31 @@
   
     
       
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            CheatSheet
+          </div>
+        </li>
+        
       
       
 
       <li class="u-relative u-o-hidden libdoc-sidebar-item ">
         
         <a
-          href="/posts/Linux/add-swap-space-on-ubuntu.html"
+          href="/posts/CheatSheet/git-flow.html"
           class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
           u-fs-xs="sm,md"
           u-p-xs="sm,md"
           data-iframe-mode=""
-          data-category="Linux">
+          data-category="CheatSheet">
           
-            Add swap space on ubuntu
+            Git Flow
           
         </a>
       </li>
+
       
     
   
@@ -386,25 +417,26 @@
 
   
 
-        
-    </ul>
+    
+  </ul>
 </nav>
-
       <main class="m-grow m-w-1 c-grid m-nowrap m-center">
   <div class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt">
     <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
-      <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
-        
-          Search results
-        
-      </h1>
+      
+        <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
+          
+            Search results
+          
+        </h1>
+      
       
         <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
           
             Search results of the specified query
           
           
-            <a href="https://www.esmaeilmazahery.ir/assets/libdoc/search.html?query=" class="link libdoc-search-query">query</a>
+            <a href="http://localhost:4000/assets/libdoc/search.html?query=" class="link libdoc-search-query">query</a>
           
         </p>
       
@@ -419,7 +451,7 @@
                     "title": "Add swap space on ubuntu",
                     "author": "",
                     "category": "Linux",
-                    "content": "Step 1 :Checking the System for Swap Information:Method 1:      sudo swapon --show  output:      NAME      TYPE      SIZE USED PRIO    /swapfile file        4G 1.7G   -2    /dev/vda2 partition   2G   0B   -3  Method 1:      free -h  output:      total        used        free      shared  buff/cache   available    Mem:          7.8Gi       4.9Gi       1.3Gi       8.0Mi       1.6Gi       2.7Gi    Swap:         6.0Gi       1.6Gi       4.4Gi    Step 2 : Checking Available Space on the Hard Drive Partition      df -h  output:      Filesystem      Size  Used Avail Use% Mounted on    udev            3.9G     0  3.9G   0% /dev    tmpfs           797M  1.5M  795M   1% /run        /dev/vda1        97G   37G   57G  40% /        tmpfs           3.9G     0  3.9G   0% /dev/shm    tmpfs           5.0M     0  5.0M   0% /run/lock    tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup    tmpfs           797M     0  797M   0% /run/user/0    Step 3 :Creating a Swap Filecreates a file of the specified size      sudo fallocate -l 1G /swapfile  check amount of space was reserved      ls -lh /swapfile  output:      -rw-r--r-- 1 root root 1.0G Apr 25 11:14 /swapfile    Step 4 :Enabling the Swap Filechange permissions to root privileges can read      sudo chmod 600 /swapfile  Verify the permissions change      ls -lh /swapfile  output:      -rw------- 1 root root 1.0G Apr 25 11:14 /swapfile  mark the file as swap space      sudo mkswap /swapfile  output:      Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)    no label, UUID=6e965805-2ab9-450f-aed6-577e74089dbf  enable the swap file      sudo swapon /swapfile  Verify that the swap is available      sudo swapon --show  output:      NAME      TYPE  SIZE USED PRIO    /swapfile file 1024M   0B   -2        free -h  output:      total        used        free      shared  buff/cache   available    Mem:          981Mi       123Mi       644Mi       0.0Ki       213Mi       714Mi    Swap:         1.0Gi          0B       1.0Gi    Step 5 : Making the Swap File PermanentBack up the /etc/fstab file in case anything goes wrong      sudo cp /etc/fstab /etc/fstab.bak  Add the swap file information to the end of your /etc/fstab file      echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab  ",
+                    "content": "      1. Checking the System for Swap Information        2. Checking Available Space on the Hard Drive Partition        3. Creating a Swap File        4. Enabling the Swap File        5. Making the Swap File Permanent  Step 1 :Checking the System for Swap Information:Method 1:      sudo swapon --show  output:      NAME      TYPE      SIZE USED PRIO    /swapfile file        4G 1.7G   -2    /dev/vda2 partition   2G   0B   -3  Method 1:      free -h  output:      total        used        free      shared  buff/cache   available    Mem:          7.8Gi       4.9Gi       1.3Gi       8.0Mi       1.6Gi       2.7Gi    Swap:         6.0Gi       1.6Gi       4.4Gi    Step 2 : Checking Available Space on the Hard Drive Partition      df -h  output:      Filesystem      Size  Used Avail Use% Mounted on    udev            3.9G     0  3.9G   0% /dev    tmpfs           797M  1.5M  795M   1% /run        /dev/vda1        97G   37G   57G  40% /        tmpfs           3.9G     0  3.9G   0% /dev/shm    tmpfs           5.0M     0  5.0M   0% /run/lock    tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup    tmpfs           797M     0  797M   0% /run/user/0    Step 3 :Creating a Swap Filecreates a file of the specified size      sudo fallocate -l 1G /swapfile  check amount of space was reserved      ls -lh /swapfile  output:      -rw-r--r-- 1 root root 1.0G Apr 25 11:14 /swapfile    Step 4 :Enabling the Swap Filechange permissions to root privileges can read      sudo chmod 600 /swapfile  Verify the permissions change      ls -lh /swapfile  output:      -rw------- 1 root root 1.0G Apr 25 11:14 /swapfile  mark the file as swap space      sudo mkswap /swapfile  output:      Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)    no label, UUID=6e965805-2ab9-450f-aed6-577e74089dbf  enable the swap file      sudo swapon /swapfile  Verify that the swap is available      sudo swapon --show  output:      NAME      TYPE  SIZE USED PRIO    /swapfile file 1024M   0B   -2        free -h  output:      total        used        free      shared  buff/cache   available    Mem:          981Mi       123Mi       644Mi       0.0Ki       213Mi       714Mi    Swap:         1.0Gi          0B       1.0Gi    Step 5 : Making the Swap File PermanentBack up the /etc/fstab file in case anything goes wrong      sudo cp /etc/fstab /etc/fstab.bak  Add the swap file information to the end of your /etc/fstab file      echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab  ",
                     "url": "/posts/Linux/add-swap-space-on-ubuntu.html"
                 },
             
@@ -439,7 +471,7 @@
                     "title": "Git Flow",
                     "author": "",
                     "category": "CheatSheet",
-                    "content": "      Git flow Commands        Feature        Release        Hotfix        In Action    Git flow Commands  Start using git-flow by initializing it inside an existing git repository:      git flow init  Feature  Start developing a new featurea  This action creates a new feature branch based on 'develop' and switches to it      git flow feature start MYFEATURE    Finish the development of a feature. This action performs the following  Merges MYFEATURE into 'develop'                                                          Removes the feature branch                                                          Switches back to 'develop' branch      git flow feature finish MYFEATURE    if you get conflict after finish the feature, you must resolve it manually and complate merge then run command again  if you want to keep the feature branch, use `git flow feature finish --keep-branch`  Publish a feature to the remote server so it can be used by other users.      git flow feature publish MYFEATURE    Get a feature published by another user.      git flow feature pull origin MYFEATURE    You can track a feature on origin by using      git flow feature track MYFEATURE  Release  To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.      git flow release start RELEASE [BASE]    You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.  It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:      git flow release publish RELEASE    track a remote RELEASE      git flow release track RELEASE    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                            Tags the release with its name                                                            Back-merges the release into 'develop'                                                            Removes the release branch      git flow release finish RELEASE    Don't forget to push your tags with      git push origin --tags  Hotfix  start hotfix      git flow hotfix start VERSION [BASENAME]    Finish a hotfix      git flow hotfix finish VERSION  In Action  add git flow      git flow init    start new feature      git flow feature start comments    finish feature      git flow feature finish comments    publish - push feature      git flow feature publish comments    start new release      git flow release start v1.0.2    publish new release      git flow release publish v1.0.3    it create a branch called 'release/v1.0.0' and push it to remote  you can fix bugs and commit to this branch no needs create new branch  finish release      git flow release finish v1.0.3    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                                  Tags the release with its name                                                                  Back-merges the release into 'develop'                                                                  Removes the release branch  if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again  add hotfix      git flow hotfix start v1.0.3    Finish a hotfix      git flow hotfix finish v1.0.4  ",
+                    "content": "      Git flow Commands        Feature        Release        Hotfix        In Action    Git flow Commands  Start using git-flow by initializing it inside an existing git repository:      git flow init  Feature  Start developing a new featurea  This action creates a new feature branch based on 'develop' and switches to it      git flow feature start MYFEATURE    Finish the development of a feature. This action performs the following  Merges MYFEATURE into 'develop'                                                            Removes the feature branch                                                            Switches back to 'develop' branch      git flow feature finish MYFEATURE    if you get conflict after finish the feature, you must resolve it manually and complate merge then run command again  if you want to keep the feature branch, use `git flow feature finish --keep-branch`  Publish a feature to the remote server so it can be used by other users.      git flow feature publish MYFEATURE    Get a feature published by another user.      git flow feature pull origin MYFEATURE    You can track a feature on origin by using      git flow feature track MYFEATURE  Release  To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.      git flow release start RELEASE [BASE]    You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.  It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:      git flow release publish RELEASE    track a remote RELEASE      git flow release track RELEASE    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                              Tags the release with its name                                                              Back-merges the release into 'develop'                                                              Removes the release branch      git flow release finish RELEASE    Don't forget to push your tags with      git push origin --tags  Hotfix  start hotfix      git flow hotfix start VERSION [BASENAME]    Finish a hotfix      git flow hotfix finish VERSION  In Action  add git flow      git flow init    start new feature      git flow feature start comments    finish feature      git flow feature finish comments    publish - push feature      git flow feature publish comments    start new release      git flow release start v1.0.2    publish new release      git flow release publish v1.0.3    it create a branch called 'release/v1.0.0' and push it to remote  you can fix bugs and commit to this branch no needs create new branch  finish release      git flow release finish v1.0.3    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                                    Tags the release with its name                                                                    Back-merges the release into 'develop'                                                                    Removes the release branch  if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again  add hotfix      git flow hotfix start v1.0.3    Finish a hotfix      git flow hotfix finish v1.0.4  ",
                     "url": "/posts/CheatSheet/git-flow.html"
                 },
             
@@ -532,7 +564,7 @@
       <nav class="c-grid m-space-between m-bottom">
         <ul class="u-ls-none u-mb-md--sm">
           <li>
-            <a href="https://www.esmaeilmazahery.ir" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
+            <a href="http://localhost:4000" class="c-btn m-translucid u-pl-none">Esmaeil Mazahery</a><br>
             A place where I share my experience about programming and technology.
             © Esmaeil Mazahery
           </li>
@@ -543,39 +575,39 @@
     </footer>
     <script type="text/javascript" src="/assets/libdoc/js/prism/prism-core.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-markup.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markup.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-css.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-css.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-clike.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-clike.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-javascript.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-javascript.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-bash.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-bash.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-csharp.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-csharp.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-dart.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-dart.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-docker.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-docker.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-go.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-go.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-graphql.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-graphql.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-http.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-http.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-java.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-java.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-markdown.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-markdown.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-regex.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-regex.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-scss.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-scss.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-sql.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-sql.min.js"></script>
     
-      <script type="text/javascript" src="https://www.esmaeilmazahery.ir/assets/libdoc/js/prism/prism-yaml.min.js"></script>
+      <script type="text/javascript" src="http://localhost:4000/assets/libdoc/js/prism/prism-yaml.min.js"></script>
     
     <script type="text/javascript" src="/assets/libdoc/js/my-toggles.js"></script>
     <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>

@@ -6,8 +6,8 @@ comments: true
 
 #LibDoc specific below
 category: Linux
-order: 2
-date: 09-03-2013
+order: 1
+date: 05-02-2023
 lang: en
 summery:  '<div>Steps to add swap space on ubuntu</div>
           <div>1: Checking the System for Swap Information</div>
@@ -18,7 +18,25 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
 # unlisted: true
 ---
 
-<h3>Step 1 :Checking the System for Swap Information:</h3>
+<ul id="markdown-toc">
+  <li>
+    <a href="#step1" id="markdown-toc-step1">1. Checking the System for Swap Information</a>
+  </li>
+  <li>
+    <a href="#step2" id="markdown-toc-step2">2. Checking Available Space on the Hard Drive Partition</a>
+  </li>
+  <li>
+    <a href="#step3" id="markdown-toc-step3">3. Creating a Swap File</a>
+  </li>
+  <li>
+    <a href="#step4" id="markdown-toc-step4">4. Enabling the Swap File</a>
+  </li>
+  <li>
+    <a href="#step5" id="markdown-toc-step5">5. Making the Swap File Permanent</a>
+  </li>
+</ul>
+
+<h3 id="step1">Step 1 :Checking the System for Swap Information:</h3>
 
 Method 1:
 <pre class="language-bash">
@@ -52,7 +70,7 @@ output:
   </code>
 </pre>
 
-<h3>
+<h3 id="step2">
   Step 2 : Checking Available Space on the Hard Drive Partition
 </h3>
 
@@ -78,7 +96,7 @@ output:
   </code>
 </pre>
 
-<h3>
+<h3 id="step3">
   Step 3 :Creating a Swap File
 </h3>
 
@@ -103,7 +121,7 @@ output:
   </code>
 </pre>
 
-<h3>
+<h3 id="step4">
   Step 4 :Enabling the Swap File
 </h3>
 
@@ -180,7 +198,7 @@ output:
   </code>
 </pre>
 
-<h3>
+<h3 id="step5">
   Step 5 : Making the Swap File Permanent
 </h3>
 
