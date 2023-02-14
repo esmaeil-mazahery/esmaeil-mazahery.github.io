@@ -1,0 +1,163 @@
+---
+title: Asp.net Web Application MVC Setup
+description: Step by step create Asp.net Web Application MVC. in this section we create solution
+layout: libdoc/page
+
+menu_title: Setup
+published: false
+
+#LibDoc specific below
+category: AspDotNet
+sub_category: DDD - MVC
+order: 1
+lang: en
+date: 05-02-2023
+summery:  '<div>Steps to add swap space on ubuntu</div>
+          <div>1: Checking the System for Swap Information</div>
+          <div>2: Checking Available Space on the Hard Drive Partition</div>
+          <div>3: Creating a Swap File</div>
+          <div>4: Enabling the Swap File</div>
+          <div>5: Making the Swap File Permanent</div>'
+# unlisted: true
+---
+
+<div>
+  <small>Target project :</small>
+  <strong>Content management system with users and roles</strong>
+</div>
+
+<h3>
+  Create Empty Solution
+</h3>
+
+<pre class="language-bash">
+  <code class="language-bash">
+    dotnet new sln --output Blog
+    cd Blog
+  </code>
+</pre>
+
+<h3>
+  Create Projects
+</h3>
+
+<p>create 4 project in solution with this names</p>
+
+<ul>
+  <li>
+    <strong>Infrastructure</strong>
+    <small>it contains all public codes and use by all other project</small>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet new classlib --output Blog.Infrastructure
+      </code>
+    </pre>
+  </li>
+  <li>
+    <strong>DataLayer</strong>
+    <small>this layer connect to database and hold model, migration and mapping of data in database</small>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet new classlib --output Blog.DataLayer
+      </code>
+    </pre>
+  </li>
+  <li>
+    <strong>ServiceLayer</strong>
+    <small>this layer contains services and handle all functionality of program</small>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet new classlib --output Blog.ServiceLayer
+      </code>
+    </pre>
+  </li>
+  <li>
+    <strong>WebApplication</strong>
+    <small>this layer contains user interface all request are handeled in this project</small>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet new mvc --output Blog.WebApplication
+      </code>
+    </pre>
+  </li>
+</ul>
+
+<h3>Folders</h3>
+<ul class="tree">
+  <li>
+    <span class="caret">Infrastructure</span>
+    <ul class="nested">
+      <li>Water</li>
+      <li>Coffee</li>
+      <li>
+        <span class="caret">Tea</span>
+        <ul class="nested active">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li>
+            <span class="caret">Green Tea</span>
+            <ul class="nested active">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span class="caret">DataLayer</span>
+    <ul class="nested">
+      <li>Models</li>
+      <li>Mapping</li>
+    </ul>
+  </li>
+  <li>
+    <span class="caret">ServiceLayer</span>
+    <ul class="nested">
+      <li>Water</li>
+      <li>Coffee</li>
+      <li>
+        <span class="caret">Tea</span>
+        <ul class="nested active">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li>
+            <span class="caret">Green Tea</span>
+            <ul class="nested active">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span class="caret">WebApplication</span>
+    <ul class="nested">
+      <li>Water</li>
+      <li>Coffee</li>
+      <li>
+        <span class="caret">Tea</span>
+        <ul class="nested active">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li>
+            <span class="caret">Green Tea</span>
+            <ul class="nested active">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>

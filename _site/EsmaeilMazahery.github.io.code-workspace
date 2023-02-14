@@ -13,6 +13,7 @@
       "*.css.liquid": "liquid-css",
       "*.scss.liquid": "liquid-scss",
       "*.html": "liquid"
-    }
+    },
+    "liquid.format.enable": true
   }
 }

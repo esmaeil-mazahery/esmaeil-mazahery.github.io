@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-14T23:29:38+03:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Esmaeil Mazahery</title><subtitle>A place where I share my experience about programming and technology.</subtitle><entry xml:lang="en"><title type="html">Add swap space on ubuntu</title><link href="http://localhost:4000/linux/2023/02/05/add-swap-space-on-ubuntu.html" rel="alternate" type="text/html" title="Add swap space on ubuntu" /><published>2023-02-05T00:00:00+03:30</published><updated>2023-02-05T00:00:00+03:30</updated><id>http://localhost:4000/linux/2023/02/05/add-swap-space-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/linux/2023/02/05/add-swap-space-on-ubuntu.html"><![CDATA[<ul id="markdown-toc">
-  <li>
-    <a href="#step1" id="markdown-toc-step1">1. Checking the System for Swap Information</a>
-  </li>
-  <li>
-    <a href="#step2" id="markdown-toc-step2">2. Checking Available Space on the Hard Drive Partition</a>
-  </li>
-  <li>
-    <a href="#step3" id="markdown-toc-step3">3. Creating a Swap File</a>
-  </li>
-  <li>
-    <a href="#step4" id="markdown-toc-step4">4. Enabling the Swap File</a>
-  </li>
-  <li>
-    <a href="#step5" id="markdown-toc-step5">5. Making the Swap File Permanent</a>
-  </li>
-</ul>
+---
+title: linux
+description: _
+layout: libdoc/page
 
-<h3 id="step1">Step 1 :Checking the System for Swap Information:</h3>
+#LibDoc specific below
+published: false
+category: CheatSheet
+order: 1
+lang: en
+# unlisted: true
+---
+
+
+<h3>Step 1 :Checking the System for Swap Information:</h3>
 
 Method 1:
 <pre class="language-bash">
@@ -50,7 +46,7 @@ output:
   </code>
 </pre>
 
-<h3 id="step2">
+<h3>
   Step 2 : Checking Available Space on the Hard Drive Partition
 </h3>
 
@@ -76,7 +72,7 @@ output:
   </code>
 </pre>
 
-<h3 id="step3">
+<h3>
   Step 3 :Creating a Swap File
 </h3>
 
@@ -101,7 +97,7 @@ output:
   </code>
 </pre>
 
-<h3 id="step4">
+<h3>
   Step 4 :Enabling the Swap File
 </h3>
 
@@ -178,7 +174,7 @@ output:
   </code>
 </pre>
 
-<h3 id="step5">
+<h3>
   Step 5 : Making the Swap File Permanent
 </h3>
 
@@ -195,4 +191,4 @@ Add the swap file information to the end of your /etc/fstab file
   <code class="language-bash">
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
   </code>
-</pre>]]></content><author><name></name></author><category term="Linux" /><summary type="html"><![CDATA[_]]></summary></entry></feed>
+</pre>

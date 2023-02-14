@@ -16,6 +16,7 @@ baseurl: # the subpath of your site, e.g. /blog
 #destination: ../your/new/path # Build relative path destination. The destination directory e.g. /blog
 #keep_files: [cache]
 #markdown: kramdown
+analytics_tag: G-7MK8GPKSZE
 defaults:
   - values:
       layout: libdoc/page
@@ -288,7 +289,7 @@ prism:
     #- arduino
     #- arff
     #- asciidoc
-    #- aspnet
+    - aspnet
     #- asm6502
     #- autohotkey
     #- autoit
@@ -352,7 +353,7 @@ prism:
     #- gdscript
     #- gedcom
     #- gherkin
-    #- git
+    - git
     #- glsl
     - go
     - graphql
@@ -385,7 +386,7 @@ prism:
     #- jq
     #- jsdoc
     #- js-extras
-    #- json
+    - json
     #- json5
     #- jsonp
     #- jsstacktrace
@@ -405,13 +406,13 @@ prism:
     #- log
     #- lolcode
     #- lua
-    #- makefile
+    - makefile
     - markdown
     # - markup-templating
     #- matlab
     #- mel
     #- mizar
-    #- mongodb
+    - mongodb
     #- monkey
     #- moonscript
     #- n1ql
@@ -421,7 +422,7 @@ prism:
     #- nasm
     #- neon
     #- nevod
-    #- nginx
+    - nginx
     #- nim
     #- nix
     #- nsis
@@ -522,7 +523,7 @@ prism:
     #- wiki
     #- wolfram
     #- xeora
-    # - xml-doc
+    #- xml-doc
     #- xojo
     #- xquery
     - yaml

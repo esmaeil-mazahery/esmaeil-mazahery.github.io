@@ -6,3 +6,9 @@ for further information about it go to [Documentation](https://olivier3lanc.gith
 ### run
 
 > bundle exec jekyll serve
+
+### run in production mode
+
+> JEKYLL_ENV=production bundle exec jekyll serve
+
+bundle exec gem install jekyll-sitemap
