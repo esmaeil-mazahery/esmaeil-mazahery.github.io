@@ -1,10 +1,11 @@
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics_tag }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
-  gtag('config', {{ site.analytics_tag }});
+  gtag('config', '{{ site.analytics_tag }}');
 </script>
