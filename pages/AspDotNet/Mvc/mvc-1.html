@@ -4,7 +4,7 @@ description: Step by step create Asp.net Web Application MVC. in this section we
 layout: libdoc/page
 
 menu_title: Setup
-published: false
+published: true
 
 #LibDoc specific below
 category: AspDotNet
@@ -21,24 +21,85 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
 # unlisted: true
 ---
 
+<ul id="markdown-toc">
+  <li>
+    <a href="#Target-project" id="markdown-toc-Target-project">Target project</a>
+  </li>
+  <li>
+    <a href="#Best-IDE-for-asp.net-core" id="markdown-toc-Best-IDE-for-asp.net-core">Best IDE for asp.net core</a>
+  </li>
+  <li>
+    <a href="#Requirement" id="markdown-toc-Requirement">Requirement</a>
+  </li>
+  <li>
+    <a href="#Create-Empty-Solution" id="markdown-toc-Create-Empty-Solution">Create Solution</a>
+  </li>
+  <li>
+    <a href="#Create-Projects" id="markdown-toc-Create-Projects">Create Projects</a>
+  </li>
+  <li>
+    <a href="#Folders" id="markdown-toc-Folders">Folders</a>
+  </li>
+</ul>
+
+<h3 id="Target-project">
+  Target project
+</h3>
 <div>
-  <small>Target project :</small>
-  <strong>Content management system with users and roles</strong>
+  Content management system with users and roles
 </div>
 
+<h3 id="Best-IDE-for-asp.net-core">
+  Best IDE for asp.net core
+</h3>
+<ul>
+  <li>
+    <strong>VS Code</strong>
+    <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>
+  </li>
+  <li>
+    <strong>Jetbrains Rider</strong>
+    <small>best for macOS</small>
+    <a href="https://www.jetbrains.com/rider">https://www.jetbrains.com/rider</a>
+  </li>
+  <li>
+    <strong>Visual Studio</strong>
+    <small>best for windows</small>
+    <a href="https://visualstudio.microsoft.com">https://visualstudio.microsoft.com</a>
+  </li>
+</ul>
 
+<h3 id="Requirement">
+  Requirement
+</h3>
+<p>Install all this stuff</p>
 
-VS Code (https://code.visualstudio.com/download)
-Dotnet 5 SDK (https://dotnet.microsoft.com/download)
+<ul>
+  <li>
+    <strong>Dotnet SDK</strong>
+    <a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a>
+    <br>
+    <small>checking our dotnet SDK</small>
+    <br>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet --version
+      </code>
+    </pre>
+  </li>
+  <li>
+    <strong>Entity Framework Tool</strong>
+    <br>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet tool install --global dotnet-ef
+      </code>
+    </pre>
+  </li>
+</ul>
 
-
-checking our dotnet SDK
-dotnet --version
-
-
-install the entity framework tool
-dotnet tool install --global dotnet-ef<h3>
-  Create Empty Solution
+<h3 id="Create-Empty-Solution">
+  Create Solution
 </h3>
 
 <pre class="language-bash">
@@ -48,11 +109,11 @@ dotnet tool install --global dotnet-ef<h3>
   </code>
 </pre>
 
-<h3>
+<h3 id="Create-Projects">
   Create Projects
 </h3>
 
-<p>create 4 project in solution with this names</p>
+<p>Create 4 project in solution with this names</p>
 
 <ul>
   <li>
@@ -93,30 +154,11 @@ dotnet tool install --global dotnet-ef<h3>
   </li>
 </ul>
 
-<h3>Folders</h3>
+<h3 id="Folders">Folders</h3>
+<p>This tree will be completed over time</p>
 <ul class="tree">
   <li>
     <span class="caret">Infrastructure</span>
-    <ul class="nested">
-      <li>Water</li>
-      <li>Coffee</li>
-      <li>
-        <span class="caret">Tea</span>
-        <ul class="nested active">
-          <li>Black Tea</li>
-          <li>White Tea</li>
-          <li>
-            <span class="caret">Green Tea</span>
-            <ul class="nested active">
-              <li>Sencha</li>
-              <li>Gyokuro</li>
-              <li>Matcha</li>
-              <li>Pi Lo Chun</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
   </li>
   <li>
     <span class="caret">DataLayer</span>
@@ -127,48 +169,8 @@ dotnet tool install --global dotnet-ef<h3>
   </li>
   <li>
     <span class="caret">ServiceLayer</span>
-    <ul class="nested">
-      <li>Water</li>
-      <li>Coffee</li>
-      <li>
-        <span class="caret">Tea</span>
-        <ul class="nested active">
-          <li>Black Tea</li>
-          <li>White Tea</li>
-          <li>
-            <span class="caret">Green Tea</span>
-            <ul class="nested active">
-              <li>Sencha</li>
-              <li>Gyokuro</li>
-              <li>Matcha</li>
-              <li>Pi Lo Chun</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
   </li>
   <li>
     <span class="caret">WebApplication</span>
-    <ul class="nested">
-      <li>Water</li>
-      <li>Coffee</li>
-      <li>
-        <span class="caret">Tea</span>
-        <ul class="nested active">
-          <li>Black Tea</li>
-          <li>White Tea</li>
-          <li>
-            <span class="caret">Green Tea</span>
-            <ul class="nested active">
-              <li>Sencha</li>
-              <li>Gyokuro</li>
-              <li>Matcha</li>
-              <li>Pi Lo Chun</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
   </li>
 </ul>

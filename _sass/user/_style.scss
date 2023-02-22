@@ -79,3 +79,11 @@ ul.tree {
         display: none;
     }
 }
+
+#libdoc-content ul:not([data-playground-commands]):not(#libdoc-assets) > li.hide-bullet::before {
+    display: none;
+}
+
+.sidebarـsub_category {
+    cursor: pointer;
+}

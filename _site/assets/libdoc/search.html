@@ -201,8 +201,6 @@
 
 
 
-
-
   
 
   
@@ -219,6 +217,51 @@
       
         <li class="c-grid m-right u-bt-thin-dashed-alt ">
           <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            AspDotNet
+          </div>
+        </li>
+        
+      
+      
+
+      
+      
+        <li class="c-grid m-right  sidebarـsub_category">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base c-text m-ff-monospace m-nowrap" u-fs-xxs="sm">
+
+            DDD - MVC
+            <span class="uicon-plus"></span>
+          </div>
+        </li>
+        
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item  ">
+        
+        <a
+          href="/pages/AspDotNet/Mvc/mvc-1.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="AspDotNet">
+          
+            Setup
+          
+        </a>
+      </li>
+
+      
+    
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
             CheatSheet
           </div>
         </li>
@@ -230,8 +273,8 @@
       
       
 
-      <li class="u-relative u-o-hidden libdoc-sidebar-item active ">  
-      
+      <li class="u-relative u-o-hidden libdoc-sidebar-item active ">
+        
         <a
           href="/pages/CheatSheet/git-flow.html"
           class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
@@ -266,8 +309,8 @@
       
       
 
-      <li class="u-relative u-o-hidden libdoc-sidebar-item active ">  
-      
+      <li class="u-relative u-o-hidden libdoc-sidebar-item active ">
+        
         <a
           href="/pages/Linux/add-swap-space-on-ubuntu.html"
           class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
@@ -277,6 +320,42 @@
           data-category="Linux">
           
             Add swap space on ubuntu
+          
+        </a>
+      </li>
+
+      
+    
+  
+
+  
+    
+      
+      
+        <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+          <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt" u-fs-xxs="sm">
+            Other
+          </div>
+        </li>
+        
+      
+      
+
+      
+      
+      
+
+      <li class="u-relative u-o-hidden libdoc-sidebar-item active ">
+        
+        <a
+          href="/pages/useful-links.html"
+          class="c-btn m-translucid m-block-right m-ff-lead u-ta-right  "
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md"
+          data-iframe-mode=""
+          data-category="Other">
+          
+            Useful links
           
         </a>
       </li>
@@ -339,9 +418,29 @@
             
         
             
+                "pages-aspdotnet-mvc-mvc-1-html": {
+                    "title": "Asp.net Web Application MVC Setup",
+                    "author": "",
+                    "category": "AspDotNet",
+                    "content": "      Target project        Best IDE for asp.net core        Requirement        Create Solution        Create Projects        Folders    Target project  Content management system with users and roles  Best IDE for asp.net core      VS Code    https://code.visualstudio.com/download        Jetbrains Rider    best for macOS    https://www.jetbrains.com/rider        Visual Studio    best for windows    https://visualstudio.microsoft.com    RequirementInstall all this stuff      Dotnet SDK    https://dotnet.microsoft.com/download        checking our dotnet SDK                      dotnet --version                  Entity Framework Tool                      dotnet tool install --global dotnet-ef              Create Solution      dotnet new sln --output Blog    cd Blog    Create ProjectsCreate 4 project in solution with this names      Infrastructure    it contains all public codes and use by all other project                  dotnet new classlib --output Blog.Infrastructure                  DataLayer    this layer connect to database and hold model, migration and mapping of data in database                  dotnet new classlib --output Blog.DataLayer                  ServiceLayer    this layer contains services and handle all functionality of program                  dotnet new classlib --output Blog.ServiceLayer                  WebApplication    this layer contains user interface all request are handeled in this project                  dotnet new mvc --output Blog.WebApplication            FoldersThis tree will be completed over time      Infrastructure        DataLayer          Models      Mapping            ServiceLayer        WebApplication  ",
+                    "url": "/pages/AspDotNet/Mvc/mvc-1.html"
+                },
+            
         
             
         
+            
+        
+            
+        
+            
+                "pages-useful-links-html": {
+                    "title": "Useful links",
+                    "author": "",
+                    "category": "Other",
+                    "content": "            https://whatwebcando.today      What Web Can Do Today?      Things that pwa currently supports                  https://picsum.photos      The Lorem Ipsum for photos.      ",
+                    "url": "/pages/useful-links.html"
+                }
             
         
     };

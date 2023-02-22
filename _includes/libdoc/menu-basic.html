@@ -2,13 +2,11 @@
 {% if site.sidebar.additional_links %}
   {% assign sorted_pages = site.html_pages | concat: site.sidebar.additional_links %}
 {% endif %}
-{% assign sorted_pages = sorted_pages | sort: "order" | sort: "category" | sort: "sub_category" %}
+{% assign sorted_pages = sorted_pages | sort: "order" | sort: "category" %}
 {% assign previous_category = "_" %}
 {% assign item_index = 0 %}
 
-
-
-{% for sorted_page in sorted_pages  %}
+{% for sorted_page in sorted_pages %}
   {% if sorted_page.unlisted != true %}
     {% if sorted_page.name != '404.html' and sorted_page.name != 'search.md' and sorted_page.url != '/' and page.unlisted != false %}
       {% assign category_displayed = false %}
@@ -28,17 +26,17 @@
       {% if sorted_page.sub_category != previous_sub_category and sorted_page.sub_category | strip != '' %}
         <li class="c-grid m-right {% if item_index > 0 %}u-mt-xs{% endif %} sidebarـsub_category">
           <div class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base c-text m-ff-monospace m-nowrap" u-fs-xxs="sm">
-            
-          {{ sorted_page.sub_category }}
-          <span class="uicon-plus"></span>
+
+            {{ sorted_page.sub_category }}
+            <span class="uicon-plus"></span>
           </div>
         </li>
         {% assign category_displayed = true %}
       {% endif %}
       {% assign previous_sub_category = sorted_page.sub_category %}
 
-      <li class="u-relative u-o-hidden libdoc-sidebar-item {% unless sorted_page.sub_category and page.sub_category != sorted_page.sub_category %}active{% endunless %} {% if page.url == sorted_page.url %}libdoc-sidebar-current-item{% endif %}">  
-      {% if page.title == sorted_page.title %}{% endif %}
+      <li class="u-relative u-o-hidden libdoc-sidebar-item {% unless sorted_page.sub_category and page.sub_category != sorted_page.sub_category %}active{% endunless %} {% if page.url == sorted_page.url %}libdoc-sidebar-current-item{% endif %}">
+        {% if page.title == sorted_page.title %}{% endif %}
         <a
           href="{{ sorted_page.url | relative_url | default: '#' }}"
           class="c-btn m-translucid m-block-right {% if page.url == sorted_page.url %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right  {% if category_displayed == false and item_index == 0 %}u-mt-xs{% endif %}"
