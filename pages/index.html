@@ -12,12 +12,21 @@ unlisted: true
 
 <ul id="markdown-toc">
   <li>
-    <a href="tel:+989999228631" id="markdown-toc-09999228631">Mobile : +989999228631</a>
+    <a href="https://telegram.me/EsmaeilMazahery" id="markdown-toc-telegram">
+      <span class="uicon-telegram u-mr-xxs"></span>
+      Telegram
+    </a>
   </li>
   <li>
     <a href="https://twitter.com/EsmaeilMazahery" id="markdown-toc-twitter">
       <span class="uicon-twitter u-mr-xxs"></span>
       Twitter
+    </a>
+  </li>
+  <li>
+    <a href="mailto:smaeil.mazahery@gmail.com" id="markdown-toc-gmail">
+      <span class="uicon-google u-mr-xxs"></span>
+      Mail
     </a>
   </li>
   <li>
@@ -27,16 +36,19 @@ unlisted: true
     </a>
   </li>
   <li>
-    <a href="https://telegram.me/EsmaeilMazahery" id="markdown-toc-telegram">
-      <span class="uicon-telegram u-mr-xxs"></span>
-      Telegram
-    </a>
+    <a href="tel:+989999228631" id="markdown-toc-09999228631">Mobile : +989999228631</a>
+  </li>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <li>
+    <a href="/pages/cv.html" id="markdown-toc-cv">CV</a>
   </li>
   <li>
-    <a href="mailto:smaeil.mazahery@gmail.com" id="markdown-toc-gmail">
-      <span class="uicon-google u-mr-xxs"></span>
-      Mail
-    </a>
+    <a href="/pages/works.html" id="markdown-toc-works">Works</a>
   </li>
 </ul>
 
@@ -44,6 +56,7 @@ unlisted: true
 {% assign sorted_pages = sorted_pages | sort: "date" | reverse %}
 {% assign sorted_pages = sorted_pages | where_exp: "item", "item.name != '404.html'" | where_exp: "item", "item.name != 'search.md'" %}
 {% assign sorted_pages = sorted_pages | where_exp: "item", "item.url != '/'" | where_exp: "item", "item.unlisted != true" %}
+{% assign sorted_pages = sorted_pages | where_exp: "item", "item.homepage != false" %}
 
 {% for sorted_page in sorted_pages limit: 10 %}
   <li class="u-relative u-o-hidden libdoc-sidebar-item">
@@ -68,5 +81,3 @@ unlisted: true
   </li>
   <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs u-mb-xs"></li>
 {% endfor %}
-
-

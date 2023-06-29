@@ -90,9 +90,24 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   <li>
     <strong>Entity Framework Tool</strong>
     <br>
+    <small>install EF</small>
     <pre class="language-bash">
       <code class="language-bash">
         dotnet tool install --global dotnet-ef
+      </code>
+    </pre>
+    <small>checking EF version</small>
+    <br>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet ef --version
+      </code>
+    </pre>
+    <small>update EF</small>
+    <br>
+    <pre class="language-bash">
+      <code class="language-bash">
+        dotnet tool update --global dotnet-ef
       </code>
     </pre>
   </li>

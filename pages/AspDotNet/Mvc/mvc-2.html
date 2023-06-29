@@ -1,17 +1,17 @@
 ---
-title: Asp.net Web Application MVC Setup
-description: Step by step create Asp.net Web Application MVC. in this section we create solution
+title: Asp.net Create Database with Entity Framework
+description: create Models, DbContext, Mappings, Migration ...
 layout: libdoc/page
 
-menu_title: DateBase Models
-published: false
+menu_title: Datebase
+published: true
 
 #LibDoc specific below
 category: AspDotNet
 sub_category: DDD - MVC
-order: 1
+order: 2
 lang: en
-date: 05-02-2023
+date: 03-03-2023
 summery:  '<div>Steps to add swap space on ubuntu</div>
           <div>1: Checking the System for Swap Information</div>
           <div>2: Checking Available Space on the Hard Drive Partition</div>
@@ -21,7 +21,296 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
 # unlisted: true
 ---
 
+<ul id="markdown-toc">
+  <li>
+    <a href="#Models" id="markdown-toc-Models">Models</a>
+  </li>
+  <li>
+    <a href="#Best-IDE-for-asp.net-core" id="markdown-toc-Best-IDE-for-asp.net-core">Mappings</a>
+  </li>
+  <li>
+    <a href="#Requirement" id="markdown-toc-Requirement">Database Context</a>
+  </li>
+  <li>
+    <a href="#Create-Empty-Solution" id="markdown-toc-Create-Empty-Solution">Migrations</a>
+  </li>
+  <li>
+    <a href="#Create-Projects" id="markdown-toc-Create-Projects">Seed Database</a>
+  </li>
+</ul>
 
-dotnet tool install --global dotnet-ef
+<h3 id="Models">
+  Database Models
+</h3>
+<p>All types of data exist in the models below. We create all models based on the diagram.</p>
 
-dotnet tool update --global dotnet-ef
+<h4>Namespace</h4>
+<div>
+  using System.ComponentModel.DataAnnotations;
+  <br>
+  using System.ComponentModel.DataAnnotations.Schema;
+</div>
+
+<h4>Data Annotations Attributes</h4>
+<ul>
+  <li>
+    <strong>Key</strong>: indicates that a property is a primary key in the database.</li>
+  <li>
+    <strong>Required</strong>: indicates that a property cannot be null.</li>
+  <li>
+    <strong>MaxLength</strong>: sets the maximum length of a string property in the database or sets the maximum number of digits allowed for a numeric property.</li>
+  <li>
+    <strong>MinLength</strong>: sets the minimum length of a string property in the database or sets the minimum number of digits allowed for a numeric property.</li>
+  <li>
+    <strong>StringLength</strong>: sets both the minimum and maximum length of a string property in the database.</li>
+  <li>
+    <strong>Column</strong>: specifies the name, type, and order of a column in the database.</li>
+  <li>
+    <strong>Table</strong>: specifies the name of a table in the database.</li>
+  <li>
+    <strong>DatabaseGenerated</strong>: specifies how a value is generated in the database (e.g., Identity, Computed).</li>
+  <li>
+    <strong>ForeignKey</strong>: indicates that a property is a foreign key in the database.</li>
+  <li>
+    <strong>InverseProperty</strong>: specifies the navigation property on the other end of a relationship.</li>
+  <li>
+    <strong>NotMapped</strong>: indicates that a property should not be mapped to the database.</li>
+  <li>
+    <strong>RegularExpression</strong>: specifies a regular expression pattern that a string property must match.</li>
+  <li>
+    <strong></strong>: compares a numeric property to another property or constant value.</li>
+  <li>
+    <strong>Compare</strong>CreditCard: indicates that a string property must be a valid credit card number.</li>
+  <li>
+    <strong>Phone</strong>: indicates that a string property must be a valid phone number.</li>
+  <li>
+    <strong>EmailAddress</strong>: use to validate email addresses</li>
+</ul>
+
+
+<h4>Sample Model</h4>
+<small>Location: Blog.DataLayer/Models/...</small>
+
+<div>Foo.cs</div>
+<pre class="language-csharp">
+    <code class="language-csharp">
+        namespace Blog.DataLayer.Models;
+
+        public class Foo
+        {
+            [Key] public int Id { get; set; }
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string Name { get; set; } = "";
+
+            [Required]
+            [RegularExpression(Constants.MobileRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string Mobile { get; set; } = "";
+
+            [RegularExpression(Constants.EmailRegex)]
+            [MaxLength(Constants.EmailLength)]
+            public string? Email { get; set; }
+
+            [RegularExpression(Constants.TelRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string? PhoneNumber { get; set; }
+
+            [MaxLength(Constants.DescriptionLength)]
+            public string? Description { get; set; }
+            
+            public DateTime RegisterDate { get; set; } = DateTime.Now;
+        }
+    </code>
+</pre>
+
+<div>Bar.cs</div>
+<pre class="language-csharp">
+    <code class="language-csharp">
+        namespace Blog.DataLayer.Models;
+
+        public class Bar
+        {
+            [Key]
+            public int Id { get; set; }
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string FirstName { get; set; } = "";
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string LastName { get; set; } = "";
+
+            [Required]
+            [RegularExpression(Constants.MobileRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string Mobile { get; set; } = "";
+
+            [MaxLength(Constants.IdentifierNumberLength)]
+            public string? IdentifierNumber { get; set; }
+
+            [RegularExpression(Constants.EmailRegex)]
+            [MaxLength(Constants.EmailLength)]
+            public string? Email { get; set; }
+
+            [RegularExpression(Constants.TelRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string? PhoneNumber { get; set; }
+
+            [MaxLength(Constants.DescriptionLength)]
+            public string? Description { get; set; }
+
+            [StringLength(maximumLength: Constants.AddressLength)]
+            public string? Address { get; set; }
+            
+            public DateTime RegisterDate { get; set; } = DateTime.Now;
+        }
+    </code>
+</pre>
+
+<div>FooDetails.cs</div>
+<p>One To One Relationship.</p>
+<pre class="language-csharp">
+    <code class="language-csharp">
+        namespace Blog.DataLayer.Models;
+
+        public class FooDetails
+        {
+            [Key] public int Id { get; set; }
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string FirstName { get; set; } = "";
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string LastName { get; set; } = "";
+
+            [Required]
+            [RegularExpression(Constants.MobileRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string Mobile { get; set; } = "";
+
+            [MaxLength(Constants.IdentifierNumberLength)]
+            public string? IdentifierNumber { get; set; }
+
+            [RegularExpression(Constants.EmailRegex)]
+            [MaxLength(Constants.EmailLength)]
+            public string? Email { get; set; }
+
+            [RegularExpression(Constants.TelRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string? PhoneNumber { get; set; }
+
+            [MaxLength(Constants.DescriptionLength)]
+            public string? Description { get; set; }
+
+            [StringLength(maximumLength: Constants.AddressLength)]
+            public string? Address { get; set; }
+            
+            public DateTime RegisterDate { get; set; } = DateTime.Now;
+        }
+    </code>
+</pre>
+
+<div>BarItem.cs</div>
+<p>One To Many Relationship.</p>
+<pre class="language-csharp">
+    <code class="language-csharp">
+        namespace Blog.DataLayer.Models;
+
+        public class BarItem
+        {
+            [Key] public int Id { get; set; }
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string FirstName { get; set; } = "";
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string LastName { get; set; } = "";
+
+            [Required]
+            [RegularExpression(Constants.MobileRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string Mobile { get; set; } = "";
+
+            [MaxLength(Constants.IdentifierNumberLength)]
+            public string? IdentifierNumber { get; set; }
+
+            [RegularExpression(Constants.EmailRegex)]
+            [MaxLength(Constants.EmailLength)]
+            public string? Email { get; set; }
+
+            [RegularExpression(Constants.TelRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string? PhoneNumber { get; set; }
+
+            [MaxLength(Constants.DescriptionLength)]
+            public string? Description { get; set; }
+
+            [StringLength(maximumLength: Constants.AddressLength)]
+            public string? Address { get; set; }
+            
+            public DateTime RegisterDate { get; set; } = DateTime.Now;
+        }
+    </code>
+</pre>
+
+<div>RelFooBar.cs</div>
+<p>Many To Many Relationship.</p>
+<pre class="language-csharp">
+    <code class="language-csharp">
+        namespace Blog.DataLayer.Models;
+
+        public class RelFooBar
+        {
+            [Key] public int Id { get; set; }
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string FirstName { get; set; } = "";
+
+            [Required]
+            [MaxLength(Constants.NameLength)]
+            public string LastName { get; set; } = "";
+
+            [Required]
+            [RegularExpression(Constants.MobileRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string Mobile { get; set; } = "";
+
+            [MaxLength(Constants.IdentifierNumberLength)]
+            public string? IdentifierNumber { get; set; }
+
+            [RegularExpression(Constants.EmailRegex)]
+            [MaxLength(Constants.EmailLength)]
+            public string? Email { get; set; }
+
+            [RegularExpression(Constants.TelRegex)]
+            [Column(TypeName = "char")]
+            [StringLength(maximumLength: 10, MinimumLength = 10)]
+            public string? PhoneNumber { get; set; }
+
+            [MaxLength(Constants.DescriptionLength)]
+            public string? Description { get; set; }
+
+            [StringLength(maximumLength: Constants.AddressLength)]
+            public string? Address { get; set; }
+            
+            public DateTime RegisterDate { get; set; } = DateTime.Now;
+        }
+    </code>
+</pre>

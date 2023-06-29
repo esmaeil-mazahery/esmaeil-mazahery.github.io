@@ -23,7 +23,7 @@
       <a
         rel="author"
         href="{{ site.url }}{{ site.baseurl }}"
-        class="c-btn m-translucid m-block-right u-p-md">
+        class="c-btn m-translucid m-block-right u-p-md d-flex flex-column">
         {% if site.sidebar.logo.url %}
           <img
             src="{% if site.sidebar.logo.url contains 'https://' or site.sidebar.logo.url contains 'http://' %}{{ site.sidebar.logo.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.sidebar.logo.url }}{% endif %}"
@@ -32,6 +32,15 @@
             {% endif %}
             alt="{{ site.title }}">
         {% else %}
+          {% if site.sidebar.profile.url %}
+            <img
+            class="rounded"
+              src="{% if site.sidebar.profile.url contains 'https://' or site.sidebar.profile.url contains 'http://' %}{{ site.sidebar.profile.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.sidebar.profile.url }}{% endif %}"
+              {% if site.sidebar.logo.max_height %}
+              style="max-height:{{ site.sidebar.profile.max_height }}"
+              {% endif %}
+              alt="{{ site.title }}">
+          {% endif %}
           <!-- Without logo -->
           <span style="font-size: {{ site.sidebar.logo.font_size | default: 'var(--sg-font-size-lg)' }}; line-height: 1em;">{{ site.title }}</span>
         {% endif %}

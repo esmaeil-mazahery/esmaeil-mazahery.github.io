@@ -167,6 +167,10 @@ sidebar:
     # If no logo url, font size of the site title, ignored if url is set
     font_size: 32px
 
+  profile:
+    url: /assets/user/images/cv/profile.jpg
+    max_height: 120px
+
   # ADDITIONAL LINKS
   # Allows to add links that are not pages included into the project
   # Display additional links anywhere into the sidebar

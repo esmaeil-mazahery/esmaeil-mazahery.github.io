@@ -183,6 +183,7 @@
   <link rel="stylesheet" href="{{ '/assets/libdoc/css/libdoc.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/user/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/user/fonts/icomoon/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
   <!-- Prism syntax highlighter -->
   {% if site.prism.theme %}
@@ -205,6 +206,7 @@
 
   <!-- Head scripts -->
   <script type="text/javascript" src="{{ '/assets/libdoc/js/jquery-3.5.1.slim.min.js' | relative_url }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
   <!-- LibDoc config -->
   <script>
@@ -225,6 +227,8 @@
   {% if jekyll.environment == 'production' and site.analytics_tag %}
     {% include user/analytics.html %}
   {% endif %}
+
+
 
   <!-- Extra -->
 </head>

@@ -1,0 +1,127 @@
+---
+title: CoreCMS - ASP.NET Core Content Management System
+description: CoreCMS is a powerful and feature-rich Content Management System (CMS) built on the ASP.NET Core framework.
+layout: libdoc/page
+
+menu_title: Intro
+published: false
+
+#LibDoc specific below
+category: CoreCMS
+sub_category: DDD - MVC
+order: 10
+lang: en
+date: 05-02-2024
+summery:  '<div>Steps to add swap space on ubuntu</div>
+          <div>1: Checking the System for Swap Information</div>
+          <div>2: Checking Available Space on the Hard Drive Partition</div>
+          <div>3: Creating a Swap File</div>
+          <div>4: Enabling the Swap File</div>
+          <div>5: Making the Swap File Permanent</div>'
+# unlisted: true
+---
+
+<ul id="markdown-toc">
+  <li>
+    <a href="#Target-project" id="markdown-toc-Target-project">Target project</a>
+  </li>
+  <li>
+    <a href="#Best-IDE-for-asp.net-core" id="markdown-toc-Best-IDE-for-asp.net-core">Best IDE for asp.net core</a>
+  </li>
+  <li>
+    <a href="#Requirement" id="markdown-toc-Requirement">Requirement</a>
+  </li>
+  <li>
+    <a href="#Create-Empty-Solution" id="markdown-toc-Create-Empty-Solution">Create Solution</a>
+  </li>
+  <li>
+    <a href="#Create-Projects" id="markdown-toc-Create-Projects">Create Projects</a>
+  </li>
+  <li>
+    <a href="#Folders" id="markdown-toc-Folders">Folders</a>
+  </li>
+</ul>
+
+
+
+Getting Started with CoreCMS
+
+Welcome to CoreCMS, an ASP.NET Core Content Management System built with a focus on Domain-Driven Design (DDD). This guide will walk you through the steps to set up and start using CoreCMS for your content management needs.
+Prerequisites
+
+Before getting started, ensure that you have the following prerequisites installed on your system:
+
+    .NET Core SDK (version X.X or later)
+    Visual Studio or any code editor of your choice
+
+Installation
+
+Follow these steps to install and set up CoreCMS:
+
+    Clone the CoreCMS repository from GitHub by running the following command in your terminal or command prompt:
+
+    bash
+
+git clone https://github.com/your-username/CoreCMS.git
+
+Open the project in your preferred code editor.
+
+Restore the required NuGet packages by running the following command in the project's root folder:
+
+dotnet restore
+
+Next, create the database required for CoreCMS. Open the appsettings.json file and update the database connection string with your preferred database provider and connection details.
+
+Apply the necessary database migrations by running the following command:
+
+sql
+
+dotnet ef database update
+
+Once the migrations are applied successfully, build the solution by running:
+
+dotnet build
+
+Finally, start the CoreCMS application by running the following command:
+
+arduino
+
+    dotnet run
+
+Congratulations! CoreCMS is now up and running on your local machine.
+Accessing the Admin Panel
+
+To access the CoreCMS admin panel and start managing your content, follow these steps:
+
+    Open your preferred web browser.
+
+    Enter the following URL in the address bar:
+
+    bash
+
+    http://localhost:5000/admin
+
+    You will be redirected to the login page. Use the default administrator credentials to log in:
+        Username: admin
+        Password: password
+
+    Note: It is recommended to change the default administrator credentials for security purposes.
+
+    Once logged in, you will have access to the CoreCMS admin panel, where you can create, edit, and manage your website's content.
+
+Extending CoreCMS
+
+CoreCMS is designed to be extensible, allowing you to customize and add new features to meet your specific requirements. Here are some ways you can extend CoreCMS:
+
+    Create custom content types: Define new content types, such as portfolios, events, or products, by extending the existing models and implementing the necessary logic.
+    Develop custom modules: Build additional modules or functionality that integrate seamlessly with CoreCMS, such as integrations with third-party services or custom workflows.
+    Customize themes: Modify the existing themes or create new ones to match your website's branding and design.
+
+For more detailed information on extending CoreCMS, refer to the documentation available in the project's GitHub repository.
+Conclusion
+
+You are now ready to start managing your content with CoreCMS! By following the steps outlined in this guide, you have installed and set up CoreCMS on your local machine and accessed the admin panel. Enjoy the flexibility and power of CoreCMS for your content management needs.
+
+If you have any questions or need further assistance, please refer to the project's GitHub repository for documentation and community support.
+
+Happy content managing with CoreCMS!

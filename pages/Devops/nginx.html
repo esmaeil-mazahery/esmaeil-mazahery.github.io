@@ -1,0 +1,116 @@
+---
+title: Nginx
+description: _
+layout: libdoc/page
+comments: true
+
+#LibDoc specific below
+category: devops
+order: 2
+date: 06-02-2023
+lang: en
+summery:  '<div>Install Nginx and perform some configuration.</div>'
+# unlisted: true
+---
+
+<ul id="markdown-toc">
+  <li>
+    <a href="#Install" id="markdown-toc-Install">Install</a>
+  </li>
+  <li>
+    <a href="#Feature" id="markdown-toc-Feature">Feature</a>
+  </li>
+  <li>
+    <a href="#Release" id="markdown-toc-Release">Release</a>
+  </li>
+  <li>
+    <a href="#Hotfix" id="markdown-toc-Hotfix">Hotfix</a>
+  </li>
+  <li>
+    <a href="#In-Action" id="markdown-toc-In-Action">In Action</a>
+  </li>
+</ul>
+
+<h3 id="Install">
+  Install
+</h3>
+
+<h4>
+  Macos
+</h4>
+<p>
+  Use brew to install
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    brew install nginx
+  </code>
+</pre>
+
+<h4>
+  Ubuntu
+</h4>
+<p>
+  install
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    sudo apt update
+    sudo apt install nginx
+  </code>
+</pre>
+
+<p>
+  Adjusting the Firewall
+  <small>List the application configurations that ufw knows</small>
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    sudo ufw app list
+  </code>
+</pre>
+<p>
+  output
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    Output
+    Available applications:
+      Nginx Full
+      Nginx HTTP
+      Nginx HTTPS
+      OpenSSH    
+  </code>
+</pre>
+<p>
+  Enable one out of three profiles.
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    sudo ufw allow 'Nginx HTTP'  
+  </code>
+</pre>
+
+<p>
+  Run:
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    sudo nginx
+  </code>
+</pre>
+<small>To check if a port is in use and kill the app, use this command.</small>
+<pre class="language-bash">
+  <code class="language-bash">
+    sudo lsof -t -i tcp:8080 | xargs kill -9
+  </code>
+</pre>
+
+<p>
+  Test:
+</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    http://localhost:8080
+  </code>
+</pre>
