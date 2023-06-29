@@ -7,6 +7,10 @@ for further information about it go to [Documentation](https://olivier3lanc.gith
 
 > bundle exec jekyll serve
 
+### build
+
+> bundle exec jekyll build
+
 ### run in production mode
 
 > JEKYLL_ENV=production bundle exec jekyll serve
