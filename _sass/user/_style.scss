@@ -118,3 +118,7 @@ ul.tree {
 .rounded {
     border-radius: 50%;
 }
+
+#libdoc-sidebar-menu {
+    min-height: calc(100vh - 100px);
+}

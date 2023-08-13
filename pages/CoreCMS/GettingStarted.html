@@ -1,15 +1,15 @@
 ---
-title: CoreCMS - ASP.NET Core Content Management System
-description: CoreCMS is a powerful and feature-rich Content Management System (CMS) built on the ASP.NET Core framework.
+title: CoreCMS - Getting Started with CoreCMS
+description: _
 layout: libdoc/page
 
-menu_title: Intro
-published: false
+menu_title: Getting Started with CoreCMS
+published: true
 
 #LibDoc specific below
 category: CoreCMS
-sub_category: DDD - MVC
-order: 10
+sub_category: AspDotnet
+order: 2
 lang: en
 date: 05-02-2024
 summery:  '<div>Steps to add swap space on ubuntu</div>
@@ -42,86 +42,74 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   </li>
 </ul>
 
+<p>CoreCMS is a powerful and feature-rich Content Management System (CMS) built on the ASP.NET Core framework.</p>
+
+<h3>Getting Started with CoreCMS</h3>
+<p>Welcome to CoreCMS, an ASP.NET Core Content Management System built with a focus on Domain-Driven Design (DDD). This guide will walk you through the steps to set up and start using CoreCMS for your content management needs.
+  Prerequisites</p>
 
 
-Getting Started with CoreCMS
+<h3>Requirement</h3>
+<p>
+  Before getting started, ensure that you have the following prerequisites installed on your system:
+</p>
+<ul>
+  <li>.NET Core SDK (version X.X or later)</li>
+  <li>Visual Studio or any code editor of your choice</li>
+</ul>
 
-Welcome to CoreCMS, an ASP.NET Core Content Management System built with a focus on Domain-Driven Design (DDD). This guide will walk you through the steps to set up and start using CoreCMS for your content management needs.
-Prerequisites
 
-Before getting started, ensure that you have the following prerequisites installed on your system:
+<h3>
+  Installation
+</h3>
+<p>Follow these steps to install and set up CoreCMS:</p>
+<p>Clone the CoreCMS repository from GitHub by running the following command in your terminal or command prompt:</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    git clone https://github.com/your-username/CoreCMS.git
+  </code>
+</pre>
+<p>Open the project in your preferred code editor.</p>
+<p>Restore the required NuGet packages by running the following command in the project's root folder:</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    dotnet restore
+  </code>
+</pre>
+<p>
+  Next, create the database required for CoreCMS. 
+  Open the appsettings.json file and update the database connection string with your preferred database provider and connection details.
+</p>
+<p>Apply the necessary database migrations by running the following command:</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    dotnet ef database update
+  </code>
+</pre>
 
-    .NET Core SDK (version X.X or later)
-    Visual Studio or any code editor of your choice
+<p>Once the migrations are applied successfully, build the solution by running:</p>
+<pre class="language-bash">
+  <code class="language-bash">
+    dotnet build
+  </code>
+</pre>
+<p>Finally, start the CoreCMS application by running the following command:</p>
 
-Installation
-
-Follow these steps to install and set up CoreCMS:
-
-    Clone the CoreCMS repository from GitHub by running the following command in your terminal or command prompt:
-
-    bash
-
-git clone https://github.com/your-username/CoreCMS.git
-
-Open the project in your preferred code editor.
-
-Restore the required NuGet packages by running the following command in the project's root folder:
-
-dotnet restore
-
-Next, create the database required for CoreCMS. Open the appsettings.json file and update the database connection string with your preferred database provider and connection details.
-
-Apply the necessary database migrations by running the following command:
-
-sql
-
-dotnet ef database update
-
-Once the migrations are applied successfully, build the solution by running:
-
-dotnet build
-
-Finally, start the CoreCMS application by running the following command:
-
-arduino
-
+<pre class="language-bash">
+  <code class="language-bash">
     dotnet run
+  </code>
+</pre>
 
-Congratulations! CoreCMS is now up and running on your local machine.
-Accessing the Admin Panel
 
-To access the CoreCMS admin panel and start managing your content, follow these steps:
+<p>
+  <strong>Congratulations!</strong>
+  CoreCMS is now up and running on your local machine.</p>
 
-    Open your preferred web browser.
 
-    Enter the following URL in the address bar:
-
-    bash
-
-    http://localhost:5000/admin
-
-    You will be redirected to the login page. Use the default administrator credentials to log in:
-        Username: admin
-        Password: password
-
-    Note: It is recommended to change the default administrator credentials for security purposes.
-
-    Once logged in, you will have access to the CoreCMS admin panel, where you can create, edit, and manage your website's content.
-
-Extending CoreCMS
-
-CoreCMS is designed to be extensible, allowing you to customize and add new features to meet your specific requirements. Here are some ways you can extend CoreCMS:
-
-    Create custom content types: Define new content types, such as portfolios, events, or products, by extending the existing models and implementing the necessary logic.
-    Develop custom modules: Build additional modules or functionality that integrate seamlessly with CoreCMS, such as integrations with third-party services or custom workflows.
-    Customize themes: Modify the existing themes or create new ones to match your website's branding and design.
-
-For more detailed information on extending CoreCMS, refer to the documentation available in the project's GitHub repository.
-Conclusion
-
-You are now ready to start managing your content with CoreCMS! By following the steps outlined in this guide, you have installed and set up CoreCMS on your local machine and accessed the admin panel. Enjoy the flexibility and power of CoreCMS for your content management needs.
-
-If you have any questions or need further assistance, please refer to the project's GitHub repository for documentation and community support.
-
-Happy content managing with CoreCMS!
+<p>Use the default administrator credentials to log in:</p>
+<p>
+  <div>Username: admin</div>
+  <div>Password: password</div>
+</p>
+<p>Happy content managing with CoreCMS!</p>

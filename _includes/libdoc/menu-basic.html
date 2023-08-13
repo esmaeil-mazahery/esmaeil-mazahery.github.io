@@ -2,7 +2,7 @@
 {% if site.sidebar.additional_links %}
   {% assign sorted_pages = site.html_pages | concat: site.sidebar.additional_links %}
 {% endif %}
-{% assign sorted_pages = sorted_pages | sort: "category" | sort: "order" %}
+{% assign sorted_pages = sorted_pages | sort: "order" | sort: "category" %}
 {% assign previous_category = "_" %}
 {% assign item_index = 0 %}
 
@@ -59,25 +59,3 @@
     {% endif %}
   {% endif %}
 {% endfor %}
-
-
-
-<li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2">
-  <a
-    href="/pages/cv"
-    class="c-btn m-block-right {% if page.url == '/pages/cv.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
-    u-fs-xs="sm,md"
-    u-p-xs="sm,md">
-    CV
-  </a>
-</li>
-
-<li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2px">
-  <a
-    href="/pages/works"
-    class="c-btn m-block-right {% if page.url == '/pages/works.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
-    u-fs-xs="sm,md"
-    u-p-xs="sm,md">
-    MyWorks
-  </a>
-</li>

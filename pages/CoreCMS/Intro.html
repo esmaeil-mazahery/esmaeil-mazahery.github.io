@@ -43,42 +43,54 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   </li>
 </ul>
 
+<h3>CoreCMS - ASP.NET Core Content Management System (DDD Approach)</h3>
 
-Project Title: CoreCMS - ASP.NET Core Content Management System (DDD Approach)
+<h3>
+  Project Overview:
+</h3>
+<p>
+  CoreCMS is a robust and extensible Content Management System (CMS) built on the ASP.NET Core framework, following the principles of Domain-Driven Design (DDD). 
+  The project aims to provide developers with a comprehensive learning experience by showcasing the implementation of a CMS using DDD concepts, empowering them to build scalable and maintainable software solutions.
+</p>
 
-Project Overview:
-CoreCMS is a robust and extensible Content Management System (CMS) built on the ASP.NET Core framework, following the principles of Domain-Driven Design (DDD). The project aims to provide developers with a comprehensive learning experience by showcasing the implementation of a CMS using DDD concepts, empowering them to build scalable and maintainable software solutions.
+<h3>
+  Project Goals:
+</h3>
+<p>
 
-Project Goals:
+  Demonstrate the application of Domain-Driven Design principles in the development of a CMS using ASP.NET Core.
+  Illustrate the separation of concerns and the modeling of the domain entities, aggregates, and services within the CMS.
+      Showcase the use of bounded contexts, ubiquitous language, and domain events to align the software design with the business domain.
+      Enable developers to gain proficiency in implementing DDD concepts, such as aggregates, repositories, value objects, and domain services, within the context of a CMS.
+      Encourage the adoption of best practices for architectural design, code organization, and maintainability in ASP.NET Core applications.</p>
 
-    Demonstrate the application of Domain-Driven Design principles in the development of a CMS using ASP.NET Core.
-    Illustrate the separation of concerns and the modeling of the domain entities, aggregates, and services within the CMS.
-    Showcase the use of bounded contexts, ubiquitous language, and domain events to align the software design with the business domain.
-    Enable developers to gain proficiency in implementing DDD concepts, such as aggregates, repositories, value objects, and domain services, within the context of a CMS.
-    Encourage the adoption of best practices for architectural design, code organization, and maintainability in ASP.NET Core applications.
 
-Project Features:
+<h3>Project Features:</h3>
+<p>
+  Bounded Contexts: Implement bounded contexts within the CMS to define separate domains and align the codebase with the different aspects of content management.
+  Aggregates and Entities: Model CMS entities as aggregates, representing consistency boundaries, and define domain entities that encapsulate behavior and enforce business rules.
+      Repositories: Implement repositories to provide persistence and retrieval mechanisms for domain entities, ensuring separation between the domain and data access layers.
+      Value Objects: Utilize value objects to encapsulate and enforce consistency rules for attributes within the CMS entities.
+      Domain Services: Implement domain services to encapsulate complex business logic or interactions that span multiple entities or aggregates.
+      Ubiquitous Language: Adopt a shared language and glossary, aligning the domain concepts with the CMS implementation and fostering effective communication between stakeholders and developers.
+      Event-Driven Architecture: Apply domain events to decouple modules, synchronize aggregates, and ensure consistency across different parts of the CMS.
+      Dependency Injection: Utilize the built-in dependency injection mechanism in ASP.NET Core to achieve loose coupling and promote testability and maintainability.
+      Modular Architecture: Design the CMS to be modular, allowing for the separation and encapsulation of different functional areas and promoting scalability and extensibility.</p>
 
-    Bounded Contexts: Implement bounded contexts within the CMS to define separate domains and align the codebase with the different aspects of content management.
-    Aggregates and Entities: Model CMS entities as aggregates, representing consistency boundaries, and define domain entities that encapsulate behavior and enforce business rules.
-    Repositories: Implement repositories to provide persistence and retrieval mechanisms for domain entities, ensuring separation between the domain and data access layers.
-    Value Objects: Utilize value objects to encapsulate and enforce consistency rules for attributes within the CMS entities.
-    Domain Services: Implement domain services to encapsulate complex business logic or interactions that span multiple entities or aggregates.
-    Ubiquitous Language: Adopt a shared language and glossary, aligning the domain concepts with the CMS implementation and fostering effective communication between stakeholders and developers.
-    Event-Driven Architecture: Apply domain events to decouple modules, synchronize aggregates, and ensure consistency across different parts of the CMS.
-    Dependency Injection: Utilize the built-in dependency injection mechanism in ASP.NET Core to achieve loose coupling and promote testability and maintainability.
-    Modular Architecture: Design the CMS to be modular, allowing for the separation and encapsulation of different functional areas and promoting scalability and extensibility.
 
-Project Structure:
+<h3>Project Structure:</h3>
+<p>
+  Domains: Contains the domain models, entities, value objects, and services that represent the CMS's business logic and rules.
+  Infrastructure: Includes the data access layer, repository implementations, external service integrations, and other infrastructure-related code.
+      Application: Contains the application layer, orchestrating the interaction between the presentation layer, domain models, and infrastructure services.
+      Presentation: Houses the user interface components, controllers, views, and user-facing functionality for CMS administration and content delivery.
+      Tests: Includes unit tests and integration tests to verify the functionality and behavior of the domain models, services, and application layers.</p>
 
-    Domains: Contains the domain models, entities, value objects, and services that represent the CMS's business logic and rules.
-    Infrastructure: Includes the data access layer, repository implementations, external service integrations, and other infrastructure-related code.
-    Application: Contains the application layer, orchestrating the interaction between the presentation layer, domain models, and infrastructure services.
-    Presentation: Houses the user interface components, controllers, views, and user-facing functionality for CMS administration and content delivery.
-    Tests: Includes unit tests and integration tests to verify the functionality and behavior of the domain models, services, and application layers.
+<h3>Documentation:</h3>
+<p>Comprehensive documentation, including detailed explanations, code samples, and diagrams, can be found in the project's GitHub repository at [insert link here]. Developers are encouraged to refer to the documentation to gain a deep understanding of the DDD approach and its implementation within the CoreCMS project.
+</p>
 
-Documentation:
-Comprehensive documentation, including detailed explanations, code samples, and diagrams, can be found in the project's GitHub repository at [insert link here]. Developers are encouraged to refer to the documentation to gain a deep understanding of the DDD approach and its implementation within the CoreCMS project.
+<h3>Conclusion:</h3>
 
-Conclusion:
+
 CoreCMS, built on ASP.NET Core using the principles of Domain-Driven Design, serves as an excellent learning resource for developers aspiring to build scalable and maintainable CMS applications. By exploring its features, adhering to DDD principles, and leveraging the power of ASP.NET Core, developers can enhance their understanding

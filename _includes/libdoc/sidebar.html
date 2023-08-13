@@ -17,7 +17,7 @@
     onclick="sidebar()">
     <span class="i-menu u-fs-md"></span>
   </button>
-  <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl">
+  <ul id="libdoc-sidebar-menu" class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto">
     <li>
 
       <a
@@ -34,7 +34,7 @@
         {% else %}
           {% if site.sidebar.profile.url %}
             <img
-            class="rounded"
+              class="rounded"
               src="{% if site.sidebar.profile.url contains 'https://' or site.sidebar.profile.url contains 'http://' %}{{ site.sidebar.profile.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.sidebar.profile.url }}{% endif %}"
               {% if site.sidebar.logo.max_height %}
               style="max-height:{{ site.sidebar.profile.max_height }}"
@@ -72,4 +72,28 @@
       {% include libdoc/menu-basic.html %}
     {% endif %}
   </ul>
+
+  <ul class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto">
+    <li class="u-relative u-o-hidden libdoc-sidebar-item active">
+      <a
+        href="/pages/cv"
+        class="c-btn m-block-right {% if page.url == '/pages/cv.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
+        u-fs-xs="sm,md"
+        u-p-xs="sm,md">
+        CV
+      </a>
+    </li>
+
+    <li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2px">
+      <a
+        href="/pages/works"
+        class="c-btn m-block-right {% if page.url == '/pages/works.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
+        u-fs-xs="sm,md"
+        u-p-xs="sm,md">
+        MyWorks
+      </a>
+    </li>
+  </ul>
+
+
 </nav>

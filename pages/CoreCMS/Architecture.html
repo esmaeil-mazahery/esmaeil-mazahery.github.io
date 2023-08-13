@@ -1,0 +1,63 @@
+---
+title: CoreCMS - Architecture
+description: _
+layout: libdoc/page
+
+menu_title: Architecture
+published: true
+
+#LibDoc specific below
+category: CoreCMS
+sub_category: AspDotnet
+order: 3
+lang: en
+date: 05-02-2024
+summery:  '<div>Steps to add swap space on ubuntu</div>
+          <div>1: Checking the System for Swap Information</div>
+          <div>2: Checking Available Space on the Hard Drive Partition</div>
+          <div>3: Creating a Swap File</div>
+          <div>4: Enabling the Swap File</div>
+          <div>5: Making the Swap File Permanent</div>'
+# unlisted: true
+---
+
+
+
+<h3>Architecture Overview:</h3>
+<p>Our ASP.NET Core project is structured using a layered architecture approach, consisting of the following layers: InfrastructureLayer, DomainLayer, DataLayer, ServicesLayer, WebApiLayer, and WebAppLayer. Each layer has specific responsibilities and contributes to the overall functionality of the application.</p>
+<ul>
+  <li>InfrastructureLayer: This layer focuses on infrastructure-related concerns such as logging, caching, and external services integration. We utilize technologies like in-memory caching for performance optimization.</li>
+  <li>
+    DomainLayer: The heart of our application, this layer contains the core business logic and domain models. We follow a DDD approach to ensure a clear understanding and representation of the business domain.
+  </li>
+  <li>DataLayer: Responsible for data persistence and retrieval, the DataLayer utilizes a repository pattern to abstract the data access logic. We use SQL Server as our database engine to store and manage data efficiently.
+  </li>
+  <li>ServicesLayer: This layer acts as an intermediary between the DataLayer and other layers, providing services and encapsulating business logic. It leverages the unit of work pattern to manage transactions and ensure consistency.
+  </li>
+  <li>WebApiLayer: In this layer, we expose RESTful APIs to interact with the application. We implement JWT (JSON Web Tokens) for secure authentication and authorization.
+  </li>
+  <li>WebAppLayer: This layer contains the presentation logic and user interface components, providing a web-based interface for users to interact with the application.
+  </li>
+</ul>
+
+<h3>Dependency Injection:</h3>
+<p>
+  To promote loose coupling and maintainability, our project incorporates the Dependency Injection (DI) pattern provided by ASP.NET Core. DI allows for the injection of dependencies into classes, making them more testable and decoupled. We leverage DI to manage the dependencies between components throughout the application.
+</p>
+
+<h3>Background Tasks:</h3>
+<p>
+  Our project includes background tasks that run asynchronously, allowing for long-running or scheduled processes to execute outside the scope of user interactions. These tasks can handle various operations such as data processing, notifications, or any other required background processes.
+</p>
+
+<h3>Caching in Memory:</h3>
+<p>
+  To enhance performance, we employ in-memory caching techniques. By storing frequently accessed data in memory, we can reduce the number of expensive database queries, resulting in improved response times and scalability.
+</p>
+
+<h3>
+  Conclusion:
+</h3>
+<p>
+  Our ASP.NET Core project embraces a DDD approach and incorporates various architectural considerations to ensure a well-structured, scalable, and maintainable application. By utilizing layered architecture, repository pattern, unit of work, Dependency Injection, background tasks, caching in memory, and JWT authentication, we strive to deliver a robust and efficient solution. The subsequent sections of this document will delve into each architectural aspect in more detail, providing guidelines and insights for development, deployment, and maintenance.
+</p>
