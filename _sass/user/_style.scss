@@ -122,3 +122,15 @@ ul.tree {
 #libdoc-sidebar-menu {
     min-height: calc(100vh - 100px);
 }
+
+.tiles-item {
+    padding: 4px 8px;
+    background-color: #515050;
+    border-radius: 5px;
+    margin: 0 2px;
+    color: white;
+}
+
+.fw-bold {
+    font-weight: bold;
+}

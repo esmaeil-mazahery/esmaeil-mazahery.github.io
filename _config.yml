@@ -7,8 +7,8 @@
 # remote_theme: olivier3lanc/Jekyll-LibDoc
 title: Esmaeil Mazahery # title of the documentation
 description:
-  >- # Description of the docs. (>- means to ignore newlines until next param)
   A place where I share my experience about programming and technology.
+  # >- # Description of the docs. (>- means to ignore newlines until next param)
 # IMPORTANT: on Github Pages deploys, url and baseurl must be commented or set to proper settings, otherwise links and resources URL are wrong
 url: https://www.esmaeilmazahery.ir # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
