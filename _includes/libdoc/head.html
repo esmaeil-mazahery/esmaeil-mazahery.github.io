@@ -188,6 +188,7 @@
   <link rel="stylesheet" href="{{ '/assets/user/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/user/fonts/icomoon/style.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="{{ '/assets/user/lib/lightbox2/css/lightbox.css' | relative_url }}" rel="stylesheet" />
 
   <!-- Prism syntax highlighter -->
   {% if site.prism.theme %}
@@ -209,8 +210,12 @@
   {% endif %}
 
   <!-- Head scripts -->
-  <script type="text/javascript" src="{{ '/assets/libdoc/js/jquery-3.5.1.slim.min.js' | relative_url }}"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="{{ '/assets/user/lib/lightbox2/js/lightbox.js' | relative_url }}"></script>
 
   <!-- LibDoc config -->
   <script>

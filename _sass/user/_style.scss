@@ -1,3 +1,27 @@
+* {
+    font-family:
+        -apple-system,
+        system-ui,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Helvetica Neue,
+        Fira Sans,
+        Ubuntu,
+        Oxygen,
+        Oxygen Sans,
+        Cantarell,
+        Droid Sans,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        Segoe UI Emoji,
+        Segoe UI Symbol,
+        Lucida Grande,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
 mark {
     background-color: #eee;
 }
@@ -111,6 +135,14 @@ ul.tree {
     background-color: #8a8a8a;
 }
 
+.bg-gray-700 {
+    background-color: #4d4c4c;
+}
+
+.bg-gray-900 {
+    background-color: #272727;
+}
+
 .cl-white {
     color: white;
 }
@@ -125,10 +157,13 @@ ul.tree {
 
 .tiles-item {
     padding: 4px 8px;
-    background-color: #515050;
     border-radius: 5px;
     margin: 0 2px;
     color: white;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
 }
 
 .fw-bold {
@@ -139,4 +174,76 @@ ul.tree {
     max-height: 100vh;
     overflow-y: auto;
     scrollbar-width: thin;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.fs-1 {
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+}
+
+.fs-2 {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.fs-3 {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+}
+
+.fs-4 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.fs-5 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+
+.fs-6 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.fs-7 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+}
+
+.fs-8 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.works-img {
+    display: flex;
+    align-items: center;
+    a img {
+        height: 56px;
+        width: 104px;
+        border: 1px solid #f0eaea;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
 }

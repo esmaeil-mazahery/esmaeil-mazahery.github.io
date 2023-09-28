@@ -99,6 +99,7 @@
   <link rel="stylesheet" href="/assets/user/css/style.css">
   <link rel="stylesheet" href="/assets/user/fonts/icomoon/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="/assets/user/lib/lightbox2/css/lightbox.css" rel="stylesheet" />
 
   <!-- Prism syntax highlighter -->
   
@@ -118,8 +119,12 @@
   
 
   <!-- Head scripts -->
-  <script type="text/javascript" src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="/assets/user/lib/lightbox2/js/lightbox.js"></script>
 
   <!-- LibDoc config -->
   <script>
@@ -558,7 +563,7 @@
   <ul class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto">
     <li class="u-relative u-o-hidden libdoc-sidebar-item active">
       <a
-        href="/pages/cv"
+        href="/pages/me/cv"
         class="c-btn m-block-right m-ff-lead u-ta-right"
         u-fs-xs="sm,md"
         u-p-xs="sm,md">
@@ -568,7 +573,7 @@
 
     <li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2px">
       <a
-        href="/pages/works"
+        href="/pages/me/works"
         class="c-btn m-block-right m-ff-lead u-ta-right"
         u-fs-xs="sm,md"
         u-p-xs="sm,md">
@@ -652,7 +657,7 @@
                     "title": "Git Flow",
                     "author": "",
                     "category": "CheatSheet",
-                    "content": "      Git flow Commands        Feature        Release        Hotfix        In Action    Git flow Commands  Start using git-flow by initializing it inside an existing git repository:      git flow init  Feature  Start developing a new featurea  This action creates a new feature branch based on 'develop' and switches to it      git flow feature start MYFEATURE    Finish the development of a feature. This action performs the following  Merges MYFEATURE into 'develop'                                                            Removes the feature branch                                                            Switches back to 'develop' branch      git flow feature finish MYFEATURE    if you get conflict after finish the feature, you must resolve it manually and complate merge then run command again  if you want to keep the feature branch, use `git flow feature finish --keep-branch`  Publish a feature to the remote server so it can be used by other users.      git flow feature publish MYFEATURE    Get a feature published by another user.      git flow feature pull origin MYFEATURE    You can track a feature on origin by using      git flow feature track MYFEATURE  Release  To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.      git flow release start RELEASE [BASE]    You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.  It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:      git flow release publish RELEASE    track a remote RELEASE      git flow release track RELEASE    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                              Tags the release with its name                                                              Back-merges the release into 'develop'                                                              Removes the release branch      git flow release finish RELEASE    Don't forget to push your tags with      git push origin --tags  Hotfix  start hotfix      git flow hotfix start VERSION [BASENAME]    Finish a hotfix      git flow hotfix finish VERSION  In Action  add git flow      git flow init    start new feature      git flow feature start comments    finish feature      git flow feature finish comments    publish - push feature      git flow feature publish comments    start new release      git flow release start v1.0.2    publish new release      git flow release publish v1.0.3    it create a branch called 'release/v1.0.0' and push it to remote  you can fix bugs and commit to this branch no needs create new branch  finish release      git flow release finish v1.0.3    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                                    Tags the release with its name                                                                    Back-merges the release into 'develop'                                                                    Removes the release branch  if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again  add hotfix      git flow hotfix start v1.0.3    Finish a hotfix      git flow hotfix finish v1.0.4  ",
+                    "content": "      Git flow Commands        Feature        Release        Hotfix        In Action    Git flow Commands  Start using git-flow by initializing it inside an existing git repository:      git flow init  Feature  Start developing a new featurea  This action creates a new feature branch based on 'develop' and switches to it      git flow feature start MYFEATURE    Finish the development of a feature. This action performs the following  Merges MYFEATURE into 'develop'                                                              Removes the feature branch                                                              Switches back to 'develop' branch      git flow feature finish MYFEATURE    if you get conflict after finish the feature, you must resolve it manually and complate merge then run command again  if you want to keep the feature branch, use `git flow feature finish --keep-branch`  Publish a feature to the remote server so it can be used by other users.      git flow feature publish MYFEATURE    Get a feature published by another user.      git flow feature pull origin MYFEATURE    You can track a feature on origin by using      git flow feature track MYFEATURE  Release  To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.      git flow release start RELEASE [BASE]    You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.  It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:      git flow release publish RELEASE    track a remote RELEASE      git flow release track RELEASE    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                                Tags the release with its name                                                                Back-merges the release into 'develop'                                                                Removes the release branch      git flow release finish RELEASE    Don't forget to push your tags with      git push origin --tags  Hotfix  start hotfix      git flow hotfix start VERSION [BASENAME]    Finish a hotfix      git flow hotfix finish VERSION  In Action  add git flow      git flow init    start new feature      git flow feature start comments    finish feature      git flow feature finish comments    publish - push feature      git flow feature publish comments    start new release      git flow release start v1.0.2    publish new release      git flow release publish v1.0.3    it create a branch called 'release/v1.0.0' and push it to remote  you can fix bugs and commit to this branch no needs create new branch  finish release      git flow release finish v1.0.3    Finishing a release is one of the big steps in git branching. It performs several actions:  Merges the release branch back into 'master'                                                                      Tags the release with its name                                                                      Back-merges the release into 'develop'                                                                      Removes the release branch  if there is a conflict after finish the release, you must resolve it manually and complete merge then run command again  add hotfix      git flow hotfix start v1.0.3    Finish a hotfix      git flow hotfix finish v1.0.4  ",
                     "url": "/pages/CheatSheet/git-flow.html"
                 },
             
