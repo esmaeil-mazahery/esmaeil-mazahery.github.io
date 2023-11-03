@@ -1,0 +1,136 @@
+---
+title: Notification with SignalR and Pwa in Asp.net Mvc
+description: _
+layout: libdoc/page
+comments: true
+
+menu_title: SignalR and Pwa
+published: false
+
+#LibDoc specific below
+category: AspDotNet
+order: 2
+date: 2023-10-07
+lang: en
+summery:  '<div>Steps to add swap space on ubuntu</div>
+          <div>1: Checking the System for Swap Information</div>
+          <div>2: Checking Available Space on the Hard Drive Partition</div>
+          <div>3: Creating a Swap File</div>
+          <div>4: Enabling the Swap File</div>
+          <div>5: Making the Swap File Permanent</div>'
+# unlisted: true
+---
+
+
+<h3 id="SignalR">
+  SignalR
+</h3>
+<p>
+  SignalR is an open-source library for real-time web applications and bi-directional communication between clients and servers. It enables web pages to have real-time functionality by establishing a persistent connection between the client and the server. This allows the server to push content to the connected clients instantly as soon as it is available, instead of relying on the clients to request information from the server at regular intervals.
+</p>
+<p>
+  SignalR supports several communication protocols, including WebSockets, Server-Sent Events (SSE), Long Polling, and more. It abstracts the underlying communication details and provides a simple API for developers to build real-time, interactive web applications.
+</p>
+<p>
+  Developers commonly use SignalR to build features such as chat applications, live notifications, online gaming, collaborative editing, and any other application where real-time communication between clients and servers is necessary.
+</p>
+<p>
+  SignalR can be used with various programming languages and frameworks, including .NET, JavaScript, and other platforms, making it a versatile choice for building real-time web applications across different technologies.
+</p>
+
+
+<h3 id="Install">
+  Install SignalR package
+</h3>
+<pre class="language-bash">
+    <code class="language-bash">
+        dotnet add package Microsoft.AspNetCore.SignalR
+    </code>
+</pre>
+
+
+<h3 id="Hub">
+  Hub
+</h3>
+<p>
+  Hub is a high-level pipeline that allows communication between client and server in real-time web applications. It provides an abstraction to handle messages sent from both the client and server, making it easy to broadcast messages to all connected clients or specific groups of clients.
+</p>
+<p>
+  Here are some key points about SignalR hubs:
+</p>
+<ul>
+  <li>
+    <strong>Bi-Directional Communication</strong>: SignalR hubs enable bi-directional communication between clients and servers. This means that both clients and the server can call methods on each other directly.
+  </li>
+  <li>
+    <strong>Methods</strong>: Hubs can contain methods that can be called by clients. Clients can invoke these methods on the server, and the server can invoke methods on connected clients.
+  </li>
+  <li>
+    <strong>Groups</strong>: Hubs allow you to organize connected clients into groups. This enables you to send messages to specific groups of clients rather than broadcasting to everyone.
+  </li>
+  <li>
+    <strong>Persistent Connections</strong>: SignalR hubs maintain a persistent connection with the server, allowing real-time data exchange without the need for continuous client-side polling.
+  </li>
+  <li>
+    <strong>Fallback Mechanisms</strong>: Hubs use different transport protocols, such as WebSockets, Server-Sent Events, or Long Polling, depending on the capabilities of the client and server. This ensures that real-time communication works even if certain transport mechanisms are not supported in the client-server environment.
+  </li>
+</ul>
+
+<h4>
+  Create a SignalR hub
+</h4>
+<pre class="language-csharp">
+  <code class="language-csharp">
+    using Microsoft.AspNetCore.SignalR;
+    using System.Threading.Tasks;
+
+    public class ChatHub : Hub
+    {
+        public async Task SendMessage(string user, string message)
+        {
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
+        }
+    }
+  </code>
+</pre>
+
+
+<h3 id="Configure">
+  Configure SignalR in Startup.cs
+</h3>
+<pre class="language-csharp">
+  <code class="language-csharp">
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddSignalR();
+            services.AddMvc(); 
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            // ... your other middleware ...
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapHub<ChatHub>("/chathub");
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+        }
+    }  
+</code>
+</pre>
+
+<p>If you dont use endpoins use this method</p>
+<pre class="language-csharp">
+  <code class="language-csharp">
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+        // ... your other middleware ...
+        app.MapHub<ChatHub>("/chatHub");
+    }
+</code>
+</pre>
