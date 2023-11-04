@@ -54,13 +54,13 @@
   <meta name="msapplication-TileColor" content="#123456">
   <meta name="theme-color" content="#123456">
 
-  <!-- Microsoft -->
+    <!-- Microsoft -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="msapplication-starturl" content="http://localhost:4000/assets/libdoc/iframe.html">
   <meta name="msapplication-tooltip" content="Iframe mode">
   <meta name="msapplication-TileColor" content="#123456">
 
-  <!-- Open Graph -->
+    <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://localhost:4000/assets/libdoc/iframe.html">
   <meta property="og:title" content="Iframe mode">
@@ -87,12 +87,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#123456">
 
-  <!-- Android -->
+    <!-- Android -->
   <meta name="theme-color" content="#123456">
   <meta name="color-scheme" content="light">
   <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Style sheets -->
+    <!-- Style sheets -->
   <link rel="stylesheet" href="/assets/libdoc/css/normalize.css">
   <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css">
   <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css">
@@ -109,10 +109,8 @@
     <style>
       code[class*="language-"],
       pre[class*="language-"] {
-        font-size: 0.9em
-        ;
-        line-height: 1.4em
-        ;
+        font-size: 0.9em;
+        line-height: 1.4em;
         font-family: var(--sg-font-family-monospace);
       }
     </style>
@@ -125,6 +123,15 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="/assets/user/lib/lightbox2/js/lightbox.js"></script>
+  <script type="text/javascript">
+          (function(d, s) {
+          var useSSL = 'https:' == document.location.protocol;
+          var js, where = d.getElementsByTagName(s)[0],
+          js = d.createElement(s);
+          js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/4236208903/10631636.js?width=245&height=130&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+          try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+          }(document, 'script'));
+  </script>
 
   <!-- LibDoc config -->
   <script>
@@ -138,15 +145,14 @@
         stylesheets: [],
       scripts_head: [],
     scripts_body: []
-}}
+    }}
   </script>
 
   <!-- Google analytics -->
   
 
 
-
-  <!-- Extra -->
+<!-- Extra -->
 </head>
   <body class="u-bc-primary-edge">
     <div class="c-grid m-nowrap">
@@ -192,6 +198,29 @@
       </a>
 
     </li>
+
+    <li class="u-relative u-o-hidden libdoc-sidebar-item active">
+      <div style="display: flex;margin-bottom: 15px;">
+
+        <a
+          href="/pages/me/works"
+          class="c-btn m-block-right m-ff-lead u-ta-right"
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md">
+          MyWorks
+        </a>
+        <a
+          href="/pages/me/cv"
+          class="c-btn m-block-right m-ff-lead u-ta-right"
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md">
+          CV
+        </a>
+
+
+      </div>
+    </li>
+
     
       
         <li id="libdoc-sidebar-item-search">
@@ -529,28 +558,8 @@
   
 
     
-  </ul>
+  
 
-  <ul class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto">
-    <li class="u-relative u-o-hidden libdoc-sidebar-item active">
-      <a
-        href="/pages/me/cv"
-        class="c-btn m-block-right m-ff-lead u-ta-right"
-        u-fs-xs="sm,md"
-        u-p-xs="sm,md">
-        CV
-      </a>
-    </li>
-
-    <li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2px">
-      <a
-        href="/pages/me/works"
-        class="c-btn m-block-right m-ff-lead u-ta-right"
-        u-fs-xs="sm,md"
-        u-p-xs="sm,md">
-        MyWorks
-      </a>
-    </li>
   </ul>
 
 
@@ -580,7 +589,10 @@
           
         </ul>
         
+
+
       </nav>
+
     </footer>
     <script type="text/javascript" src="/assets/libdoc/js/prism/prism-core.min.js"></script>
     

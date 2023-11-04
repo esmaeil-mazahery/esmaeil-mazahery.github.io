@@ -47,6 +47,29 @@
       </a>
 
     </li>
+
+    <li class="u-relative u-o-hidden libdoc-sidebar-item active">
+      <div style="display: flex;margin-bottom: 15px;">
+
+        <a
+          href="/pages/me/works"
+          class="c-btn m-block-right {% if page.url == '/pages/me/works.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md">
+          MyWorks
+        </a>
+        <a
+          href="/pages/me/cv"
+          class="c-btn m-block-right {% if page.url == '/pages/me/cv.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
+          u-fs-xs="sm,md"
+          u-p-xs="sm,md">
+          CV
+        </a>
+
+
+      </div>
+    </li>
+
     {% if page_paths %}
       {% if site.sidebar.disable_search != true %}
         <li id="libdoc-sidebar-item-search">
@@ -71,28 +94,10 @@
       {% endif %}
       {% include libdoc/menu-basic.html %}
     {% endif %}
-  </ul>
+  {% comment %} </ul>
 
-  <ul class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto">
-    <li class="u-relative u-o-hidden libdoc-sidebar-item active">
-      <a
-        href="/pages/me/cv"
-        class="c-btn m-block-right {% if page.url == '/pages/me/cv.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
-        u-fs-xs="sm,md"
-        u-p-xs="sm,md">
-        CV
-      </a>
-    </li>
+                          <ul class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto"> {% endcomment %}
 
-    <li class="u-relative u-o-hidden libdoc-sidebar-item active mt-2px">
-      <a
-        href="/pages/me/works"
-        class="c-btn m-block-right {% if page.url == '/pages/me/works.html' %}u-br-large-solid{% else %}m-ff-lead{% endif %} u-ta-right"
-        u-fs-xs="sm,md"
-        u-p-xs="sm,md">
-        MyWorks
-      </a>
-    </li>
   </ul>
 
 

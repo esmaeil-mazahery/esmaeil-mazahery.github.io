@@ -29,8 +29,8 @@
   <!-- Favicons -->
   {% assign favicon_path_or_url = page.metadata.favicon | default: page.metadata.favicon_auto | default: site.metadata.favicon | default: site.metadata.favicon_auto %}
   {% if favicon_path_or_url contains 'http://' or favicon_path_or_url contains 'https://' %}
-    {% else %}
-      {% assign favicon_path_or_url = site.url | append: site.baseurl | append: favicon_path_or_url %}
+  {% else %}
+    {% assign favicon_path_or_url = site.url | append: site.baseurl | append: favicon_path_or_url %}
   {% endif %}
   {% if favicon_path_or_url.size > 9 %}
     {% assign ico_split = favicon_path_or_url | split: '.ico' %}
@@ -139,13 +139,13 @@
   <meta name="msapplication-TileColor" content="{{ site.metadata.color | default: '#ffffff' }}">
   <meta name="theme-color" content="{{ page.metadata.color | default: site.metadata.color | default: '#FFFFFF' }}">
 
-  <!-- Microsoft -->
+    <!-- Microsoft -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="msapplication-starturl" content="{{ site_url }}{{ page.url }}">
   <meta name="msapplication-tooltip" content="{{ page.title | default: site.title }}">
   <meta name="msapplication-TileColor" content="{{ page.metadata.color | default: site.metadata.color | default: '#FFFFFF' }}">
 
-  <!-- Open Graph -->
+    <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site_url }}{{ page.url }}">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -176,12 +176,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="{{ page.metadata.color | default: site.metadata.color | default: '#FFFFFF' }}">
 
-  <!-- Android -->
+    <!-- Android -->
   <meta name="theme-color" content="{{ page.metadata.color | default: site.metadata.color | default: '#FFFFFF' }}">
   <meta name="color-scheme" content="light">
   <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Style sheets -->
+    <!-- Style sheets -->
   <link rel="stylesheet" href="{{ '/assets/libdoc/css/normalize.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/libdoc/fonts/icomoon/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/libdoc/css/libdoc.css' | relative_url }}">
@@ -200,10 +200,8 @@
     <style>
       code[class*="language-"],
       pre[class*="language-"] {
-        font-size: {{ site.prism.font_size }}
-        ;
-        line-height: {{ site.prism.line_height }}
-        ;
+        font-size: {{ site.prism.font_size }};
+        line-height: {{ site.prism.line_height }};
         font-family: var(--sg-font-family-monospace);
       }
     </style>
@@ -216,6 +214,15 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="{{ '/assets/user/lib/lightbox2/js/lightbox.js' | relative_url }}"></script>
+  <script type="text/javascript">
+          (function(d, s) {
+          var useSSL = 'https:' == document.location.protocol;
+          var js, where = d.getElementsByTagName(s)[0],
+          js = d.createElement(s);
+          js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/4236208903/10631636.js?width=245&height=130&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+          try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+          }(document, 'script'));
+  </script>
 
   <!-- LibDoc config -->
   <script>
@@ -229,7 +236,7 @@
         stylesheets: [{% for item in site.stylesheets %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
       scripts_head: [{% for item in site.scripts_head %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
     scripts_body: [{% for item in site.scripts_body %}'{{ item }}'{% if forloop.last == false %},{% endif %}{% endfor %}]
-}}
+    }}
   </script>
 
   <!-- Google analytics -->
@@ -238,6 +245,5 @@
   {% endif %}
 
 
-
-  <!-- Extra -->
+<!-- Extra -->
 </head>
