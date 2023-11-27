@@ -4,7 +4,7 @@ description: Step by step create Asp.net Web Application MVC. in this section we
 layout: libdoc/page
 
 menu_title: 1- Setup
-published: true
+published: false
 
 #LibDoc specific below
 category: AspDotNet
@@ -81,7 +81,7 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
     <br>
     <small>checking our dotnet SDK</small>
     <br>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet --version
       </code>
@@ -91,21 +91,21 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
     <strong>Entity Framework Tool</strong>
     <br>
     <small>install EF</small>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet tool install --global dotnet-ef
       </code>
     </pre>
     <small>checking EF version</small>
     <br>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet ef --version
       </code>
     </pre>
     <small>update EF</small>
     <br>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet tool update --global dotnet-ef
       </code>
@@ -134,7 +134,7 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   <li>
     <strong>Infrastructure</strong>
     <small>it contains all public codes and use by all other project</small>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet new classlib --output Blog.Infrastructure
       </code>
@@ -143,7 +143,7 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   <li>
     <strong>DataLayer</strong>
     <small>this layer connect to database and hold model, migration and mapping of data in database</small>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet new classlib --output Blog.DataLayer
       </code>
@@ -152,7 +152,7 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   <li>
     <strong>ServiceLayer</strong>
     <small>this layer contains services and handle all functionality of program</small>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet new classlib --output Blog.ServiceLayer
       </code>
@@ -161,7 +161,7 @@ summery:  '<div>Steps to add swap space on ubuntu</div>
   <li>
     <strong>WebApplication</strong>
     <small>this layer contains user interface all request are handeled in this project</small>
-    <pre class="language-bash">
+<pre class="language-bash">
       <code class="language-bash">
         dotnet new mvc --output Blog.WebApplication
       </code>
