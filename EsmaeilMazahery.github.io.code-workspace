@@ -17,6 +17,7 @@
     "liquid.format.enable": true,
     "[liquid]": {
       "editor.formatOnSave": true
-    }
+    },
+    "cSpell.enableFiletypes": ["liquid"]
   }
 }
